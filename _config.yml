@@ -33,9 +33,9 @@ author:
   email            : "giovanni.rossanigo20@gmail.com" 
 
   # Academic websites
-  academia         : # URL
-  arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  academia         : # https://www.uni-regensburg.de/mathematik/fakultaet/startseite/index.html
+  #arxiv            : # URL - Update with the correct link to your profile
+  #googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
   inspire-hep      : # URL
   impactstory      : # URL
   semantic         : # URL
