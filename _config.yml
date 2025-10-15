@@ -23,7 +23,7 @@ repository               : "giovannirossanigo/giovannirossanigo.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "profile.JPG"
   name             : "Giovanni Rossanigo"
   pronouns         : # example: "he/him"  
   bio              : "PhD Student"
