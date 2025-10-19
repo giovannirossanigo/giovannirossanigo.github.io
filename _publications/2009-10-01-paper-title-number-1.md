@@ -2,7 +2,7 @@
 title: "Master's thesis"
 collection: Thesis
 category: theses
-permalink: /publication/2009-10-01-paper-title-number-1
+permalink: /publication/masters-thesis
 excerpt: 'Here you can find my master thesis.'
 date: April 2025
 slidesurl: 'http://giovannirossanigo.github.io/files/Abstract_Neeman_Dualities___Beamer.pdf'
