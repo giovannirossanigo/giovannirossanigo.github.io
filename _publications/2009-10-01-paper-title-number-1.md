@@ -1,6 +1,6 @@
 ---
 title: "Master's thesis"
-collection: Thesis
+collection: publications
 category: manuscripts
 permalink: /publication/masters-thesis
 excerpt: 'Here you can find my master thesis.'
