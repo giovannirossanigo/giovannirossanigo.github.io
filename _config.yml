@@ -64,10 +64,11 @@ author:
 publication_category:
   books:
     title: 'Lecture notes'
+  articles:
+    title: 'Journal Articles'
   manuscripts:
-    title: 'Journal Articles'    
-  theses:
-    title: 'Theses'
+    title: 'Theses'    
+  
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
