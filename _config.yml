@@ -66,8 +66,8 @@ publication_category:
     title: 'Lecture notes'
   manuscripts:
     title: 'Journal Articles'    
-  conferences:
-    title: 'theses'
+  theses:
+    title: 'Theses'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
