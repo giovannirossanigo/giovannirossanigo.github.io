@@ -5,7 +5,7 @@ category: manuscripts
 permalink: /publication/masters-thesis
 excerpt: 'Here you can find my master thesis.'
 date: 09 April 2025
-#venue: 'Journal 1'
+venue: ''
 slidesurl: 'http://giovannirossanigo.github.io/files/Abstract_Neeman_Dualities___Beamer.pdf'
 paperurl: 'http://giovannirossanigo.github.io/files/Abstract_Neeman_Dualities.pdf'
 ---
