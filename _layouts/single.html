@@ -82,8 +82,8 @@ layout: default
         {% endif %}
         {% include page__taxonomy.html %}
       </footer>
-
-      {% if page.share %}{% include social-share.html %}{% endif %}
+# la linea seguente è quella dei pulsanti per condividere
+      {% comment %}{% if page.share %}{% include social-share.html %}{% endif %}{% endcomment %}
 
       {% include post_pagination.html %}
     </div>
