@@ -58,7 +58,9 @@ author:
   twitter          : # Username for X / Twitter
   wikipedia        : # Username
   youtube          : # Username
-  
+
+  # Disable social share buttons everywhere
+  share: false
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
