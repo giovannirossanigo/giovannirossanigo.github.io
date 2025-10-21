@@ -67,7 +67,9 @@ publication_category:
   articles:
     title: 'Journal Articles'
   manuscripts:
-    title: 'Theses'    
+    title: 'Theses'  
+  preprints:
+    title: 'Preprints'
   
 
 # Site Settings
