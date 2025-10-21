@@ -1,7 +1,7 @@
 ---
 title: "Master's thesis"
 collection: publications
-category: preprints
+category: manuscripts
 permalink: /publication/masters-thesis
 excerpt: 'Here you can find my master thesis.'
 date: 09 April 2025
