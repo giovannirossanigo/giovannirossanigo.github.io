@@ -1,10 +1,10 @@
 ---
-title: "Bachelor's thesis"
+title: "Bachelor's thesis: Results on cloaking by transformation optics and anomalous localized resonance in elliptic geometry"
 collection: publications
 category: manuscripts
 permalink: /publication/bachelors_thesis
 excerpt: 'Here you can find my bachelor thesis.'
-date: 2021
+date: 2021-10-07
 venue: 
 citation: ''
 slidesurl: 'http://giovannirossanigo.github.io/files/bachelors_thesis_beamer.pdf'
