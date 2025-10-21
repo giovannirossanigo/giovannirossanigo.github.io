@@ -1,6 +1,6 @@
 ---
 title: "Bachelor's thesis"
-#collection: publications
+collection: publications
 category: manuscripts
 permalink: /publication/bachelors_thesis
 excerpt: 'Here you can find my bachelor thesis.'
