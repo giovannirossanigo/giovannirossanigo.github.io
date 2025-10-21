@@ -4,7 +4,7 @@ collection: publications
 category: manuscripts
 permalink: /publication/bachelors_thesis
 excerpt: 'Here you can find my bachelor thesis.'
-date: 
+date: 2021
 venue: 
 citation: ''
 slidesurl: 'http://giovannirossanigo.github.io/files/bachelors_thesis_beamer.pdf'
