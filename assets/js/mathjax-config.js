@@ -20,6 +20,15 @@ window.MathJax = {
       susp: "\\Sigma$
     }
   },
+  environments: {
+      definition: ['\\begin{array}{l}\\textbf{Definition.}\\;', '\\end{array}'],
+      theorem:    ['\\begin{array}{l}\\textbf{Theorem.}\\;', '\\end{array}'],
+      lemma:      ['\\begin{array}{l}\\textbf{Lemma.}\\;', '\\end{array}'],
+      proof:      ['\\begin{array}{l}\\textit{Proof.}\\;', '\\end{array}']
+    }
+  },
+  svg: { fontCache: 'global' }
+};
   options: {
     skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
   }
