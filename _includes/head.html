@@ -19,3 +19,27 @@
 <link rel="stylesheet" href="{{ base_path }}/assets/css/main.css">
 
 <meta http-equiv="cleartype" content="on">
+
+<!-- MathJax configuration for LaTeX-style environments -->
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']],
+    tags: 'ams',
+    packages: {'[+]': ['base', 'ams']},
+    environments: {
+      definition: ['\\begin{array}{l}\\textbf{Definition.}\\;', '\\end{array}'],
+      theorem: ['\\begin{array}{l}\\textbf{Theorem.}\\;', '\\end{array}'],
+      lemma: ['\\begin{array}{l}\\textbf{Lemma.}\\;', '\\end{array}'],
+      proof: ['\\begin{array}{l}\\textit{Proof.}\\;', '\\end{array}']
+    }
+  },
+  svg: { fontCache: 'global' }
+};
+</script>
+
+<!-- Load MathJax -->
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
