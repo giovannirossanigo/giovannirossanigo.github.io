@@ -5,8 +5,10 @@ window.MathJax = {
     processEscapes: true,
     packages: {'[+]': ['noerrors']},
     macros: {
+      mc: ["\\mathscr", 1],
+      mb: ["\\mathfrak", 1],
+        
       inf: "(\\infty,1)",
-      C: "\\mathcal{C}",
       Hom: "\\mathrm{Hom}",
       Fun: "\\mathrm{Fun}",
       Mod: "\\mathrm{Mod}",
