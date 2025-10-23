@@ -10,8 +10,11 @@ window.MathJax = {
       Hom: "\\mathrm{Hom}",
       Fun: "\\mathrm{Fun}",
       Mod: "\\mathrm{Mod}",
-      Spc: "\\mathcal{S}",
-      Catinf: "\\mathrm{Cat}_{(\\infty,1)}"
+      Catinf: "\\mathrm{Cat}_{(\\infty,1)}",
+      Spc: "Spc",
+      Sp: "Sp",
+      PSh: "PSh"
+      Ind: "Ind",
     }
   },
   options: {
