@@ -15,8 +15,9 @@ window.MathJax = {
       Catinf: "\\mathrm{Cat}_{(\\infty,1)}",
       Spc: "Spc",
       Sp: "Sp",
-      PSh: "PSh"
+      PSh: "PSh",
       Ind: "Ind",
+      susp: "\\Sigma$
     }
   },
   options: {
