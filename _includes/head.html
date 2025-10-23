@@ -6,7 +6,6 @@
 
 <link href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ base_path }}/feed.xml{% endif %}" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
 
-<!-- http://t.co/dKP3o1e -->
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,38 +14,9 @@
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
 </script>
 
-<!-- For all browsers -->
 <link rel="stylesheet" href="{{ base_path }}/assets/css/main.css">
-
 <meta http-equiv="cleartype" content="on">
 
-
-<!-- MathJax configuration for LaTeX-style environments -->
+<!-- MathJax configuration from external file -->
 <script src="{{ '/assets/js/mathjax-config.js' | relative_url }}"></script>
-<script id="MathJax-script" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>
-
-
-<script>
-window.MathJax = {
-  tex: {
-    inlineMath: [['$', '$'], ['\\(', '\\)']],
-    displayMath: [['$$', '$$'], ['\\[', '\\]']],
-    tags: 'ams',
-    packages: {'[+]': ['base', 'ams']},
-    environments: {
-      definition: ['\\begin{array}{l}\\textbf{Definition.}\\;', '\\end{array}'],
-      theorem: ['\\begin{array}{l}\\textbf{Theorem.}\\;', '\\end{array}'],
-      lemma: ['\\begin{array}{l}\\textbf{Lemma.}\\;', '\\end{array}'],
-      proof: ['\\begin{array}{l}\\textit{Proof.}\\;', '\\end{array}']
-    }
-  },
-  svg: { fontCache: 'global' }
-};
-</script>
-
-<!-- Load MathJax -->
-<script id="MathJax-script" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
