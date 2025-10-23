@@ -3,11 +3,10 @@ window.MathJax = {
     inlineMath: [['$', '$'], ['\\(', '\\)']],
     displayMath: [['$$', '$$'], ['\\[', '\\]']],
     processEscapes: true,
-    packages: {'[+]': ['noerrors']},
+    packages: {'[+]': ['base','ams']},
     macros: {
-      mc: ["\\mathscr", 1],
-      mb: ["\\mathfrak", 1],
-        
+      mc: ["\\mathscr{#1}", 1],
+      mb: ["\\mathfrak{#1}", 1],
       inf: "(\\infty,1)",
       Hom: "\\mathrm{Hom}",
       Fun: "\\mathrm{Fun}",
@@ -17,10 +16,9 @@ window.MathJax = {
       Sp: "Sp",
       PSh: "PSh",
       Ind: "Ind",
-      susp: "\\Sigma$
-    }
-  },
-  environments: {
+      susp: "\\Sigma"
+    },
+    environments: {
       definition: ['\\begin{array}{l}\\textbf{Definition.}\\;', '\\end{array}'],
       theorem:    ['\\begin{array}{l}\\textbf{Theorem.}\\;', '\\end{array}'],
       lemma:      ['\\begin{array}{l}\\textbf{Lemma.}\\;', '\\end{array}'],
@@ -29,7 +27,4 @@ window.MathJax = {
   },
   svg: { fontCache: 'global' }
 };
-  options: {
-    skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-  }
-};
+
