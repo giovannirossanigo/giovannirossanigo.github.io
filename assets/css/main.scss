@@ -99,36 +99,36 @@ mjx-container {
   color: #1565c0;
 }
 
-/* === Dark mode support (Primer toggle) === */
-html.color-mode-dark .definition,
-html.color-mode-dark .theorem,
-html.color-mode-dark .lemma,
-html.color-mode-dark .proof {
-  background-color: #a81d1b;
-  color: #e0e0e0;
-  border-radius: 0.4em;
-  padding: 0.75em 1em;
-  margin: 1em 0;
+/* === Dark mode support for theorem-like environments === */
+body.dark-mode .definition,
+body.dark-mode .theorem,
+body.dark-mode .lemma,
+body.dark-mode .proof {
+  background-color: #1e1e1e !important;  /* sfondo scuro */
+  color: #e0e0e0 !important;             /* testo chiaro */
+  border-left-width: 4px !important;
+  border-radius: 0.4em !important;
+  padding: 0.75em 1em !important;
+  margin: 1em 0 !important;
 }
 
-/* Specific colors for dark mode */
-html.color-mode-dark .definition { border-left-color: #4b9cd3; }  /* Blue */
-html.color-mode-dark .theorem    { border-left-color: #9c27b0; }  /* Purple */
-html.color-mode-dark .lemma      { border-left-color: #ff9800; }  /* Orange */
-html.color-mode-dark .proof      { border-left-color: #4caf50; }  /* Green */
+body.dark-mode .definition { border-left-color: #4b9cd3 !important; }
+body.dark-mode .theorem    { border-left-color: #9c27b0 !important; }
+body.dark-mode .lemma      { border-left-color: #ff9800 !important; }
+body.dark-mode .proof      { border-left-color: #4caf50 !important; }
 
-/* Bold labels inside boxes (dark mode) */
-html.color-mode-dark .definition strong,
-html.color-mode-dark .theorem strong,
-html.color-mode-dark .lemma strong,
-html.color-mode-dark .proof strong {
+body.dark-mode .definition strong,
+body.dark-mode .theorem strong,
+body.dark-mode .lemma strong,
+body.dark-mode .proof strong {
   color: #ffffff !important;
 }
 
-/* Links inside boxes (dark mode) */
-html.color-mode-dark .definition a,
-html.color-mode-dark .theorem a,
-html.color-mode-dark .lemma a,
-html.color-mode-dark .proof a {
-  color: #81d4fa !important; /* leggibile su sfondo scuro */
+body.dark-mode .definition a,
+body.dark-mode .theorem a,
+body.dark-mode .lemma a,
+body.dark-mode .proof a {
+  color: #81d4fa !important; /* link leggibili */
 }
+
+
