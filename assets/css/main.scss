@@ -90,29 +90,37 @@ mjx-container {
   font-weight: 700;
 }
 
-/* === Dark mode support for theorem-like boxes === */
-@media (prefers-color-scheme: dark), 
-html.color-mode--dark {
+/* === Dark mode support for theorem-like environments === */
+@media (prefers-color-scheme: dark) {
+  /* Box generale */
   .definition, .theorem, .lemma, .proof {
-    background-color: #1e1e1e;   /* sfondo scuro */
-    color: #e0e0e0 !important;   /* testo chiaro */
-    border-left-width: 4px;
+    background-color: #1e1e1e !important;  /* sfondo scuro */
+    color: #e0e0e0 !important;             /* testo chiaro */
+    border-left-width: 4px !important;     /* mantiene spessore bordo */
+    border-radius: 0.4em !important;       /* mantiene arrotondamenti */
+    padding: 0.75em 1em !important;        /* mantiene padding */
+    margin: 1em 0 !important;              /* mantiene margini */
   }
 
+  /* Colori dei bordi */
+  .definition { border-left-color: #4b9cd3 !important; }  /* blu */
+  .theorem    { border-left-color: #9c27b0 !important; }  /* viola */
+  .lemma      { border-left-color: #ff9800 !important; }  /* arancio */
+  .proof      { border-left-color: #4caf50 !important; }  /* verde */
 
-  /* Mantieni le barre laterali colorate */
-  .definition { border-left-color: #4b9cd3; }
-  .theorem    { border-left-color: #9c27b0; }
-  .lemma      { border-left-color: #ff9800; }
-  .proof      { border-left-color: #4caf50; }
-
-  /* Eventuali strong all’interno dei box diventano chiari */
+  /* Forza il colore dei titoli */
   .definition strong,
   .theorem strong,
   .lemma strong,
   .proof strong {
-    color: #f5f5f5;
+    color: #ffffff !important;
+  }
+
+  /* Forza colore dei link all'interno dei box (se ci sono) */
+  .definition a,
+  .theorem a,
+  .lemma a,
+  .proof a {
+    color: #81d4fa !important; /* blu chiaro leggibile su sfondo scuro */
   }
 }
-
-
