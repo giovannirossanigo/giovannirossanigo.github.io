@@ -5,7 +5,7 @@
  * This file controls what is imported from /_sass
  *
  * Note that the files are processed in the order they are imported, so they are partly
-   sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
+ * sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
  */
 
 @import
@@ -42,40 +42,50 @@
     "vendor/font-awesome/brands"
 ;
 
-// === Custom MathJax and LaTeX-style environment styling ===
+/* === Custom MathJax and LaTeX-style environment styling === */
 
+/* Improve spacing for MathJax display math */
 mjx-container[display="true"] {
-  margin: 1.5em 0;
+  display: block;
+  margin: 1.5em 0 !important;
+  text-align: left !important;
 }
 
-mjx-container[display="true"]::before {
-  content: "";
-  display: block;
-  margin-bottom: 0.2em;
+mjx-container[display="false"] {
+  display: inline !important;
+  white-space: normal !important;
 }
 
 mjx-container {
   font-size: 1.05em;
+  line-height: 1.6;
 }
 
-/* Optional: visual highlight for theorem-like environments */
+/* === Box styles for theorem-like environments === */
+
 .definition, .theorem, .proof, .lemma {
   display: block;
-  margin: 1em 0;
-  padding: 0.75em 1em;
+  margin: 1.2em 0;
+  padding: 0.9em 1.2em;
   border-left: 4px solid #4b9cd3;
-  background-color: #f8f9fa;
+  background-color: #fbfbfb;
   border-radius: 0.4em;
+  font-size: 1.03em;
+  line-height: 1.55;
 }
 
-.theorem {
-  border-left-color: #9c27b0;
-}
+/* Different colors for each type of environment */
+.definition { border-left-color: #4b9cd3; }  /* Blue */
+.theorem    { border-left-color: #9c27b0; }  /* Purple */
+.lemma      { border-left-color: #ff9800; }  /* Orange */
+.proof      { border-left-color: #4caf50; }  /* Green */
 
-.proof {
-  border-left-color: #4caf50;
-}
-
-.lemma {
-  border-left-color: #ff9800;
+/* Bold labels at the start of each environment */
+.definition strong,
+.theorem strong,
+.lemma strong,
+.proof strong {
+  display: inline-block;
+  margin-right: 0.6em;
+  font-weight: 700;
 }
