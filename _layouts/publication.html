@@ -4,10 +4,10 @@ layout: single
 
 <article class="publication">
 
-  <!-- Qui viene visualizzato tutto il contenuto della pubblicazione -->
+  <!-- Contenuto della pubblicazione -->
   {{ content }}
 
-  <!-- Se vuoi mostrare Paper e Slides (se presenti) -->
+  <!-- Link a Paper e Slides se presenti -->
   <section class="publication-links">
     {% if page.paperurl %}
     <p><a href="{{ page.paperurl }}" target="_blank">Paper</a></p>
@@ -18,7 +18,7 @@ layout: single
   </section>
 
   {%- comment -%}
-  <!-- La sezione “Recommended citation” è commentata -->
+  <!-- Sezione “Recommended citation” rimossa/commentata -->
   {% if page.citation %}
   <h4>Recommended citation:</h4>
   <p>{{ page.citation }}</p>
