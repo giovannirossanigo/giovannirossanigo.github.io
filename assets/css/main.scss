@@ -90,37 +90,35 @@ mjx-container {
   font-weight: 700;
 }
 
-/* === Dark mode support for theorem-like environments (Primer toggle) === */
-body.dark-mode .definition,
-body.dark-mode .theorem,
-body.dark-mode .lemma,
-body.dark-mode .proof {
-    background-color: #1e1e1e !important;  /* sfondo scuro */
-    color: #e0e0e0 !important;             /* testo chiaro */
-    border-left-width: 4px !important;
-    border-radius: 0.4em !important;
-    padding: 0.75em 1em !important;
-    margin: 1em 0 !important;
+/* === Dark mode per box theorem-like === */
+.definition.dark,
+.theorem.dark,
+.lemma.dark,
+.proof.dark {
+  background-color: #1e1e1e !important;   /* sfondo scuro */
+  color: #e0e0e0 !important;             /* testo chiaro */
+  border-left-width: 4px !important;
+  border-radius: 0.4em !important;
+  padding: 0.75em 1em !important;
+  margin: 1em 0 !important;
 }
 
-body.dark-mode .definition { border-left-color: #4b9cd3 !important; }  /* blu */
-body.dark-mode .theorem    { border-left-color: #9c27b0 !important; }  /* viola */
-body.dark-mode .lemma      { border-left-color: #ff9800 !important; }  /* arancio */
-body.dark-mode .proof      { border-left-color: #4caf50 !important; }  /* verde */
+/* Colori dei bordi */
+.definition.dark { border-left-color: #4b9cd3 !important; }  /* blu */
+.theorem.dark    { border-left-color: #9c27b0 !important; }  /* viola */
+.lemma.dark      { border-left-color: #ff9800 !important; }  /* arancio */
+.proof.dark      { border-left-color: #4caf50 !important; }  /* verde */
 
-/* Force bold labels color */
-body.dark-mode .definition strong,
-body.dark-mode .theorem strong,
-body.dark-mode .lemma strong,
-body.dark-mode .proof strong {
-    color: #ffffff !important;
-}
+/* Titoli in grassetto */
+.definition.dark strong,
+.theorem.dark strong,
+.lemma.dark strong,
+.proof.dark strong { color: #ffffff !important; }
 
-/* Links inside boxes in dark mode */
-body.dark-mode .definition a,
-body.dark-mode .theorem a,
-body.dark-mode .lemma a,
-body.dark-mode .proof a {
-    color: #81d4fa !important; /* link leggibili */
-}
+/* Link leggibili */
+.definition.dark a,
+.theorem.dark a,
+.lemma.dark a,
+.proof.dark a { color: #81d4fa !important; }
+
 
