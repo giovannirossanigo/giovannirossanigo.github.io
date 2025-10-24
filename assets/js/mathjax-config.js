@@ -3,6 +3,7 @@ window.MathJax = {
     inlineMath: [['$', '$'], ['\\(', '\\)']],
     displayMath: [['$$', '$$'], ['\\[', '\\]']],
     processEscapes: true,
+    processEnvironments: true, 
     packages: {'[+]': ['base','ams']},
     macros: {
       mc: ["\\mathscr{#1}", 1],
