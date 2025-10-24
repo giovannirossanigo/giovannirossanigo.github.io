@@ -1,28 +1,49 @@
 ---
-layout: single
+# Layout indipendente per le pubblicazioni
 ---
 
-<article class="publication">
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en" }}">
+  <head>
+    {% include head.html %}
+  </head>
+  <body class="publication">
 
-  <!-- Contenuto della pubblicazione -->
-  {{ content }}
+    {% include header.html %}
 
-  <!-- Link a Paper e Slides se presenti -->
-  <section class="publication-links">
-    {% if page.paperurl %}
-    <p><a href="{{ page.paperurl }}" target="_blank">Paper</a></p>
-    {% endif %}
-    {% if page.slidesurl %}
-    <p><a href="{{ page.slidesurl }}" target="_blank">Slides</a></p>
-    {% endif %}
-  </section>
+    <main id="content" class="site-content" role="main">
+      <article class="publication">
 
-  {%- comment -%}
-  <!-- Sezione “Recommended citation” rimossa/commentata -->
-  {% if page.citation %}
-  <h4>Recommended citation:</h4>
-  <p>{{ page.citation }}</p>
-  {% endif %}
-  {%- endcomment -%}
+        <!-- Titolo -->
+        <header class="publication-header">
+          <h1 class="publication-title">{{ page.title }}</h1>
+          {% if page.date %}
+            <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time>
+          {% endif %}
+          {% if page.venue %}
+            <p class="publication-venue">{{ page.venue }}</p>
+          {% endif %}
+        </header>
 
-</article>
+        <!-- Contenuto della pubblicazione -->
+        <section class="publication-content">
+          {{ content }}
+        </section>
+
+        <!-- Link a Paper e Slides -->
+        <section class="publication-links">
+          {% if page.paperurl %}
+            <p><a href="{{ page.paperurl }}" target="_blank">Paper</a></p>
+          {% endif %}
+          {% if page.slidesurl %}
+            <p><a href="{{ page.slidesurl }}" target="_blank">Slides</a></p>
+          {% endif %}
+        </section>
+
+      </article>
+    </main>
+
+    {% include footer.html %}
+
+  </body>
+</html>
