@@ -1,7 +1,6 @@
 {% include base_path %}
 
 <meta charset="utf-8">
-
 {% include seo.html %}
 
 <link href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ base_path }}/feed.xml{% endif %}" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
@@ -21,6 +20,6 @@
 <script src="{{ '/assets/js/mathjax-config.js' | relative_url }}"></script>
 <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-<!-- Dark mode support for theorem-like boxes -->
-<script src="{{ '/assets/js/dark-boxes.js' | relative_url }}"></script>
+<!-- Primer color mode toggle (Dark/Light) -->
+<script async src="{{ '/assets/js/color-mode.js' | relative_url }}"></script>
 
