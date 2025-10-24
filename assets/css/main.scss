@@ -115,5 +115,24 @@ mjx-container {
   }
 }
 
+/* === Dark mode support (toggle manuale via body.dark-mode) === */
+body.dark-mode {
+  .definition, .theorem, .lemma, .proof {
+    background-color: #1e1e1e;   /* sfondo scuro */
+    color: #e0e0e0 !important;   /* testo chiaro */
+    border-left-width: 4px;
+  }
 
+  .definition { border-left-color: #4b9cd3; }
+  .theorem    { border-left-color: #9c27b0; }
+  .lemma      { border-left-color: #ff9800; }
+  .proof      { border-left-color: #4caf50; }
+
+  .definition strong,
+  .theorem strong,
+  .lemma strong,
+  .proof strong {
+    color: #ffffff !important;
+  }
+}
 
