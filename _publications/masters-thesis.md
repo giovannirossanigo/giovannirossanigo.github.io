@@ -8,6 +8,8 @@ date: 2025-04-09
 venue:
 layout: publication
 share: false
+comments: false
+author_profile: false
 slidesurl: 'http://giovannirossanigo.github.io/files/Abstract_Neeman_Dualities___Beamer.pdf'
 paperurl: 'http://giovannirossanigo.github.io/files/Abstract_Neeman_Dualities.pdf'
 ---
