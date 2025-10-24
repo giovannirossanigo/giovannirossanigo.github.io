@@ -3,7 +3,6 @@ window.MathJax = {
     inlineMath: [['$', '$'], ['\\(', '\\)']],
     displayMath: [['$$', '$$'], ['\\[', '\\]']],
     processEscapes: true,
-    processEnvironments: true, 
     packages: {'[+]': ['base','ams', 'noerrors', 'noundefined']},
     macros: {
       mc: ["\\mathscr{#1}", 1],
@@ -19,17 +18,10 @@ window.MathJax = {
       Ind: "Ind",
       susp: "\\Sigma"
     },
-    environments: {
-      definition: ['\\textbf{Definition. }\\;\\text{', '}'],
-      theorem:    ['\\textbf{Theorem. }\\;\\text{', '}'],
-      lemma:      ['\\textbf{Lemma. }\\;\\text{', '}'],
-      proof:      ['\\textit{Proof. }\\;\\text{', '}']
-    }
   },
   svg: { fontCache: 'global' },
-
-  options: {
+  startup: {
     skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-  }
+  },
 };
 
