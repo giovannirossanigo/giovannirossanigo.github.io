@@ -25,6 +25,10 @@ window.MathJax = {
       proof:      ['\\begin{array}{l}\\textit{Proof.}\\;', '\\end{array}']
     }
   },
-  svg: { fontCache: 'global' }
+  svg: { fontCache: 'global' },
+
+  options: {
+    skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  }
 };
 
