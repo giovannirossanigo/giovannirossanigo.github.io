@@ -27,15 +27,14 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  const themeToggle = document.getElementById('theme-toggle');
+  const toggle = document.getElementById('theme-toggle');
   const body = document.body;
+  const icon = document.getElementById('theme-icon');
 
-  // Assicurati che i box abbiano la classe dark-mode corretta quando si cambia tema
-  themeToggle.addEventListener('click', function() {
-    body.classList.toggle('dark-mode');
-
-    // Aggiorna anche l'icona
-    const icon = document.getElementById('theme-icon');
+  toggle.addEventListener('click', function(e) {
+    e.preventDefault();
+    body.classList.toggle('dark-mode');  // <-- qui cambiamo la classe sul body
+    // Aggiorna icona
     if (body.classList.contains('dark-mode')) {
       icon.classList.remove('fa-sun');
       icon.classList.add('fa-moon');
@@ -45,10 +44,9 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
-  // Se vuoi, puoi forzare l'iniziale dark-mode secondo preferenze
-  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+  // Se vuoi inizializzare in dark mode secondo preferenze sistema
+  if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
     body.classList.add('dark-mode');
-    const icon = document.getElementById('theme-icon');
     icon.classList.remove('fa-sun');
     icon.classList.add('fa-moon');
   }
