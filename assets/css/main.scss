@@ -63,24 +63,25 @@ mjx-container {
 
 /* === Box styles for theorem-like environments === */
 
-/* Light mode (già presente) */
+/* Light mode (default) */
 .definition, .theorem, .lemma, .proof {
   display: block;
   margin: 1.2em 0;
   padding: 0.9em 1.2em;
-  border-left: 4px solid #4b9cd3;
+  border-left: 4px solid #4b9cd3; /* default, poi ridefinito per ogni tipo */
   background-color: #fbfbfb;
   border-radius: 0.4em;
   font-size: 1.03em;
   line-height: 1.55;
 }
 
+/* Specific colors for light mode */
 .definition { border-left-color: #4b9cd3; }  /* Blue */
 .theorem    { border-left-color: #9c27b0; }  /* Purple */
 .lemma      { border-left-color: #ff9800; }  /* Orange */
 .proof      { border-left-color: #4caf50; }  /* Green */
 
-/* Bold labels */
+/* Bold labels inside boxes */
 .definition strong,
 .theorem strong,
 .lemma strong,
@@ -90,35 +91,44 @@ mjx-container {
   font-weight: 700;
 }
 
-/* === Dark mode per box theorem-like === */
-.definition.dark,
-.theorem.dark,
-.lemma.dark,
-.proof.dark {
-  background-color: #1e1e1e !important;   /* sfondo scuro */
-  color: #e0e0e0 !important;             /* testo chiaro */
-  border-left-width: 4px !important;
-  border-radius: 0.4em !important;
-  padding: 0.75em 1em !important;
-  margin: 1em 0 !important;
+/* Links inside boxes (light mode) */
+.definition a,
+.theorem a,
+.lemma a,
+.proof a {
+  color: #1565c0;
 }
 
-/* Colori dei bordi */
-.definition.dark { border-left-color: #4b9cd3 !important; }  /* blu */
-.theorem.dark    { border-left-color: #9c27b0 !important; }  /* viola */
-.lemma.dark      { border-left-color: #ff9800 !important; }  /* arancio */
-.proof.dark      { border-left-color: #4caf50 !important; }  /* verde */
+/* === Dark mode support (Primer toggle) === */
+html.color-mode-dark .definition,
+html.color-mode-dark .theorem,
+html.color-mode-dark .lemma,
+html.color-mode-dark .proof {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  border-radius: 0.4em;
+  padding: 0.75em 1em;
+  margin: 1em 0;
+}
 
-/* Titoli in grassetto */
-.definition.dark strong,
-.theorem.dark strong,
-.lemma.dark strong,
-.proof.dark strong { color: #ffffff !important; }
+/* Specific colors for dark mode */
+html.color-mode-dark .definition { border-left-color: #4b9cd3; }  /* Blue */
+html.color-mode-dark .theorem    { border-left-color: #9c27b0; }  /* Purple */
+html.color-mode-dark .lemma      { border-left-color: #ff9800; }  /* Orange */
+html.color-mode-dark .proof      { border-left-color: #4caf50; }  /* Green */
 
-/* Link leggibili */
-.definition.dark a,
-.theorem.dark a,
-.lemma.dark a,
-.proof.dark a { color: #81d4fa !important; }
+/* Bold labels inside boxes (dark mode) */
+html.color-mode-dark .definition strong,
+html.color-mode-dark .theorem strong,
+html.color-mode-dark .lemma strong,
+html.color-mode-dark .proof strong {
+  color: #ffffff !important;
+}
 
-
+/* Links inside boxes (dark mode) */
+html.color-mode-dark .definition a,
+html.color-mode-dark .theorem a,
+html.color-mode-dark .lemma a,
+html.color-mode-dark .proof a {
+  color: #81d4fa !important; /* leggibile su sfondo scuro */
+}
