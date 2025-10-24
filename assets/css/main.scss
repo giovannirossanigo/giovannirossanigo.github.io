@@ -90,37 +90,36 @@ mjx-container {
   font-weight: 700;
 }
 
-/* === Dark mode support for theorem-like environments === */
-@media (prefers-color-scheme: dark) {
-  /* Box generale */
-  .definition, .theorem, .lemma, .proof {
+/* === Dark mode support for theorem-like environments (Primer toggle) === */
+body.dark-mode .definition,
+body.dark-mode .theorem,
+body.dark-mode .lemma,
+body.dark-mode .proof {
     background-color: #1e1e1e !important;  /* sfondo scuro */
     color: #e0e0e0 !important;             /* testo chiaro */
-    border-left-width: 4px !important;     /* mantiene spessore bordo */
-    border-radius: 0.4em !important;       /* mantiene arrotondamenti */
-    padding: 0.75em 1em !important;        /* mantiene padding */
-    margin: 1em 0 !important;              /* mantiene margini */
-  }
+    border-left-width: 4px !important;
+    border-radius: 0.4em !important;
+    padding: 0.75em 1em !important;
+    margin: 1em 0 !important;
+}
 
-  /* Colori dei bordi */
-  .definition { border-left-color: #4b9cd3 !important; }  /* blu */
-  .theorem    { border-left-color: #9c27b0 !important; }  /* viola */
-  .lemma      { border-left-color: #ff9800 !important; }  /* arancio */
-  .proof      { border-left-color: #4caf50 !important; }  /* verde */
+body.dark-mode .definition { border-left-color: #4b9cd3 !important; }  /* blu */
+body.dark-mode .theorem    { border-left-color: #9c27b0 !important; }  /* viola */
+body.dark-mode .lemma      { border-left-color: #ff9800 !important; }  /* arancio */
+body.dark-mode .proof      { border-left-color: #4caf50 !important; }  /* verde */
 
-  /* Forza il colore dei titoli */
-  .definition strong,
-  .theorem strong,
-  .lemma strong,
-  .proof strong {
+body.dark-mode .definition strong,
+body.dark-mode .theorem strong,
+body.dark-mode .lemma strong,
+body.dark-mode .proof strong {
     color: #ffffff !important;
-  }
+}
 
-  /* Forza colore dei link all'interno dei box (se ci sono) */
-  .definition a,
-  .theorem a,
-  .lemma a,
-  .proof a {
-    color: #81d4fa !important; /* blu chiaro leggibile su sfondo scuro */
-  }
+body.dark-mode .definition a,
+body.dark-mode .theorem a,
+body.dark-mode .lemma a,
+body.dark-mode .proof a {
+    color: #81d4fa !important; /* link leggibili */
+}
+
 }
