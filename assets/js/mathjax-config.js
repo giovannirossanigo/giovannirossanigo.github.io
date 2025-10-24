@@ -6,7 +6,7 @@ window.MathJax = {
     packages: {'[+]': ['base','ams', 'bbm', 'noerrors', 'noundefined']},
     macros: {
       mc: ["\\mathscr{#1}", 1],
-      mb: ["\\mathbbm{#1}", 1],
+      mb: ["\\mathbb{#1}", 1],
       inf: "(\\infty,1)",
       Hom: "\\mathrm{Hom}",
       Fun: "\\mathrm{Fun}",
