@@ -63,7 +63,8 @@ mjx-container {
 
 /* === Box styles for theorem-like environments === */
 
-.definition, .theorem, .proof, .lemma {
+/* Light mode (già presente) */
+.definition, .theorem, .lemma, .proof {
   display: block;
   margin: 1.2em 0;
   padding: 0.9em 1.2em;
@@ -74,13 +75,12 @@ mjx-container {
   line-height: 1.55;
 }
 
-/* Different colors for each type of environment */
 .definition { border-left-color: #4b9cd3; }  /* Blue */
 .theorem    { border-left-color: #9c27b0; }  /* Purple */
 .lemma      { border-left-color: #ff9800; }  /* Orange */
 .proof      { border-left-color: #4caf50; }  /* Green */
 
-/* Bold labels at the start of each environment */
+/* Bold labels */
 .definition strong,
 .theorem strong,
 .lemma strong,
@@ -88,4 +88,25 @@ mjx-container {
   display: inline-block;
   margin-right: 0.6em;
   font-weight: 700;
+}
+
+/* === Dark mode support === */
+@media (prefers-color-scheme: dark) {
+  .definition, .theorem, .lemma, .proof {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    border-left-width: 4px;
+  }
+
+  .definition { border-left-color: #4b9cd3; }
+  .theorem    { border-left-color: #9c27b0; }
+  .lemma      { border-left-color: #ff9800; }
+  .proof      { border-left-color: #4caf50; }
+
+  .definition strong,
+  .theorem strong,
+  .lemma strong,
+  .proof strong {
+    color: #ffffff;
+  }
 }
