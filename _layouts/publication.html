@@ -1,0 +1,51 @@
+---
+# Layout per le pubblicazioni personalizzato
+---
+
+{% capture layout_class %}single publication{% endcapture %}
+
+{% include head.html %}
+
+<body class="{{ layout_class }}">
+  {% include header.html %}
+
+  <main id="content" class="site-content" role="main">
+
+    <article class="publication">
+
+      <header class="publication-header">
+        <h1 class="publication-title">{{ page.title }}</h1>
+        {% if page.date %}
+        <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time>
+        {% endif %}
+        {% if page.venue %}
+        <p class="publication-venue">{{ page.venue }}</p>
+        {% endif %}
+      </header>
+
+      <section class="publication-content">
+        {{ content }}
+      </section>
+
+      <section class="publication-links">
+        {% if page.paperurl %}
+        <p><a href="{{ page.paperurl }}" target="_blank">Paper</a></p>
+        {% endif %}
+        {% if page.slidesurl %}
+        <p><a href="{{ page.slidesurl }}" target="_blank">Slides</a></p>
+        {% endif %}
+      </section>
+
+      {%- comment -%}
+      {% if page.citation %}
+      <h4>Recommended citation:</h4>
+      <p>{{ page.citation }}</p>
+      {% endif %}
+      {%- endcomment -%}
+
+    </article>
+
+  </main>
+
+  {% include footer.html %}
+</body>
