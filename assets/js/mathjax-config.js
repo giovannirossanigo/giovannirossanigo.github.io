@@ -20,10 +20,10 @@ window.MathJax = {
       susp: "\\Sigma"
     },
     environments: {
-      definition: ['\\begin{array}{l}\\textbf{Definition.}\\;', '\\end{array}'],
-      theorem:    ['\\begin{array}{l}\\textbf{Theorem.}\\;', '\\end{array}'],
-      lemma:      ['\\begin{array}{l}\\textbf{Lemma.}\\;', '\\end{array}'],
-      proof:      ['\\begin{array}{l}\\textit{Proof.}\\;', '\\end{array}']
+      definition: ['\\textbf{Definition. }\\;\\text{', '}'],
+      theorem:    ['\\textbf{Theorem. }\\;\\text{', '}'],
+      lemma:      ['\\textbf{Lemma. }\\;\\text{', '}'],
+      proof:      ['\\textit{Proof. }\\;\\text{', '}']
     }
   },
   svg: { fontCache: 'global' },
