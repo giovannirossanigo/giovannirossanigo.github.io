@@ -1,0 +1,12 @@
+{%- comment -%}
+  Include per box tipo theorem, lemma, definition, proof.
+  Uso:
+    {% include theorem-box.html type="definition" title="Definition." content="Testo della definizione..." %}
+{%- endcomment -%}
+
+<div class="{{ include.type }}">
+  {% if include.title %}
+    <strong>{{ include.title }}</strong>
+  {% endif %}
+  {{ include.content }}
+</div>
