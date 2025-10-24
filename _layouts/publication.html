@@ -2,9 +2,27 @@
 layout: single
 ---
 
-{%- comment -%}
-{% if page.citation %}
-<h4>Recommended citation:</h4>
-<p>{{ page.citation }}</p>
-{% endif %}
-{%- endcomment -%}
+<article class="publication">
+
+  <!-- Qui viene visualizzato tutto il contenuto della pubblicazione -->
+  {{ content }}
+
+  <!-- Se vuoi mostrare Paper e Slides (se presenti) -->
+  <section class="publication-links">
+    {% if page.paperurl %}
+    <p><a href="{{ page.paperurl }}" target="_blank">Paper</a></p>
+    {% endif %}
+    {% if page.slidesurl %}
+    <p><a href="{{ page.slidesurl }}" target="_blank">Slides</a></p>
+    {% endif %}
+  </section>
+
+  {%- comment -%}
+  <!-- La sezione “Recommended citation” è commentata -->
+  {% if page.citation %}
+  <h4>Recommended citation:</h4>
+  <p>{{ page.citation }}</p>
+  {% endif %}
+  {%- endcomment -%}
+
+</article>
