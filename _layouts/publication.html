@@ -1,49 +1,49 @@
 ---
-# Layout indipendente per le pubblicazioni
+# Layout minimale per publications
 ---
 
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en" }}">
-  <head>
-    {% include head.html %}
-  </head>
-  <body class="publication">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+</head>
+<body>
 
-    {% include header.html %}
+<main id="content">
 
-    <main id="content" class="site-content" role="main">
-      <article class="publication">
+  <article class="publication">
 
-        <!-- Titolo -->
-        <header class="publication-header">
-          <h1 class="publication-title">{{ page.title }}</h1>
-          {% if page.date %}
-            <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time>
-          {% endif %}
-          {% if page.venue %}
-            <p class="publication-venue">{{ page.venue }}</p>
-          {% endif %}
-        </header>
+    <!-- Titolo -->
+    <header class="publication-header">
+      <h1>{{ page.title }}</h1>
+      {% if page.date %}
+        <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time>
+      {% endif %}
+      {% if page.venue %}
+        <p>{{ page.venue }}</p>
+      {% endif %}
+    </header>
 
-        <!-- Contenuto della pubblicazione -->
-        <section class="publication-content">
-          {{ content }}
-        </section>
+    <!-- Contenuto -->
+    <section class="publication-content">
+      {{ content }}
+    </section>
 
-        <!-- Link a Paper e Slides -->
-        <section class="publication-links">
-          {% if page.paperurl %}
-            <p><a href="{{ page.paperurl }}" target="_blank">Paper</a></p>
-          {% endif %}
-          {% if page.slidesurl %}
-            <p><a href="{{ page.slidesurl }}" target="_blank">Slides</a></p>
-          {% endif %}
-        </section>
+    <!-- Link Paper e Slides -->
+    <section class="publication-links">
+      {% if page.paperurl %}
+        <p><a href="{{ page.paperurl }}" target="_blank">Paper</a></p>
+      {% endif %}
+      {% if page.slidesurl %}
+        <p><a href="{{ page.slidesurl }}" target="_blank">Slides</a></p>
+      {% endif %}
+    </section>
 
-      </article>
-    </main>
+  </article>
 
-    {% include footer.html %}
+</main>
 
-  </body>
+</body>
 </html>
