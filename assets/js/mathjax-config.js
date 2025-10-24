@@ -4,7 +4,7 @@ window.MathJax = {
     displayMath: [['$$', '$$'], ['\\[', '\\]']],
     processEscapes: true,
     processEnvironments: true, 
-    packages: {'[+]': ['base','ams']},
+    packages: {'[+]': ['base','ams', 'noerrors', 'noundefined']},
     macros: {
       mc: ["\\mathscr{#1}", 1],
       mb: ["\\mathbbm{#1}", 1],
