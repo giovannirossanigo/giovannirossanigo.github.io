@@ -108,6 +108,7 @@ body.dark-mode .theorem    { border-left-color: #9c27b0 !important; }  /* viola 
 body.dark-mode .lemma      { border-left-color: #ff9800 !important; }  /* arancio */
 body.dark-mode .proof      { border-left-color: #4caf50 !important; }  /* verde */
 
+/* Force bold labels color */
 body.dark-mode .definition strong,
 body.dark-mode .theorem strong,
 body.dark-mode .lemma strong,
@@ -115,6 +116,7 @@ body.dark-mode .proof strong {
     color: #ffffff !important;
 }
 
+/* Links inside boxes in dark mode */
 body.dark-mode .definition a,
 body.dark-mode .theorem a,
 body.dark-mode .lemma a,
@@ -122,4 +124,3 @@ body.dark-mode .proof a {
     color: #81d4fa !important; /* link leggibili */
 }
 
-}
