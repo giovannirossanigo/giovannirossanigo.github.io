@@ -23,3 +23,34 @@
 <!-- Primer color mode toggle (Dark/Light) -->
 <script async src="{{ '/assets/js/color-mode.js' | relative_url }}"></script>
 
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const themeToggle = document.getElementById('theme-toggle');
+  const body = document.body;
+
+  // Assicurati che i box abbiano la classe dark-mode corretta quando si cambia tema
+  themeToggle.addEventListener('click', function() {
+    body.classList.toggle('dark-mode');
+
+    // Aggiorna anche l'icona
+    const icon = document.getElementById('theme-icon');
+    if (body.classList.contains('dark-mode')) {
+      icon.classList.remove('fa-sun');
+      icon.classList.add('fa-moon');
+    } else {
+      icon.classList.remove('fa-moon');
+      icon.classList.add('fa-sun');
+    }
+  });
+
+  // Se vuoi, puoi forzare l'iniziale dark-mode secondo preferenze
+  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    body.classList.add('dark-mode');
+    const icon = document.getElementById('theme-icon');
+    icon.classList.remove('fa-sun');
+    icon.classList.add('fa-moon');
+  }
+});
+</script>
