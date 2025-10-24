@@ -93,8 +93,8 @@ mjx-container {
 /* === Dark mode support === */
 @media (prefers-color-scheme: dark) {
   .definition, .theorem, .lemma, .proof {
-    background-color: #1e1e1e;
-    color: #e0e0e0;
+    background-color: #1e1e1e;   /* sfondo scuro */
+    color: #e0e0e0 !important;   /* testo chiaro */
     border-left-width: 4px;
   }
 
@@ -103,10 +103,13 @@ mjx-container {
   .lemma      { border-left-color: #ff9800; }
   .proof      { border-left-color: #4caf50; }
 
+  /* forza il colore del titolo in grassetto */
   .definition strong,
   .theorem strong,
   .lemma strong,
   .proof strong {
-    color: #ffffff;
+    color: #ffffff !important;
   }
+}
+
 }
