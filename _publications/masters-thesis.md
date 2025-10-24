@@ -6,7 +6,6 @@ permalink: /publication/masters-thesis
 excerpt: 'Here you can find my master thesis.'
 date: 2025-04-09
 venue:
-citation: ''
 hide-citation: true
 share: false
 slidesurl: 'http://giovannirossanigo.github.io/files/Abstract_Neeman_Dualities___Beamer.pdf'
