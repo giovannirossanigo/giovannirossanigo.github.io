@@ -42,16 +42,9 @@
     "vendor/font-awesome/brands"
 ;
 
-/* === Global transitions for smooth theme change === */
-body,
-body * {
-  transition: background-color 0.3s ease,
-              color 0.3s ease,
-              border-color 0.3s ease,
-              box-shadow 0.3s ease;
-}
+/* === Custom MathJax and LaTeX-style environment styling === */
 
-/* === MathJax styling === */
+/* Improve spacing for MathJax display math */
 mjx-container[display="true"] {
   display: block;
   margin: 1.5em 0 !important;
@@ -69,7 +62,9 @@ mjx-container {
 }
 
 /* === Box styles for theorem-like environments === */
-.definition, .theorem, .lemma, .proof, .example, .remark {
+
+/* Light mode (default) */
+.definition, .theorem, .lemma, .proof, .example, .remark, .proposition, .corollary {
   display: block;
   margin: 1.2em 0;
   padding: 0.9em 1.2em;
@@ -78,8 +73,6 @@ mjx-container {
   border-radius: 0.4em;
   font-size: 1.03em;
   line-height: 1.55;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Specific colors for light mode */
@@ -89,6 +82,8 @@ mjx-container {
 .proof      { border-left-color: #4caf50; }  /* Green */
 .example    { border-left-color: #28a745; }  /* Verde chiaro */
 .remark     { border-left-color: #ffc107; }  /* Giallo */
+.proposition { border-left-color: #795548; } /* Marrone */
+.corollary   { border-left-color: #607d8b; } /* Blu-grigio */
 
 /* Bold labels inside boxes */
 .definition strong,
@@ -96,7 +91,9 @@ mjx-container {
 .lemma strong,
 .proof strong,
 .example strong,
-.remark strong {
+.remark strong,
+.proposition strong,
+.corollary strong {
   display: inline-block;
   margin-right: 0.6em;
   font-weight: 700;
@@ -108,31 +105,35 @@ mjx-container {
 .lemma a,
 .proof a,
 .example a,
-.remark a {
+.remark a,
+.proposition a,
+.corollary a {
   color: #1565c0;
-  transition: color 0.3s ease;
 }
 
-/* === Dark mode support === */
+/* === Dark mode support for theorem-like environments === */
 body.dark-mode .definition,
 body.dark-mode .theorem,
 body.dark-mode .lemma,
 body.dark-mode .proof,
 body.dark-mode .example,
 body.dark-mode .remark,
+body.dark-mode .proposition,
+body.dark-mode .corollary,
 body.color-mode-dark .definition,
 body.color-mode-dark .theorem,
 body.color-mode-dark .lemma,
 body.color-mode-dark .proof,
 body.color-mode-dark .example,
-body.color-mode-dark .remark {
-  background-color: #1e1e1e !important;
-  color: #e0e0e0 !important;
+body.color-mode-dark .remark,
+body.color-mode-dark .proposition,
+body.color-mode-dark .corollary {
+  background-color: #1e1e1e !important;  /* sfondo scuro */
+  color: #e0e0e0 !important;             /* testo chiaro */
   border-left-width: 4px !important;
   border-radius: 0.4em !important;
   padding: 0.75em 1em !important;
   margin: 1em 0 !important;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.6);
 }
 
 /* Dark mode border colors */
@@ -148,6 +149,10 @@ body.dark-mode .example,
 body.color-mode-dark .example { border-left-color: #28a745 !important; }
 body.dark-mode .remark,
 body.color-mode-dark .remark { border-left-color: #ffc107 !important; }
+body.dark-mode .proposition,
+body.color-mode-dark .proposition { border-left-color: #795548 !important; }
+body.dark-mode .corollary,
+body.color-mode-dark .corollary { border-left-color: #607d8b !important; }
 
 /* Bold labels inside boxes (dark mode) */
 body.dark-mode .definition strong,
@@ -156,12 +161,16 @@ body.dark-mode .lemma strong,
 body.dark-mode .proof strong,
 body.dark-mode .example strong,
 body.dark-mode .remark strong,
+body.dark-mode .proposition strong,
+body.dark-mode .corollary strong,
 body.color-mode-dark .definition strong,
 body.color-mode-dark .theorem strong,
 body.color-mode-dark .lemma strong,
 body.color-mode-dark .proof strong,
 body.color-mode-dark .example strong,
-body.color-mode-dark .remark strong {
+body.color-mode-dark .remark strong,
+body.color-mode-dark .proposition strong,
+body.color-mode-dark .corollary strong {
   color: #ffffff !important;
 }
 
@@ -172,13 +181,18 @@ body.dark-mode .lemma a,
 body.dark-mode .proof a,
 body.dark-mode .example a,
 body.dark-mode .remark a,
+body.dark-mode .proposition a,
+body.dark-mode .corollary a,
 body.color-mode-dark .definition a,
 body.color-mode-dark .theorem a,
 body.color-mode-dark .lemma a,
 body.color-mode-dark .proof a,
 body.color-mode-dark .example a,
-body.color-mode-dark .remark a {
-  color: #81d4fa !important;
+body.color-mode-dark .remark a,
+body.color-mode-dark .proposition a,
+body.color-mode-dark .corollary a {
+  color: #81d4fa !important; /* link leggibili in dark mode */
 }
+
 
 
