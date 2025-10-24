@@ -91,14 +91,14 @@ mjx-container {
 }
 
 /* === Dark mode support for theorem-like boxes === */
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark), 
+html.color-mode--dark {
   .definition, .theorem, .lemma, .proof {
     background-color: #1e1e1e;   /* sfondo scuro */
-    color: #f5f5f5;              /* testo chiaro */
-    border-left-width: 4px;       /* mantiene la barra laterale */
-    border-radius: 0.4em;         /* mantiene i bordi arrotondati */
-    padding: 0.75em 1em;          /* mantiene il padding originale */
+    color: #e0e0e0 !important;   /* testo chiaro */
+    border-left-width: 4px;
   }
+
 
   /* Mantieni le barre laterali colorate */
   .definition { border-left-color: #4b9cd3; }
@@ -115,24 +115,4 @@ mjx-container {
   }
 }
 
-/* === Dark mode support (toggle manuale via body.dark-mode) === */
-body.dark-mode {
-  .definition, .theorem, .lemma, .proof {
-    background-color: #1e1e1e;   /* sfondo scuro */
-    color: #e0e0e0 !important;   /* testo chiaro */
-    border-left-width: 4px;
-  }
-
-  .definition { border-left-color: #4b9cd3; }
-  .theorem    { border-left-color: #9c27b0; }
-  .lemma      { border-left-color: #ff9800; }
-  .proof      { border-left-color: #4caf50; }
-
-  .definition strong,
-  .theorem strong,
-  .lemma strong,
-  .proof strong {
-    color: #ffffff !important;
-  }
-}
 
