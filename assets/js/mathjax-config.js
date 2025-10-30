@@ -13,7 +13,7 @@ window.MathJax = {
       Fun: "\\mathrm{Fun}",
       Mod: "\\mathrm{Mod}",
       Catinf: "\\mathrm{Cat}_{(\\infty,1)}",
-      Spc: "\\mathrm{Spc]",
+      Spc: "\\mathrm{Spc}",
       Sp: "\\mathrm{Sp}",
       PSh: "\\mathrm{PSh}",
       Shv: "\\mathrm{Shv}",
