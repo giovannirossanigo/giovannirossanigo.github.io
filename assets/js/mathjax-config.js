@@ -8,6 +8,7 @@ window.MathJax = {
       mc: ["\\mathscr{#1}", 1],
       mb: ["\\mathbb{#1}", 1],
       inf: "(\\infty,1)",
+      op: "op",
       Hom: "\\mathrm{Hom}",
       Fun: "\\mathrm{Fun}",
       Mod: "\\mathrm{Mod}",
@@ -18,10 +19,11 @@ window.MathJax = {
       Shv: "Shv",
       Ind: "Ind",
       Li: "\\mathfrak{L}",
+      CS: "\\mathfrak{C}",
+      S: "\\mathfrak{S}",
       susp: "\\Sigma",
 
-      yo: "\\mathrel{\\text{\\usefont{U}{min}{m}{n}\\symbol{'207}}}", 
-      y: "\\yo"
+      yo: "\\text{よ}", 
     },
   },
   svg: { fontCache: 'global' },
