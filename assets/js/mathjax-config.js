@@ -17,7 +17,7 @@ window.MathJax = {
       Sp: "\\mathrm{Sp}",
       PSh: "\\mathrm{PSh}",
       Shv: "\\mathrm{Shv}",
-      Ind: "\\mathrm{Ind}",
+      Ind: "\\text{Ind}",
       lim: "\\mathrm{lim}",
       colim: "\\mathrm{colim}",
       Li: "\\mathfrak{L}",
