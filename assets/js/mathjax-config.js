@@ -15,8 +15,13 @@ window.MathJax = {
       Spc: "Spc",
       Sp: "Sp",
       PSh: "PSh",
+      Shv: "Shv",
       Ind: "Ind",
-      susp: "\\Sigma"
+      Li: "\\mathfrak{L}",
+      susp: "\\Sigma",
+
+      yo: "\\mathrel{\\text{\\usefont{U}{min}{m}{n}\\symbol{'207}}}", 
+      y: "\\yo"
     },
   },
   svg: { fontCache: 'global' },
