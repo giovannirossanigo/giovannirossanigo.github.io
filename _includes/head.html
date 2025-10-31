@@ -23,13 +23,11 @@
 <!-- TikZJax: support for TikZ and tikzcd -->
 <script src="https://tikzjax.com/v1/tikzjax.js"></script>
 <style>
-  /* Uniforma i font dei diagrammi al resto del sito */
   svg.tikz text {
     font-family: KaTeX_Main, "Times New Roman", serif !important;
     font-size: 1em;
   }
 
-  /* Centra i diagrammi nei post */
   .tikz-cd, svg.tikz {
     display: block;
     margin: 1em auto;
@@ -48,7 +46,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
   toggle.addEventListener('click', function(e) {
     e.preventDefault();
-    body.classList.toggle('dark-mode');  // Cambia tema
+
+    // Cambia tema
+    body.classList.toggle('dark-mode');
+
+    // Sincronizza con Primer
+    if (body.classList.contains('dark-mode')) {
+      body.classList.add('color-mode-dark');
+    } else {
+      body.classList.remove('color-mode-dark');
+    }
 
     // Aggiorna icona
     if (body.classList.contains('dark-mode')) {
@@ -66,9 +73,12 @@ document.addEventListener('DOMContentLoaded', function() {
   // Inizializza in dark mode secondo le preferenze del sistema
   if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
     body.classList.add('dark-mode');
+    body.classList.add('color-mode-dark');
     icon.classList.remove('fa-sun');
     icon.classList.add('fa-moon');
   }
+
+  // Aggiorna i box inizialmente
+  if (window.updateBoxes) window.updateBoxes();
 });
 </script>
-
