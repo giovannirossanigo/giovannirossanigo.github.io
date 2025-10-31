@@ -334,3 +334,13 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+
+# For the references
+plugins:
+  - jekyll-scholar
+
+scholar:
+  source: "./_bibliography"
+  bibliography: "references.bib"
+  style: "apa"
+  locale: "en"
