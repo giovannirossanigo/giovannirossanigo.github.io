@@ -342,7 +342,7 @@ plugins:
 scholar:
   source: "./_bibliography"
   bibliography: "references.bib"
-  style: "ieee" 
+  style: "bibtex" 
   default_cite_style: "label"
 
 
