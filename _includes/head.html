@@ -44,6 +44,9 @@ document.addEventListener('DOMContentLoaded', function() {
   const body = document.body;
   const icon = document.getElementById('theme-icon');
 
+  // Funzione per aggiornare i box (già definita in dark-boxes.js)
+  const updateBoxesSafe = () => { if(window.updateBoxes) window.updateBoxes(); };
+
   toggle.addEventListener('click', function(e) {
     e.preventDefault();
 
@@ -57,6 +60,9 @@ document.addEventListener('DOMContentLoaded', function() {
       body.classList.remove('color-mode-dark');
     }
 
+    // Aggiorna subito i box
+    updateBoxesSafe();
+
     // Aggiorna icona
     if (body.classList.contains('dark-mode')) {
       icon.classList.remove('fa-sun');
@@ -65,9 +71,6 @@ document.addEventListener('DOMContentLoaded', function() {
       icon.classList.remove('fa-moon');
       icon.classList.add('fa-sun');
     }
-
-    // Aggiorna subito i box
-    if (window.updateBoxes) window.updateBoxes();
   });
 
   // Inizializza in dark mode secondo le preferenze del sistema
@@ -79,6 +82,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   // Aggiorna i box inizialmente
-  if (window.updateBoxes) window.updateBoxes();
+  updateBoxesSafe();
 });
 </script>
+
