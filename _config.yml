@@ -343,6 +343,6 @@ scholar:
   source: "./_bibliography"
   bibliography: "references.bib"
   style: "ieee" 
-  default_cite_style: "plain"
+  default_cite_style: "label"
 
 
