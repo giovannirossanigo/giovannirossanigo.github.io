@@ -11,9 +11,11 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
+    # Installa TeX Live completo
     - name: Setup TeX Live
       uses: xu-cheng/texlive-action@v2
 
+    # Installa pdf2svg per convertire PDF in SVG
     - name: Install pdf2svg
       run: sudo apt-get update && sudo apt-get install -y pdf2svg
 
