@@ -1,7 +1,8 @@
 // Funzione globale per aggiornare i box
 window.updateBoxes = () => {
-  const isDark = document.body.classList.contains('dark-mode');
-  document.querySelectorAll('.definition, .theorem, .lemma, .proof').forEach(el => {
+  const isDark = document.body.classList.contains('dark-mode') || document.body.classList.contains('color-mode-dark');
+
+  document.querySelectorAll('.definition, .theorem, .lemma, .proof, .example, .remark, .proposition, .corollary').forEach(el => {
     if (isDark) {
       el.classList.add('dark');
     } else {
