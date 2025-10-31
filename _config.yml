@@ -342,5 +342,7 @@ plugins:
 scholar:
   source: "./_bibliography"
   bibliography: "references.bib"
-  style: "apa"
+  style: "plain"
+  default_cite_style: alpha
   locale: "en"
+
