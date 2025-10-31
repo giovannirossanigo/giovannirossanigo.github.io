@@ -9,17 +9,22 @@ jobs:
   build-diagrams:
     runs-on: ubuntu-latest
     steps:
+      # 1️⃣ Checkout della repo
       - uses: actions/checkout@v3
 
-      # Installa TeX Live completo
-      - name: Setup TeX Live
-        uses: xu-cheng/texlive-action@v2
+      # 2️⃣ Installazione TeX Live completa
+      - name: Install TeX Live
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y texlive-latex-base texlive-latex-extra \
+                                  texlive-fonts-recommended texlive-fonts-extra \
+                                  texlive-luatex
 
-      # Installa pdf2svg per convertire PDF in SVG
+      # 3️⃣ Installazione pdf2svg
       - name: Install pdf2svg
-        run: sudo apt-get update && sudo apt-get install -y pdf2svg
+        run: sudo apt-get install -y pdf2svg
 
-      # Compila i file .tex in SVG
+      # 4️⃣ Compilazione dei file .tex in SVG
       - name: Compile TikZ diagrams
         run: |
           mkdir -p assets/img/diagrams
@@ -29,7 +34,7 @@ jobs:
             pdf2svg diagrams/$base.pdf assets/img/diagrams/$base.svg
           done
 
-      # Commit automatico degli SVG
+      # 5️⃣ Commit automatico degli SVG
       - name: Commit SVGs
         run: |
           git config --global user.name "github-actions[bot]"
