@@ -45,3 +45,24 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const body = document.body;
+
+  // Se cambia la classe del body (dark/light), aggiorna i box
+  const observer = new MutationObserver((mutations) => {
+    for (const m of mutations) {
+      if (m.attributeName === "class") {
+        if (window.updateBoxes) {
+          // aspetta un frame per permettere al browser di applicare i nuovi stili
+          requestAnimationFrame(() => window.updateBoxes());
+        }
+      }
+    }
+  });
+
+  observer.observe(body, { attributes: true, attributeFilter: ["class"] });
+});
+</script>
+
