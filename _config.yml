@@ -342,7 +342,7 @@ plugins:
 scholar:
   source: "./_bibliography"
   bibliography: "references.bib"
-  style: "bibtex" 
-  default_cite_style: "label"
+  style: "chicago-author-date"   # oppure "apa", a tua scelta
+  default_cite_style: "author"    # genera citazioni inline autore-anno
 
 
