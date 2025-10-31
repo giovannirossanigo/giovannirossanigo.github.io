@@ -342,7 +342,7 @@ plugins:
 scholar:
   source: "./_bibliography"
   bibliography: "references.bib"
-  style: bibtex
-  default_cite_style: plain
+  style: "plain"
+  default_cite_style: "plain"
 
 
