@@ -18,3 +18,4 @@ document.addEventListener("DOMContentLoaded", () => {
   const observer = new MutationObserver(updateBoxes);
   observer.observe(document.body, { attributes: true, attributeFilter: ['class'] });
 });
+
