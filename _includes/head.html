@@ -9,8 +9,24 @@
 <meta name="MobileOptimized" content="320">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<!-- ✅ Applica immediatamente il tema corretto PRIMA del CSS -->
 <script>
-  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  (function() {
+    try {
+      var theme = localStorage.getItem('color-mode');
+      if (theme === 'dark') {
+        document.documentElement.classList.add('js');
+        document.body.classList.add('dark-mode', 'color-mode-dark');
+      }
+    } catch (e) {
+      console.warn('⚠️ Impossibile leggere color-mode da localStorage:', e);
+    }
+  })();
+</script>
+
+<script>
+  document.documentElement.className =
+    document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
 </script>
 
 <link rel="stylesheet" href="{{ base_path }}/assets/css/main.css">
@@ -23,18 +39,18 @@
 <!-- TikZJax: support for TikZ and tikzcd -->
 <script src="https://tikzjax.com/v1/tikzjax.js"></script>
 <style>
+  /* Uniforma i font dei diagrammi al resto del sito */
   svg.tikz text {
     font-family: KaTeX_Main, "Times New Roman", serif !important;
     font-size: 1em;
   }
-
   .tikz-cd, svg.tikz {
     display: block;
     margin: 1em auto;
   }
 </style>
 
-<!-- Primer color mode toggle (Dark/Light) -->
+<!-- Script di gestione del tema -->
 <script src="{{ '/assets/js/color-mode.js' | relative_url }}"></script>
 <script src="{{ '/assets/js/dark-boxes.js' | relative_url }}"></script>
 
@@ -44,24 +60,25 @@ document.addEventListener('DOMContentLoaded', function() {
   const body = document.body;
   const icon = document.getElementById('theme-icon');
 
-  // Funzione per aggiornare i box (già definita in dark-boxes.js)
-  const updateBoxesSafe = () => { if(window.updateBoxes) window.updateBoxes(); };
+  // Funzione per aggiornare i box (definita globalmente in dark-boxes.js)
+  const updateBoxesSafe = () => { if (window.updateBoxes) window.updateBoxes(); };
 
+  // Listener per il toggle tema
   toggle.addEventListener('click', function(e) {
     e.preventDefault();
 
-    // Cambia tema
     body.classList.toggle('dark-mode');
+    body.classList.toggle('color-mode-dark');
 
-    // Sincronizza con Primer
-    if (body.classList.contains('dark-mode')) {
-      body.classList.add('color-mode-dark');
-    } else {
-      body.classList.remove('color-mode-dark');
+    // Salva il tema in localStorage
+    try {
+      localStorage.setItem(
+        'color-mode',
+        body.classList.contains('dark-mode') ? 'dark' : 'light'
+      );
+    } catch (e) {
+      console.warn('⚠️ Impossibile salvare color-mode in localStorage:', e);
     }
-
-    // Aggiorna subito i box
-    updateBoxesSafe();
 
     // Aggiorna icona
     if (body.classList.contains('dark-mode')) {
@@ -71,12 +88,15 @@ document.addEventListener('DOMContentLoaded', function() {
       icon.classList.remove('fa-moon');
       icon.classList.add('fa-sun');
     }
+
+    // Aggiorna i box subito
+    updateBoxesSafe();
   });
 
-  // Inizializza in dark mode secondo le preferenze del sistema
-  if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    body.classList.add('dark-mode');
-    body.classList.add('color-mode-dark');
+  // Inizializza in dark mode secondo preferenze del sistema (se nessuna scelta salvata)
+  const savedTheme = localStorage.getItem('color-mode');
+  if (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    body.classList.add('dark-mode', 'color-mode-dark');
     icon.classList.remove('fa-sun');
     icon.classList.add('fa-moon');
   }
