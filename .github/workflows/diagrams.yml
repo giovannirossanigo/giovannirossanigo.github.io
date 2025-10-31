@@ -9,29 +9,32 @@ jobs:
   build-diagrams:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-    # Installa TeX Live completo
-    - name: Setup TeX Live
-      uses: xu-cheng/texlive-action@v2
+      # Installa TeX Live completo
+      - name: Setup TeX Live
+        uses: xu-cheng/texlive-action@v2
 
-    # Installa pdf2svg per convertire PDF in SVG
-    - name: Install pdf2svg
-      run: sudo apt-get update && sudo apt-get install -y pdf2svg
+      # Installa pdf2svg per convertire PDF in SVG
+      - name: Install pdf2svg
+        run: sudo apt-get update && sudo apt-get install -y pdf2svg
 
-    - name: Compile TikZ diagrams
-      run: |
-        mkdir -p assets/img/diagrams
-        for f in diagrams/*.tex; do
-          base=$(basename $f .tex)
-          pdflatex -interaction=nonstopmode -output-directory=diagrams $f
-          pdf2svg diagrams/$base.pdf assets/img/diagrams/$base.svg
-        done
+      # Compila i file .tex in SVG
+      - name: Compile TikZ diagrams
+        run: |
+          mkdir -p assets/img/diagrams
+          for f in diagrams/*.tex; do
+            base=$(basename $f .tex)
+            pdflatex -interaction=nonstopmode -output-directory=diagrams $f
+            pdf2svg diagrams/$base.pdf assets/img/diagrams/$base.svg
+          done
 
-    - name: Commit SVGs
-      run: |
-        git config --global user.name "github-actions[bot]"
-        git config --global user.email "github-actions[bot]@users.noreply.github.com"
-        git add assets/img/diagrams/*.svg
-        git commit -m "Update TikZ diagrams [skip ci]" || echo "No changes to commit"
-        git push
+      # Commit automatico degli SVG
+      - name: Commit SVGs
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/img/diagrams/*.svg
+          git commit -m "Update TikZ diagrams [skip ci]" || echo "No changes to commit"
+          git push
+
