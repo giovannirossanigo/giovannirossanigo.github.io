@@ -343,6 +343,6 @@ scholar:
   source: "./_bibliography"
   bibliography: "references.bib"
   style: bibtex
-  default_cite_style: alpha
+  default_cite_style: "citation.html"
   locale: "en"
 
