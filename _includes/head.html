@@ -9,7 +9,7 @@
 <meta name="MobileOptimized" content="320">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- ✅ Applica immediatamente il tema corretto PRIMA del CSS -->
+<!-- ⚡ Applica subito il tema corretto per evitare flash bianco -->
 <script>
   (function() {
     try {
@@ -18,7 +18,7 @@
         document.documentElement.classList.add('js');
         document.body.classList.add('dark-mode', 'color-mode-dark');
       }
-    } catch (e) {
+    } catch(e) {
       console.warn('⚠️ Impossibile leggere color-mode da localStorage:', e);
     }
   })();
@@ -32,14 +32,13 @@
 <link rel="stylesheet" href="{{ base_path }}/assets/css/main.css">
 <meta http-equiv="cleartype" content="on">
 
-<!-- MathJax configuration from external file -->
+<!-- MathJax configuration -->
 <script src="{{ '/assets/js/mathjax-config.js' | relative_url }}"></script>
 <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-<!-- TikZJax: support for TikZ and tikzcd -->
+<!-- TikZJax support -->
 <script src="https://tikzjax.com/v1/tikzjax.js"></script>
 <style>
-  /* Uniforma i font dei diagrammi al resto del sito */
   svg.tikz text {
     font-family: KaTeX_Main, "Times New Roman", serif !important;
     font-size: 1em;
@@ -50,7 +49,7 @@
   }
 </style>
 
-<!-- Script di gestione del tema -->
+<!-- Script gestione tema -->
 <script src="{{ '/assets/js/color-mode.js' | relative_url }}"></script>
 <script src="{{ '/assets/js/dark-boxes.js' | relative_url }}"></script>
 
@@ -60,17 +59,16 @@ document.addEventListener('DOMContentLoaded', function() {
   const body = document.body;
   const icon = document.getElementById('theme-icon');
 
-  // Funzione per aggiornare i box (definita globalmente in dark-boxes.js)
-  const updateBoxesSafe = () => { if (window.updateBoxes) window.updateBoxes(); };
+  const updateBoxesSafe = () => { if(window.updateBoxes) window.updateBoxes(); };
 
-  // Listener per il toggle tema
+  // Listener toggle tema
   toggle.addEventListener('click', function(e) {
     e.preventDefault();
 
     body.classList.toggle('dark-mode');
     body.classList.toggle('color-mode-dark');
 
-    // Salva il tema in localStorage
+    // Salva la scelta nel localStorage
     try {
       localStorage.setItem(
         'color-mode',
@@ -89,11 +87,11 @@ document.addEventListener('DOMContentLoaded', function() {
       icon.classList.add('fa-sun');
     }
 
-    // Aggiorna i box subito
+    // Aggiorna subito i box
     updateBoxesSafe();
   });
 
-  // Inizializza in dark mode secondo preferenze del sistema (se nessuna scelta salvata)
+  // Inizializza tema secondo preferenze utente o sistema
   const savedTheme = localStorage.getItem('color-mode');
   if (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches) {
     body.classList.add('dark-mode', 'color-mode-dark');
