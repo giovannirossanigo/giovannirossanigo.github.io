@@ -29,7 +29,7 @@
     font-size: 1em;
   }
 
-  /* (facoltativo) centra i diagrammi nei post */
+  /* Centra i diagrammi nei post */
   .tikz-cd, svg.tikz {
     display: block;
     margin: 1em auto;
@@ -38,8 +38,7 @@
 
 <!-- Primer color mode toggle (Dark/Light) -->
 <script src="{{ '/assets/js/color-mode.js' | relative_url }}"></script>
-
-
+<script src="{{ '/assets/js/dark-boxes.js' | relative_url }}"></script>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
@@ -49,7 +48,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
   toggle.addEventListener('click', function(e) {
     e.preventDefault();
-    body.classList.toggle('dark-mode');  // <-- qui cambiamo la classe sul body
+    body.classList.toggle('dark-mode');  // Cambia tema
+
     // Aggiorna icona
     if (body.classList.contains('dark-mode')) {
       icon.classList.remove('fa-sun');
@@ -58,9 +58,12 @@ document.addEventListener('DOMContentLoaded', function() {
       icon.classList.remove('fa-moon');
       icon.classList.add('fa-sun');
     }
+
+    // Aggiorna subito i box
+    if (window.updateBoxes) window.updateBoxes();
   });
 
-  // Se vuoi inizializzare in dark mode secondo preferenze sistema
+  // Inizializza in dark mode secondo le preferenze del sistema
   if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
     body.classList.add('dark-mode');
     icon.classList.remove('fa-sun');
@@ -68,3 +71,4 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 </script>
+
