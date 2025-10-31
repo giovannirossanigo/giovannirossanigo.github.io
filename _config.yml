@@ -335,7 +335,7 @@ compress_html:
   ignore:
     envs: development
 
-# For the references
+# For the references!
 plugins:
   - jekyll-scholar
 
