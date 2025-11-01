@@ -4,19 +4,19 @@
 <svg
    version="1.1"
    id="svg2"
-   width="231.836"
-   height="18.278667"
-   viewBox="0 0 231.836 18.278667"
+   width="221.228"
+   height="18.745333"
+   viewBox="0 0 221.228 18.745333"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <defs
      id="defs6" />
   <g
      id="g8"
-     transform="matrix(1.3333333,0,0,-1.3333333,0,18.278667)">
+     transform="matrix(1.3333333,0,0,-1.3333333,0,18.745333)">
     <g
        id="g10"
-       transform="translate(86.938,6.855)">
+       transform="translate(82.961,7.03)">
       <g
          id="g12">
         <g
@@ -25,257 +25,265 @@
              id="g16">
             <g
                id="g18"
-               transform="translate(-87.934,-3.368)">
+               transform="translate(-83.957,-3.489)">
               <g
                  id="g20"
-                 transform="translate(19.489)">
+                 transform="translate(18.86)">
                 <g
                    id="g22">
                   <g
                      id="g24">
                     <g
                        id="g26"
-                       transform="translate(-16.5)">
+                       transform="translate(-15.871)">
                       <g
                          id="g28">
                         <g
                            id="g30"
-                           transform="translate(-1.993,-3.487)">
+                           transform="translate(-1.993,-3.541)">
                           <text
                              xml:space="preserve"
-                             transform="matrix(1,0,0,-1,1.993,3.487)"
-                             style="font-variant:normal;font-weight:normal;font-size:9.9626px;font-family:CMR10;-inkscape-font-specification:CMR10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                             transform="matrix(1,0,0,-1,2.092,3.541)"
+                             style="font-variant:normal;font-weight:normal;font-size:9.9626px;font-family:txmiaX;-inkscape-font-specification:txmiaX;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
                              id="text34"><tspan
                                x="0"
                                y="0"
                                id="tspan32">Σ</tspan></text>
                           <text
                              xml:space="preserve"
-                             transform="matrix(1,0,0,-1,9.188,7.102)"
-                             style="font-variant:normal;font-weight:normal;font-size:6.9738px;font-family:CMMI7;-inkscape-font-specification:CMMI7;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                             transform="matrix(1,0,0,-1,9.649,7.158)"
+                             style="font-variant:normal;font-weight:normal;font-size:7.2727px;font-family:NewTXMI7;-inkscape-font-specification:NewTXMI7;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
                              id="text38"><tspan
                                x="0"
                                y="0"
-                               id="tspan36">j</tspan></text>
+                               id="tspan36">푗</tspan></text>
                           <text
                              xml:space="preserve"
-                             transform="matrix(1,0,0,-1,13.386,3.487)"
-                             style="font-variant:normal;font-weight:normal;font-size:9.9626px;font-family:CMMI10;-inkscape-font-specification:CMMI10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                             transform="matrix(1,0,0,-1,13.142,3.541)"
+                             style="font-variant:normal;font-weight:normal;font-size:9.9626px;font-family:NewTXMI;-inkscape-font-specification:NewTXMI;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
                              id="text42"><tspan
                                x="0"
                                y="0"
-                               id="tspan40">b</tspan></text>
+                               id="tspan40">푏</tspan></text>
                           <text
                              xml:space="preserve"
-                             transform="matrix(1,0,0,-1,17.661,1.993)"
-                             style="font-variant:normal;font-weight:normal;font-size:6.9738px;font-family:CMMI7;-inkscape-font-specification:CMMI7;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                             transform="matrix(1,0,0,-1,18.638,2.047)"
+                             style="font-variant:normal;font-weight:normal;font-size:7.2727px;font-family:NewTXMI7;-inkscape-font-specification:NewTXMI7;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
                              id="text46"><tspan
-                               x="0 7.0693412"
+                               x="0 6.1454315"
                                y="0"
-                               id="tspan44">mm</tspan></text>
+                               id="tspan44">푚푚</tspan></text>
                           <text
                              xml:space="preserve"
-                             transform="matrix(1,0,0,-1,31.8,3.985)"
-                             style="font-variant:normal;font-weight:normal;font-size:4.9813px;font-family:CMSY5;-inkscape-font-specification:CMSY5;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                             transform="matrix(1,0,0,-1,30.811,4.149)"
+                             style="font-variant:normal;font-weight:normal;font-size:5.4795px;font-family:txsys;-inkscape-font-specification:txsys;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
                              id="text50"><tspan
                                x="0"
                                y="0"
                                id="tspan48">′</tspan></text>
                           <g
                              id="g52"
-                             transform="translate(1.993,3.487)" />
+                             transform="translate(1.993,3.541)" />
                         </g>
                       </g>
                       <g
                          id="g54"
-                         transform="translate(16.5)" />
+                         transform="translate(15.871)" />
                     </g>
                   </g>
                 </g>
                 <g
                    id="g56"
-                   transform="translate(62.907)">
+                   transform="translate(61.282)">
                   <g
                      id="g58">
                     <g
                        id="g60">
                       <g
                          id="g62"
-                         transform="translate(-16.519)">
+                         transform="translate(-15.522)">
                         <g
                            id="g64">
                           <g
                              id="g66"
-                             transform="translate(-64.881,-3.487)">
+                             transform="translate(-63.624,-3.541)">
                             <text
                                xml:space="preserve"
-                               transform="matrix(1,0,0,-1,64.881,3.487)"
-                               style="font-variant:normal;font-weight:normal;font-size:9.9626px;font-family:CMR10;-inkscape-font-specification:CMR10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                               transform="matrix(1,0,0,-1,63.723,3.541)"
+                               style="font-variant:normal;font-weight:normal;font-size:9.9626px;font-family:txmiaX;-inkscape-font-specification:txmiaX;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
                                id="text70"><tspan
                                  x="0"
                                  y="0"
                                  id="tspan68">Σ</tspan></text>
                             <text
                                xml:space="preserve"
-                               transform="matrix(1,0,0,-1,72.077,7.102)"
-                               style="font-variant:normal;font-weight:normal;font-size:6.9738px;font-family:CMMI7;-inkscape-font-specification:CMMI7;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                               transform="matrix(1,0,0,-1,71.28,7.158)"
+                               style="font-variant:normal;font-weight:normal;font-size:7.2727px;font-family:NewTXMI7;-inkscape-font-specification:NewTXMI7;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
                                id="text74"><tspan
                                  x="0"
                                  y="0"
-                                 id="tspan72">j</tspan></text>
+                                 id="tspan72">푗</tspan></text>
                             <text
                                xml:space="preserve"
-                               transform="matrix(1,0,0,-1,76.274,3.487)"
-                               style="font-variant:normal;font-weight:normal;font-size:9.9626px;font-family:CMMI10;-inkscape-font-specification:CMMI10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                               transform="matrix(1,0,0,-1,74.644,3.541)"
+                               style="font-variant:normal;font-weight:normal;font-size:9.9626px;font-family:NewTXMI;-inkscape-font-specification:NewTXMI;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
                                id="text78"><tspan
                                  x="0"
                                  y="0"
-                                 id="tspan76">c</tspan></text>
+                                 id="tspan76">푐</tspan></text>
                             <text
                                xml:space="preserve"
-                               transform="matrix(1,0,0,-1,80.586,1.993)"
-                               style="font-variant:normal;font-weight:normal;font-size:6.9738px;font-family:CMMI7;-inkscape-font-specification:CMMI7;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                               transform="matrix(1,0,0,-1,79.571,2.047)"
+                               style="font-variant:normal;font-weight:normal;font-size:7.2727px;font-family:NewTXMI7;-inkscape-font-specification:NewTXMI7;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
                                id="text82"><tspan
-                                 x="0 7.0693412"
+                                 x="0 6.1454315"
                                  y="0"
-                                 id="tspan80">mm</tspan></text>
+                                 id="tspan80">푚푚</tspan></text>
                             <text
                                xml:space="preserve"
-                               transform="matrix(1,0,0,-1,94.725,3.985)"
-                               style="font-variant:normal;font-weight:normal;font-size:4.9813px;font-family:CMSY5;-inkscape-font-specification:CMSY5;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                               transform="matrix(1,0,0,-1,91.744,4.149)"
+                               style="font-variant:normal;font-weight:normal;font-size:5.4795px;font-family:txsys;-inkscape-font-specification:txsys;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
                                id="text86"><tspan
                                  x="0"
                                  y="0"
                                  id="tspan84">′</tspan></text>
                             <g
                                id="g88"
-                               transform="translate(64.881,3.487)" />
+                               transform="translate(63.624,3.541)" />
                           </g>
                         </g>
                         <g
                            id="g90"
-                           transform="translate(16.519)" />
+                           transform="translate(15.522)" />
                       </g>
                     </g>
                   </g>
                   <g
                      id="g92"
-                     transform="translate(68.445)">
+                     transform="translate(65.097)">
                     <g
                        id="g94">
                       <g
                          id="g96">
                         <g
                            id="g98"
-                           transform="translate(-22.039)">
+                           transform="translate(-19.686)">
                           <g
                              id="g100">
                             <g
                                id="g102"
-                               transform="translate(-127.806,-3.487)">
+                               transform="translate(-124.557,-3.541)">
                               <text
                                  xml:space="preserve"
-                                 transform="matrix(1,0,0,-1,127.806,3.487)"
-                                 style="font-variant:normal;font-weight:normal;font-size:9.9626px;font-family:CMR10;-inkscape-font-specification:CMR10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                                 transform="matrix(1,0,0,-1,124.657,3.541)"
+                                 style="font-variant:normal;font-weight:normal;font-size:9.9626px;font-family:txmiaX;-inkscape-font-specification:txmiaX;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
                                  id="text106"><tspan
                                    x="0"
                                    y="0"
                                    id="tspan104">Σ</tspan></text>
                               <text
                                  xml:space="preserve"
-                                 transform="matrix(1,0,0,-1,135.001,7.102)"
-                                 style="font-variant:normal;font-weight:normal;font-size:6.9738px;font-family:CMMI7;-inkscape-font-specification:CMMI7;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                                 transform="matrix(1,0,0,-1,132.213,7.158)"
+                                 style="font-variant:normal;font-weight:normal;font-size:7.2727px;font-family:NewTXMI7;-inkscape-font-specification:NewTXMI7;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
                                  id="text110"><tspan
                                    x="0"
                                    y="0"
-                                   id="tspan108">j</tspan></text>
+                                   id="tspan108">푗</tspan></text>
                               <text
                                  xml:space="preserve"
-                                 transform="matrix(1,0,0,-1,138.701,7.102)"
-                                 style="font-variant:normal;font-weight:normal;font-size:6.9738px;font-family:CMR7;-inkscape-font-specification:CMR7;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                                 transform="matrix(1,0,0,-1,134.97,7.158)"
+                                 style="font-variant:normal;font-weight:normal;font-size:7.2727px;font-family:txsys;-inkscape-font-specification:txsys;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
                                  id="text114"><tspan
-                                   x="0 6.1160226"
+                                   x="0"
                                    y="0"
-                                   id="tspan112">+1</tspan></text>
+                                   id="tspan112">+</tspan></text>
                               <text
                                  xml:space="preserve"
-                                 transform="matrix(1,0,0,-1,149.286,3.487)"
-                                 style="font-variant:normal;font-weight:normal;font-size:9.9626px;font-family:CMMI10;-inkscape-font-specification:CMMI10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                                 transform="matrix(1,0,0,-1,139.072,7.158)"
+                                 style="font-variant:normal;font-weight:normal;font-size:7.2727px;font-family:'TeX Gyre Termes';-inkscape-font-specification:TeXGyreTermesX-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
                                  id="text118"><tspan
                                    x="0"
                                    y="0"
-                                   id="tspan116">a</tspan></text>
+                                   id="tspan116">1</tspan></text>
                               <text
                                  xml:space="preserve"
-                                 transform="matrix(1,0,0,-1,154.552,1.993)"
-                                 style="font-variant:normal;font-weight:normal;font-size:6.9738px;font-family:CMMI7;-inkscape-font-specification:CMMI7;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                                 transform="matrix(1,0,0,-1,143.336,3.541)"
+                                 style="font-variant:normal;font-weight:normal;font-size:9.9626px;font-family:NewTXMI;-inkscape-font-specification:NewTXMI;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
                                  id="text122"><tspan
-                                   x="0 7.0693412"
-                                   y="0"
-                                   id="tspan120">mm</tspan></text>
-                              <text
-                                 xml:space="preserve"
-                                 transform="matrix(1,0,0,-1,168.691,3.985)"
-                                 style="font-variant:normal;font-weight:normal;font-size:4.9813px;font-family:CMSY5;-inkscape-font-specification:CMSY5;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-                                 id="text126"><tspan
                                    x="0"
                                    y="0"
-                                   id="tspan124">′</tspan></text>
+                                   id="tspan120">푎</tspan></text>
+                              <text
+                                 xml:space="preserve"
+                                 transform="matrix(1,0,0,-1,148.831,2.047)"
+                                 style="font-variant:normal;font-weight:normal;font-size:7.2727px;font-family:NewTXMI7;-inkscape-font-specification:NewTXMI7;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                                 id="text126"><tspan
+                                   x="0 6.1454315"
+                                   y="0"
+                                   id="tspan124">푚푚</tspan></text>
+                              <text
+                                 xml:space="preserve"
+                                 transform="matrix(1,0,0,-1,161.004,4.149)"
+                                 style="font-variant:normal;font-weight:normal;font-size:5.4795px;font-family:txsys;-inkscape-font-specification:txsys;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                                 id="text130"><tspan
+                                   x="0"
+                                   y="0"
+                                   id="tspan128">′</tspan></text>
                               <g
-                                 id="g128"
-                                 transform="translate(127.806,3.487)" />
+                                 id="g132"
+                                 transform="translate(124.557,3.541)" />
                             </g>
                           </g>
                           <g
-                             id="g130"
-                             transform="translate(22.039)" />
+                             id="g134"
+                             transform="translate(19.686)" />
                         </g>
                       </g>
                     </g>
                     <g
-                       id="g132"
-                       transform="translate(-150.841)" />
+                       id="g136"
+                       transform="translate(-145.239)" />
                   </g>
                 </g>
               </g>
               <g
-                 id="g134"
-                 transform="translate(87.934,3.368)" />
+                 id="g138"
+                 transform="translate(83.957,3.489)" />
             </g>
           </g>
           <g
-             id="g136">
+             id="g140">
             <path
-               d="m -48.75764,-0.87715 h 23.11363"
-               style="fill:none;stroke:#000000;stroke-width:0.39848;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
-               id="path138" />
+               d="m -46.03755,-0.9279 h 22.95416"
+               style="fill:none;stroke:#000000;stroke-width:0.5579;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+               id="path142" />
             <g
-               id="g140"
-               transform="translate(-25.44478,-0.87715)">
+               id="g144"
+               transform="translate(-22.80443,-0.9279)">
               <g
-                 id="g142">
+                 id="g146">
                 <path
-                   d="M -2.07213,2.39091 C -1.69356,0.95633 -0.84995,0.27893 0,0 -0.84995,-0.27893 -1.69356,-0.95633 -2.07213,-2.39091"
-                   style="fill:none;stroke:#000000;stroke-width:0.39848;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
-                   id="path144" />
+                   d="M -2.90112,3.34744 C -2.3711,1.33896 -1.18999,0.39053 0,0 -1.18999,-0.39053 -2.3711,-1.33896 -2.90112,-3.34744"
+                   style="fill:none;stroke:#000000;stroke-width:0.5579;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                   id="path148" />
               </g>
             </g>
           </g>
           <g
-             id="g146">
+             id="g150">
             <path
-               d="M 14.16768,-0.87715 H 37.28131"
-               style="fill:none;stroke:#000000;stroke-width:0.39848;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
-               id="path148" />
+               d="M 14.89682,-0.9279 H 37.85098"
+               style="fill:none;stroke:#000000;stroke-width:0.5579;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+               id="path152" />
             <g
-               id="g150"
-               transform="translate(37.48055,-0.87715)">
+               id="g154"
+               transform="translate(38.12994,-0.9279)">
               <g
-                 id="g152">
+                 id="g156">
                 <path
-                   d="M -2.07213,2.39091 C -1.69356,0.95633 -0.84995,0.27893 0,0 -0.84995,-0.27893 -1.69356,-0.95633 -2.07213,-2.39091"
-                   style="fill:none;stroke:#000000;stroke-width:0.39848;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
-                   id="path154" />
+                   d="M -2.90112,3.34744 C -2.3711,1.33896 -1.18999,0.39053 0,0 -1.18999,-0.39053 -2.3711,-1.33896 -2.90112,-3.34744"
+                   style="fill:none;stroke:#000000;stroke-width:0.5579;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                   id="path158" />
               </g>
             </g>
           </g>
