@@ -1,8 +1,13 @@
 \documentclass[tikz,border=2pt]{standalone}
 \usepackage{tikz-cd}
 \usepackage{amsmath, amssymb}
+\usepackage{newtxtext,newtxmath} % font simile al corpo del sito
 
-
+% Imposta colori delle frecce e delle etichette per ereditare currentColor (compatibile dark mode)
+\tikzcdset{
+  every label/.append style={text=currentColor},
+  every arrow/.append style={draw=currentColor}
+}
 
 \begin{document}
 \begin{tikzcd}[cramped]
