@@ -27,15 +27,14 @@ jobs:
         run: |
           mkdir -p assets/img/diagrams
           for f in diagrams/*.tex; do
-          pdflatex -interaction=nonstopmode -halt-on-error -output-directory=diagrams "$f"
-          inkscape diagrams/$(basename "$f" .tex).pdf \
-          --export-plain-svg=assets/img/diagrams/$(basename "$f" .tex).svg \
-          --export-text-to-path
-      # Automatizza: sostituisci fill e stroke hardcoded con currentColor
-          sed -i 's/fill="[^"]*"/fill="currentColor"/g' assets/img/diagrams/$(basename "$f" .tex).svg
-          sed -i 's/stroke="[^"]*"/stroke="currentColor"/g' assets/img/diagrams/$(basename "$f" .tex).svg
+            pdflatex -interaction=nonstopmode -halt-on-error -output-directory=diagrams "$f"
+            inkscape diagrams/$(basename "$f" .tex).pdf \
+              --export-plain-svg=assets/img/diagrams/$(basename "$f" .tex).svg \
+              --export-text-to-path
+            # Automatizza: sostituisci fill e stroke hardcoded con currentColor
+            sed -i 's/fill="[^"]*"/fill="currentColor"/g' assets/img/diagrams/$(basename "$f" .tex).svg
+            sed -i 's/stroke="[^"]*"/stroke="currentColor"/g' assets/img/diagrams/$(basename "$f" .tex).svg
           done
-
 
       - name: Commit and push changes
         run: |
@@ -44,4 +43,5 @@ jobs:
           git add assets/img/diagrams/*.svg
           git commit -m "Update TikZ diagrams [skip ci]" || echo "No changes to commit"
           git push origin master
+
 
