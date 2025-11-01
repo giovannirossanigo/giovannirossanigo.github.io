@@ -2,44 +2,39 @@ name: Build TikZ diagrams
 
 on:
   push:
+    branches:
+      - master
     paths:
-      - 'diagrams/**.tex'
+      - 'diagrams/*.tex'
+      - '.github/workflows/build-diagrams.yml'
 
 jobs:
   build-diagrams:
     runs-on: ubuntu-latest
-    steps:
-      # 1️⃣ Checkout della repo
-      - uses: actions/checkout@v3
 
-      # 2️⃣ Installazione TeX Live completa
-      - name: Install TeX Live
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PAT_TOKEN }}
+
+      - name: Install TeXLive + Inkscape
         run: |
           sudo apt-get update
-          sudo apt-get install -y texlive-latex-base texlive-latex-extra \
-                                  texlive-fonts-recommended texlive-fonts-extra \
-                                  texlive-luatex
+          sudo apt-get install -y texlive-full inkscape
 
-      # 3️⃣ Installazione pdf2svg
-      - name: Install pdf2svg
-        run: sudo apt-get install -y pdf2svg
-
-      # 4️⃣ Compilazione dei file .tex in SVG
       - name: Compile TikZ diagrams
         run: |
           mkdir -p assets/img/diagrams
           for f in diagrams/*.tex; do
-            base=$(basename $f .tex)
-            pdflatex -interaction=nonstopmode -output-directory=diagrams $f
-            pdf2svg diagrams/$base.pdf assets/img/diagrams/$base.svg
+            pdflatex -interaction=nonstopmode -halt-on-error -output-directory=diagrams "$f"
+            inkscape diagrams/$(basename "$f" .tex).pdf --export-plain-svg=assets/img/diagrams/$(basename "$f" .tex).svg
           done
 
-      # 5️⃣ Commit automatico degli SVG usando il PAT
-      - name: Commit and push diagrams
+      - name: Commit and push changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add assets/img/diagrams/*.svg
           git commit -m "Update TikZ diagrams [skip ci]" || echo "No changes to commit"
-          git push https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/giovannirossanigo/giovannirossanigo.github.io.git HEAD:master
-
+          git push origin master
