@@ -18,29 +18,53 @@ jobs:
         with:
           token: ${{ secrets.PAT_TOKEN }}
 
-      - name: Install TeXLive + Inkscape
+      # ----------------------------
+      # Cache per TeXLive
+      # ----------------------------
+      - name: Cache TeXLive packages
+        uses: actions/cache@v3
+        with:
+          path: /usr/local/texlive
+          key: ${{ runner.os }}-texlive
+
+      # ----------------------------
+      # Installazione TeXLive + Inkscape ridotta
+      # ----------------------------
+      - name: Install TeXLive minimal + Inkscape
         run: |
           sudo apt-get update
-          sudo apt-get install -y texlive-full inkscape
+          sudo apt-get install -y \
+            texlive-latex-base \
+            texlive-latex-recommended \
+            texlive-latex-extra \
+            texlive-fonts-recommended \
+            inkscape
 
+      # ----------------------------
+      # Compila e genera SVG
+      # ----------------------------
       - name: Compile TikZ diagrams and convert to SVG
         run: |
           mkdir -p assets/img/diagrams
           for f in diagrams/*.tex; do
             # Compila LaTeX
             pdflatex -interaction=nonstopmode -halt-on-error -output-directory=diagrams "$f"
-            # Converte in SVG
+
+            # Converte PDF in SVG (testo come percorso)
             inkscape diagrams/$(basename "$f" .tex).pdf \
               --export-plain-svg=assets/img/diagrams/$(basename "$f" .tex).svg \
               --export-text-to-path
-            # Sostituisce fill e stroke nei tag
+
+            # Sostituisci fill e stroke con currentColor
             sed -i 's/fill="[^"]*"/fill="currentColor"/g' assets/img/diagrams/$(basename "$f" .tex).svg
             sed -i 's/stroke="[^"]*"/stroke="currentColor"/g' assets/img/diagrams/$(basename "$f" .tex).svg
-            # Sostituisce fill e stroke dentro style="..."
             sed -i 's/fill:[^;"]*/fill:currentColor/g' assets/img/diagrams/$(basename "$f" .tex).svg
             sed -i 's/stroke:[^;"]*/stroke:currentColor/g' assets/img/diagrams/$(basename "$f" .tex).svg
           done
 
+      # ----------------------------
+      # Commit e push
+      # ----------------------------
       - name: Commit and push changes
         run: |
           git config --global user.name "github-actions[bot]"
