@@ -4,7 +4,7 @@
 /*
  * This file controls what is imported from /_sass
  *
- * Note that the files are processed in the order they are imported, so they are partly
+ * The files are processed in the order they are imported, so they are partly
  * sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
  */
 
@@ -195,3 +195,13 @@ body.color-mode-dark .proposition a,
 body.color-mode-dark .corollary a {
   color: #81d4fa !important;
 }
+
+/* === Diagram SVG TikZ support (dynamic color for dark/light mode) === */
+.diagram-container {
+  color: inherit; /* eredita il colore corrente del tema */
+}
+
+body.dark-mode .diagram-container {
+  color: white; /* modalità scura */
+}
+
