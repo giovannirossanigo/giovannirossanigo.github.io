@@ -196,12 +196,16 @@ body.color-mode-dark .corollary a {
   color: #81d4fa !important;
 }
 
+
 /* === Diagram SVG TikZ support (dynamic color for dark/light mode) === */
+.diagram-container svg path {
+  fill: currentColor; /* path vettoriali assumono il colore corrente */
+}
+
 .diagram-container {
-  color: inherit; /* eredita il colore corrente del tema */
+  color: inherit; /* eredita colore dal tema */
 }
 
 body.dark-mode .diagram-container {
   color: white; /* modalità scura */
 }
-
