@@ -27,8 +27,11 @@ jobs:
         run: |
           mkdir -p assets/img/diagrams
           for f in diagrams/*.tex; do
-            pdflatex -interaction=nonstopmode -halt-on-error -output-directory=diagrams "$f"
-            inkscape diagrams/$(basename "$f" .tex).pdf --export-plain-svg=assets/img/diagrams/$(basename "$f" .tex).svg
+          pdflatex -interaction=nonstopmode -halt-on-error -output-directory=diagrams "$f"
+          inkscape diagrams/$(basename "$f" .tex).pdf --export-plain-svg=assets/img/diagrams/$(basename "$f" .tex).svg
+          # Sostituisci black con currentColor
+          sed -i 's/fill="black"/fill="currentColor"/g' assets/img/diagrams/$(basename "$f" .tex).svg
+          sed -i 's/stroke="black"/stroke="currentColor"/g' assets/img/diagrams/$(basename "$f" .tex).svg
           done
 
       - name: Commit and push changes
