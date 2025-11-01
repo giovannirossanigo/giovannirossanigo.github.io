@@ -27,13 +27,18 @@ jobs:
         run: |
           mkdir -p assets/img/diagrams
           for f in diagrams/*.tex; do
+            # Compila LaTeX
             pdflatex -interaction=nonstopmode -halt-on-error -output-directory=diagrams "$f"
+            # Converte in SVG
             inkscape diagrams/$(basename "$f" .tex).pdf \
               --export-plain-svg=assets/img/diagrams/$(basename "$f" .tex).svg \
               --export-text-to-path
-            # Automatizza: sostituisci fill e stroke con currentColor
+            # Sostituisce fill e stroke nei tag
             sed -i 's/fill="[^"]*"/fill="currentColor"/g' assets/img/diagrams/$(basename "$f" .tex).svg
             sed -i 's/stroke="[^"]*"/stroke="currentColor"/g' assets/img/diagrams/$(basename "$f" .tex).svg
+            # Sostituisce fill e stroke dentro style="..."
+            sed -i 's/fill:[^;"]*/fill:currentColor/g' assets/img/diagrams/$(basename "$f" .tex).svg
+            sed -i 's/stroke:[^;"]*/stroke:currentColor/g' assets/img/diagrams/$(basename "$f" .tex).svg
           done
 
       - name: Commit and push changes
@@ -44,5 +49,3 @@ jobs:
           git commit -m "Update TikZ diagrams [skip ci]" || echo "No changes to commit"
           git pull --rebase origin master
           git push origin master
-
-
