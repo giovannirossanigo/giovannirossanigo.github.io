@@ -31,7 +31,7 @@ jobs:
             inkscape diagrams/$(basename "$f" .tex).pdf \
               --export-plain-svg=assets/img/diagrams/$(basename "$f" .tex).svg \
               --export-text-to-path
-            # Automatizza: sostituisci fill e stroke hardcoded con currentColor
+            # Automatizza: sostituisci fill e stroke con currentColor
             sed -i 's/fill="[^"]*"/fill="currentColor"/g' assets/img/diagrams/$(basename "$f" .tex).svg
             sed -i 's/stroke="[^"]*"/stroke="currentColor"/g' assets/img/diagrams/$(basename "$f" .tex).svg
           done
@@ -42,6 +42,7 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add assets/img/diagrams/*.svg
           git commit -m "Update TikZ diagrams [skip ci]" || echo "No changes to commit"
+          git pull --rebase origin master
           git push origin master
 
 
