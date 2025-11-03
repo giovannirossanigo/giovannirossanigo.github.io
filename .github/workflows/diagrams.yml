@@ -63,7 +63,7 @@ jobs:
             echo "Converting $base.pdf to SVG ..."
             inkscape diagrams/${base}.pdf \
               --export-plain-svg=_includes/diagrams/${base}.svg \
-              --export-text-to-path
+             # --export-text-to-path
 
             echo "Applying color substitution ..."
             sed -i 's/fill="[^"]*"/fill="currentColor"/g' _includes/diagrams/${base}.svg
