@@ -217,6 +217,6 @@ body.dark-mode .diagram-container {
 
 .diagram-container img {
   display: inline-block; /* assicura che il text-align funzioni correttamente */
-  max-width: 100%;       /* evita che l'immagine esca dal container */
+  max-width: 90%;       /* evita che l'immagine esca dal container */
   height: auto;
 }
