@@ -56,11 +56,12 @@ jobs:
           mkdir -p _includes/diagrams
           for f in diagrams/*.tex; do
             base=$(basename "$f" .tex)
-            echo "Compiling $f with XeLaTeX..."
-            latexmk -xelatex -interaction=nonstopmode -halt-on-error -output-directory=diagrams "$f" || cat diagrams/${base}.log
 
-            echo "Converting $base.pdf to SVG with dvisvgm..."
-            dvisvgm --pdf diagrams/${base}.pdf -n -o _includes/diagrams/${base}.svg
+            echo "Compiling $f with XeLaTeX (force compilation)..."
+            latexmk -xelatex -interaction=nonstopmode -halt-on-error -output-directory=diagrams -f "$f" || cat diagrams/${base}.log
+
+            echo "Converting $base.pdf to SVG with dvisvgm using currentColor..."
+            dvisvgm diagrams/${base}.pdf -n -o _includes/diagrams/${base}.svg
 
             echo "Replacing all fixed colors with currentColor..."
             # Fill e stroke diretti
