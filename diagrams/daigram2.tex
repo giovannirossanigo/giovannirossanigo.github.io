@@ -1,0 +1,26 @@
+\documentclass[tikz,border=0pt]{standalone}
+\usepackage{fontspec}
+\usepackage{mathrsfs}  
+\usepackage{unicode-math}
+\usepackage{tikz-cd}
+\setmainfont{Latin Modern Roman}
+\setmathfont{Latin Modern Math}
+
+% Imposta colori neutri (black) per frecce ed etichette
+%\tikzcdset{
+%  every label/.append style={text=black},
+%  every arrow/.append style={draw=black}
+%} 
+
+\begin{document} 
+
+\[\begin{tikzcd}[cramped]
+	{\mathscr{C}(\alpha,\beta)} & {F(\alpha,\beta')} \\
+	{F(\alpha',\beta)} & {F(\alpha',\beta')}
+	\arrow["F", from=1-1, to=1-2]
+	\arrow[from=1-1, to=2-1]
+	\arrow[from=1-2, to=2-2]
+	\arrow[from=2-1, to=2-2]
+\end{tikzcd}\]
+
+\end{document}
