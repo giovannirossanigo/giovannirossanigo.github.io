@@ -1,21 +1,12 @@
 \documentclass[tikz,border=0pt]{standalone}
 \usepackage{fontspec}
 \usepackage{mathrsfs}  
-
 \usepackage{tikz-cd}
 
 
-
-
-% Imposta colori neutri (black) per frecce ed etichette
-%\tikzcdset{
-%  every label/.append style={text=black},
-%  every arrow/.append style={draw=black}
-%} 
-
 \begin{document} 
 
-\begin{tikzcd}
+\begin{tikzcd}[every arrow/.append style={-open}]
 	{\mathscr{C}(\alpha, \beta)} & {F(\alpha,\beta')} \\
 	{F(\alpha',\beta)} & {F(\alpha',\beta')}
 	\arrow["F", from=1-1, to=1-2]
