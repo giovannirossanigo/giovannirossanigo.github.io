@@ -240,6 +240,6 @@ body.dark-mode .diagram-container {
 /* Opzionale: scaling delle immagini <img> nel container, ma per le immagini dentro lemmi, definizioni etc. */
 .diagram-wrapper svg {
     display: inline-block;
-    max-width: 10% !important;
+    max-width: 80% !important;
     height: auto !important;
 }
