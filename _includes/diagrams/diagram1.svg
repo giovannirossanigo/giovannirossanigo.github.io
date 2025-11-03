@@ -68,9 +68,9 @@
 <g transform='matrix(.999739 0 0 .999739 -40.88099 74.86)'>
 <use x='215.627702' y='-62.499681' xlink:href='#g2-2988'/>
 </g>
-<path d='M41.62506 9.40868H64.73863' stroke='#000' fill='none' stroke-width='.3985' stroke-miterlimit='10'/>
-<path d='M62.86568 7.01769C63.24426 8.4523 64.0879 9.12975 64.93788 9.40868C64.0879 9.68761 63.24426 10.36506 62.86568 11.79967' stroke='#000' fill='none' stroke-width='.3985' stroke-miterlimit='10' stroke-linejoin='round' stroke-linecap='round'/>
-<path d='M107.00267 9.40868H130.11624' stroke='#000' fill='none' stroke-width='.3985' stroke-miterlimit='10'/>
-<path d='M128.24329 7.01769C128.62187 8.4523 129.46551 9.12975 130.31549 9.40868C129.46551 9.68761 128.62187 10.36506 128.24329 11.79967' stroke='#000' fill='none' stroke-width='.3985' stroke-miterlimit='10' stroke-linejoin='round' stroke-linecap='round'/>
+<path d='M41.62506 9.40868H64.73863' stroke='currentColor' fill='currentColor' stroke-width='.3985' stroke-miterlimit='10'/>
+<path d='M62.86568 7.01769C63.24426 8.4523 64.0879 9.12975 64.93788 9.40868C64.0879 9.68761 63.24426 10.36506 62.86568 11.79967' stroke='currentColor' fill='currentColor' stroke-width='.3985' stroke-miterlimit='10' stroke-linejoin='round' stroke-linecap='round'/>
+<path d='M107.00267 9.40868H130.11624' stroke='currentColor' fill='currentColor' stroke-width='.3985' stroke-miterlimit='10'/>
+<path d='M128.24329 7.01769C128.62187 8.4523 129.46551 9.12975 130.31549 9.40868C129.46551 9.68761 128.62187 10.36506 128.24329 11.79967' stroke='currentColor' fill='currentColor' stroke-width='.3985' stroke-miterlimit='10' stroke-linejoin='round' stroke-linecap='round'/>
 </g>
 </svg>
