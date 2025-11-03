@@ -55,7 +55,7 @@ jobs:
           # Converte PDF in SVG (testo come percorso) direttamente in _includes
           inkscape diagrams/$(basename "$f" .tex).pdf \
           --export-plain-svg=_includes/diagrams/$(basename "$f" .tex).svg \
-          --export-text-to-path
+          #--export-text-to-path
 
           # Sostituisci fill e stroke con currentColor
           sed -i 's/fill="[^"]*"/fill="currentColor"/g' _includes/diagrams/$(basename "$f" .tex).svg
