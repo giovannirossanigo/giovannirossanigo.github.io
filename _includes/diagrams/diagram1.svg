@@ -66,8 +66,8 @@
 <use x='205.566367' y='-60.467032' xlink:href='#g1-1416'/>
 </g>
 <path d='M41.625097 9.40868H64.738667' stroke="currentColor" fill='none' stroke-width='.3985' stroke-miterlimit='10'/>
-<path d='M62.86571 7.01769C63.24429 8.4523 64.08793 9.12975 64.93791 9.40868C64.08793 9.68761 63.24429 10.36506 62.86571 11.79967' stroke='#000' fill='none' stroke-width='.3985' stroke-miterlimit='10' stroke-linejoin='round' stroke-linecap='round'/>
+<path d='M62.86571 7.01769C63.24429 8.4523 64.08793 9.12975 64.93791 9.40868C64.08793 9.68761 63.24429 10.36506 62.86571 11.79967' stroke="currentColor" fill='none' stroke-width='.3985' stroke-miterlimit='10' stroke-linejoin='round' stroke-linecap='round'/>
 <path d='M107.002707 9.40868H130.116277' stroke="currentColor" fill='none' stroke-width='.3985' stroke-miterlimit='10'/>
-<path d='M128.24332 7.01769C128.6219 8.4523 129.46554 9.12975 130.31552 9.40868C129.46554 9.68761 128.6219 10.36506 128.24332 11.79967' stroke='#000' fill='none' stroke-width='.3985' stroke-miterlimit='10' stroke-linejoin='round' stroke-linecap='round'/>
+<path d='M128.24332 7.01769C128.6219 8.4523 129.46554 9.12975 130.31552 9.40868C129.46554 9.68761 128.6219 10.36506 128.24332 11.79967' stroke="currentColor" fill='none' stroke-width='.3985' stroke-miterlimit='10' stroke-linejoin='round' stroke-linecap='round'/>
 </g>
 </svg>
