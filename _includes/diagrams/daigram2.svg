@@ -65,16 +65,16 @@
 <g transform='matrix(.999739 0 0 .999739 -4.337994 92.103)'>
 <use x='110.686106' y='-45.132218' xlink:href='#g1-2'/>
 </g>
-<path d='M42.9866 9.255233H68.63056' stroke='currentColor' fill='currentColor' stroke-width='.39848' stroke-miterlimit='10'/>
-<path d='M66.757669 6.864324C67.136239 8.298904 67.979849 8.976304 68.829799 9.255234C67.979849 9.534164 67.136239 10.211564 66.757669 11.646144' stroke='currentColor' fill='currentColor' stroke-width='.39848' stroke-miterlimit='10' stroke-linejoin='round' stroke-linecap='round'/>
+<path d='M42.9866 9.255233H64.44625' stroke='currentColor' fill='currentColor' stroke-width='.39848' stroke-miterlimit='10'/>
+<path d='M68.20753 9.255234C67.74563 9.142534 65.71525 8.503894 64.44625 7.808864V10.701604C65.71525 10.006574 67.74563 9.367934 68.20753 9.255234Z' stroke='currentColor' fill='currentColor' stroke-width='.39848' stroke-miterlimit='10'/>
 <g transform='matrix(.999455 0 0 .999455 67.672 52.052995)'>
 <use x='-14.718975' y='-45.119401' xlink:href='#g4-1'/>
 </g>
-<path d='M21.95958 18.085753V35.221763' stroke='currentColor' fill='currentColor' stroke-width='.39848' stroke-miterlimit='10'/>
-<path d='M24.35049 33.348877C22.91591 33.727447 22.23851 34.571057 21.95958 35.421007C21.68065 34.571057 21.00325 33.727447 19.56867 33.348877' stroke='currentColor' fill='currentColor' stroke-width='.39848' stroke-miterlimit='10' stroke-linejoin='round' stroke-linecap='round'/>
-<path d='M91.18885 18.085753V35.221763' stroke='currentColor' fill='currentColor' stroke-width='.39848' stroke-miterlimit='10'/>
-<path d='M93.57976 33.348877C92.14518 33.727447 91.46778 34.571057 91.18885 35.421007C90.90992 34.571057 90.23252 33.727447 88.79794 33.348877' stroke='currentColor' fill='currentColor' stroke-width='.39848' stroke-miterlimit='10' stroke-linejoin='round' stroke-linecap='round'/>
-<path d='M44.1194 44.468503H67.23299' stroke='currentColor' fill='currentColor' stroke-width='.39848' stroke-miterlimit='10'/>
-<path d='M65.3601 42.077597C65.73867 43.512177 66.58228 44.189577 67.43223 44.468507C66.58228 44.747437 65.73867 45.424837 65.3601 46.859417' stroke='currentColor' fill='currentColor' stroke-width='.39848' stroke-miterlimit='10' stroke-linejoin='round' stroke-linecap='round'/>
+<path d='M21.95958 18.085753V31.037453' stroke='currentColor' fill='currentColor' stroke-width='.39848' stroke-miterlimit='10'/>
+<path d='M21.95958 34.798733C22.07228 34.336833 22.71092 32.306453 23.40595 31.037453H20.51321C21.20824 32.306453 21.84688 34.336833 21.95958 34.798733Z' stroke='currentColor' fill='currentColor' stroke-width='.39848' stroke-miterlimit='10'/>
+<path d='M91.18885 18.085753V31.037453' stroke='currentColor' fill='currentColor' stroke-width='.39848' stroke-miterlimit='10'/>
+<path d='M91.18885 34.798733C91.30155 34.336833 91.94019 32.306453 92.63522 31.037453H89.74248C90.43751 32.306453 91.07615 34.336833 91.18885 34.798733Z' stroke='currentColor' fill='currentColor' stroke-width='.39848' stroke-miterlimit='10'/>
+<path d='M44.1194 44.468503H63.04868' stroke='currentColor' fill='currentColor' stroke-width='.39848' stroke-miterlimit='10'/>
+<path d='M66.80996 44.468507C66.34806 44.355807 64.31768 43.717167 63.04868 43.022137V45.914877C64.31768 45.219847 66.34806 44.581207 66.80996 44.468507Z' stroke='currentColor' fill='currentColor' stroke-width='.39848' stroke-miterlimit='10'/>
 </g>
 </svg>
