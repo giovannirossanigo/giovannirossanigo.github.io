@@ -31,7 +31,7 @@ jobs:
           key: ${{ runner.os }}-texlive
 
       # ----------------------------
-      # Installazione TeXLive + dvisvgm
+      # Install TeXLive + dvisvgm
       # ----------------------------
       - name: Install TeXLive + dvisvgm
         run: |
@@ -49,7 +49,7 @@ jobs:
             dvisvgm
 
       # ----------------------------
-      # Compila i diagrammi con XeLaTeX e converte in SVG con dvisvgm
+      # Compile TikZ diagrams and convert to SVG
       # ----------------------------
       - name: Compile TikZ diagrams and convert to SVG
         run: |
@@ -62,22 +62,26 @@ jobs:
             echo "Converting $base.pdf to SVG with dvisvgm..."
             dvisvgm --pdf diagrams/${base}.pdf -n -o _includes/diagrams/${base}.svg
 
-            echo "Applying color substitution for dynamic dark/light mode..."
-            # Sostituisce fill e stroke in TUTTO l'SVG, inclusi defs e path delle frecce
+            echo "Replacing all fixed colors with currentColor..."
+            # Fill e stroke diretti
             sed -i 's/fill="[^"]*"/fill="currentColor"/g' _includes/diagrams/${base}.svg
             sed -i 's/stroke="[^"]*"/stroke="currentColor"/g' _includes/diagrams/${base}.svg
+            # Fill e stroke in style inline
             sed -i 's/fill:[^;"]*/fill:currentColor/g' _includes/diagrams/${base}.svg
             sed -i 's/stroke:[^;"]*/stroke:currentColor/g' _includes/diagrams/${base}.svg
+            # Style globali: style="..." con fill o stroke multipli
+            sed -i -E 's/(style="[^"]*fill:[^;"]*;?)/\1 fill:currentColor;/g' _includes/diagrams/${base}.svg
+            sed -i -E 's/(style="[^"]*stroke:[^;"]*;?)/\1 stroke:currentColor;/g' _includes/diagrams/${base}.svg
           done
 
       # ----------------------------
-      # Commit e push dei nuovi SVG
+      # Commit and push new SVGs
       # ----------------------------
       - name: Commit and push changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          
+
           git add _includes/diagrams/*.svg
           git commit -m "Update TikZ diagrams [skip ci]" || echo "No changes to commit"
           git pull --rebase origin master || true
