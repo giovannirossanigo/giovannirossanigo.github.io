@@ -3,12 +3,11 @@
 \usepackage{mathrsfs}  
 \usepackage{tikz-cd}
 
-% Importiamo frecce avanzate
-\usetikzlibrary{arrows.meta}
+
 
 \begin{document} 
 
-\begin{tikzcd}[every arrow/.append style={-{Latex[open]}}]
+\begin{tikzcd}
   {\mathscr{C}(\alpha, \beta)} & {F(\alpha,\beta')} \\
   {F(\alpha',\beta)} & {F(\alpha',\beta')}
   \arrow["F", from=1-1, to=1-2]
