@@ -197,26 +197,43 @@ body.color-mode-dark .corollary a {
 }
 
 
-/* === Diagram SVG TikZ support (dynamic color for dark/light mode) === */
-.diagram-container svg path {
-  fill: currentColor; /* path vettoriali assumono il colore corrente */
-}
-.diagram-container svg text {
-    font-family: 'Inter', sans-serif;
-    font-size: 1rem; /* o quello del sito */
-}
+/* === Diagram SVG TikZ support (dynamic color for dark/light mode, scalable) === */
+
 .diagram-container {
-    color: inherit; /* eredita colore dal tema */
-    text-align: center; /* centra l'immagine orizzontalmente */
-    margin: 1em 0;      /* opzionale: spazio sopra e sotto */
+    color: inherit;          /* eredita colore dal tema */
+    text-align: center;       /* centra l'immagine orizzontalmente */
+    margin: 1em 0;           /* spazio sopra e sotto */
 }
 
+/* Scala tutto l'SVG */
+.diagram-container svg {
+    width: 80%;              /* puoi aumentare per ingrandire tutto */
+    height: auto;            /* mantiene proporzioni */
+    display: block;          /* evita overflow */
+    margin: 0 auto;          /* centra l'SVG */
+}
+
+/* Path vettoriali assumono il colore corrente */
+.diagram-container svg path {
+    fill: currentColor;
+}
+
+/* Testo interno SVG */
+.diagram-container svg text {
+    font-family: 'Inter', sans-serif; /* uniforme con il sito */
+    font-size: 1rem;                  /* puoi regolare se serve più grande */
+    fill: currentColor;               /* colore dinamico */
+}
+
+/* Supporto modalità scura */
 body.dark-mode .diagram-container {
-  color: white; /* modalità scura */
+    color: white;  /* testo e path diventano bianchi */
 }
 
+/* Opzionale: scaling delle immagini <img> nel container */
 .diagram-container img {
-  display: inline-block; /* assicura che il text-align funzioni correttamente */
-  max-width: 90%;       /* evita che l'immagine esca dal container */
-  height: auto;
+    display: inline-block;
+    max-width: 90%;
+    height: auto;
 }
+
