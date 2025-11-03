@@ -63,15 +63,20 @@ jobs:
             dvisvgm --pdf --no-fonts --exact diagrams/${base}.pdf -o _includes/diagrams/${base}.svg
 
             echo "Replacing all fill/stroke colors with currentColor..."
-            # Fill e stroke diretti
+            echo "Replacing all fill/stroke colors with currentColor..."
+            # Fill e stroke diretti con doppi apici
             sed -i 's/fill="[^"]*"/fill="currentColor"/g' _includes/diagrams/${base}.svg
             sed -i 's/stroke="[^"]*"/stroke="currentColor"/g' _includes/diagrams/${base}.svg
+            # Fill e stroke diretti con apici singoli
+            sed -i "s/fill='[^']*'/fill='currentColor'/g" _includes/diagrams/${base}.svg
+            sed -i "s/stroke='[^']*'/stroke='currentColor'/g" _includes/diagrams/${base}.svg
             # Fill e stroke in style inline
             sed -i 's/fill:[^;"]*/fill:currentColor/g' _includes/diagrams/${base}.svg
             sed -i 's/stroke:[^;"]*/stroke:currentColor/g' _includes/diagrams/${base}.svg
             # Style globali: style="..." con fill o stroke multipli
             sed -i -E 's/(style="[^"]*fill:[^;"]*;?)/\1 fill:currentColor;/g' _includes/diagrams/${base}.svg
             sed -i -E 's/(style="[^"]*stroke:[^;"]*;?)/\1 stroke:currentColor;/g' _includes/diagrams/${base}.svg
+
           done
 
       # ----------------------------
