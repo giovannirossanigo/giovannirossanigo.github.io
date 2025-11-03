@@ -28,7 +28,7 @@ jobs:
           key: ${{ runner.os }}-texlive
 
       # ----------------------------
-      # Installazione TeXLive + Inkscape ridotta
+      # Installazione TeXLive + Inkscape
       # ----------------------------
       - name: Install TeXLive minimal + Inkscape
         run: |
@@ -41,38 +41,48 @@ jobs:
             inkscape
 
       # ----------------------------
-      # Compila e genera SVG
+      # Compila e genera SVG direttamente in _includes/diagrams
       # ----------------------------
       - name: Compile TikZ diagrams and convert to SVG
         run: |
-          # Crea la cartella direttamente in _includes/diagrams
           mkdir -p _includes/diagrams
-
           for f in diagrams/*.tex; do
-          # Compila LaTeX
-          pdflatex -interaction=nonstopmode -halt-on-error -output-directory=diagrams "$f"
+            echo "Compiling $f..."
+            pdflatex -interaction=nonstopmode -halt-on-error -output-directory=diagrams "$f"
 
-          # Converte PDF in SVG (testo come percorso) direttamente in _includes
-          inkscape diagrams/$(basename "$f" .tex).pdf \
-          --export-plain-svg=_includes/diagrams/$(basename "$f" .tex).svg \
-          #--export-text-to-path
+            inkscape diagrams/$(basename "$f" .tex).pdf \
+              --export-plain-svg=_includes/diagrams/$(basename "$f" .tex).svg
 
-          # Sostituisci fill e stroke con currentColor
-          sed -i 's/fill="[^"]*"/fill="currentColor"/g' _includes/diagrams/$(basename "$f" .tex).svg
-          sed -i 's/stroke="[^"]*"/stroke="currentColor"/g' _includes/diagrams/$(basename "$f" .tex).svg
-          sed -i 's/fill:[^;"]*/fill:currentColor/g' _includes/diagrams/$(basename "$f" .tex).svg
-          sed -i 's/stroke:[^;"]*/stroke:currentColor/g' _includes/diagrams/$(basename "$f" .tex).svg
+            # Usa currentColor per fill/stroke
+            sed -i 's/fill="[^"]*"/fill="currentColor"/g' _includes/diagrams/$(basename "$f" .tex).svg
+            sed -i 's/stroke="[^"]*"/stroke="currentColor"/g' _includes/diagrams/$(basename "$f" .tex).svg
+            sed -i 's/fill:[^;"]*/fill:currentColor/g' _includes/diagrams/$(basename "$f" .tex).svg
+            sed -i 's/stroke:[^;"]*/stroke:currentColor/g' _includes/diagrams/$(basename "$f" .tex).svg
           done
 
-
       # ----------------------------
-      # Commit e push
+      # Commit e push sicuro
       # ----------------------------
       - name: Commit and push changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add assets/img/diagrams/*.svg
-          git commit -m "Update TikZ diagrams [skip ci]" || echo "No changes to commit"
-          git pull --rebase origin master
+
+          # Aggiungi solo gli SVG aggiornati
+          git add _includes/diagrams/*.svg
+
+          # Se non ci sono modifiche, esci
+          if git diff --cached --quiet; then
+            echo "No SVG changes to commit."
+            exit 0
+          fi
+
+          git commit -m "Update TikZ diagrams [skip ci]"
+
+          # Pulisci i file temporanei non tracciati
+          git clean -fd diagrams/
+
+          # Aggiorna e spingi in sicurezza
+          git fetch origin
+          git rebase origin/master || git rebase --abort
           git push origin master
