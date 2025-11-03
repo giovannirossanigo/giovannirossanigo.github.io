@@ -31,9 +31,9 @@ jobs:
           key: ${{ runner.os }}-texlive
 
       # ----------------------------
-      # Installazione TeXLive + Inkscape
+      # Installazione TeXLive + dvisvgm
       # ----------------------------
-      - name: Install TeXLive + Inkscape
+      - name: Install TeXLive + dvisvgm
         run: |
           sudo apt-get update
           sudo apt-get install -y \
@@ -45,27 +45,25 @@ jobs:
             texlive-fonts-extra \
             texlive-pictures \
             texlive-science \
-            inkscape \
-            latexmk
+            latexmk \
+            dvisvgm
 
       # ----------------------------
-      # Compila i diagrammi con XeLaTeX e converte in SVG
+      # Compila i diagrammi con XeLaTeX e converte in SVG con dvisvgm
       # ----------------------------
-      - name: Compile TikZ diagrams with XeLaTeX and convert to SVG
+      - name: Compile TikZ diagrams and convert to SVG
         run: |
           mkdir -p _includes/diagrams
           for f in diagrams/*.tex; do
             base=$(basename "$f" .tex)
-            echo "Compiling $f ..."
-            # usa XeLaTeX e stampa il log se fallisce
-            latexmk -pdfxe -interaction=nonstopmode -halt-on-error -output-directory=diagrams "$f" || cat diagrams/${base}.log
+            echo "Compiling $f with XeLaTeX..."
+            latexmk -xelatex -interaction=nonstopmode -halt-on-error -output-directory=diagrams "$f" || cat diagrams/${base}.log
 
-            echo "Converting $base.pdf to SVG ..."
-            inkscape diagrams/${base}.pdf \
-              --export-plain-svg=_includes/diagrams/${base}.svg \
-             # --export-text-to-path
+            echo "Converting $base.dvi/pdf to SVG with dvisvgm..."
+            # dvisvgm legge PDF generato da XeLaTeX
+            dvisvgm --pdf diagrams/${base}.pdf -n -o _includes/diagrams/${base}.svg
 
-            echo "Applying color substitution ..."
+            echo "Applying color substitution..."
             sed -i 's/fill="[^"]*"/fill="currentColor"/g' _includes/diagrams/${base}.svg
             sed -i 's/stroke="[^"]*"/stroke="currentColor"/g' _includes/diagrams/${base}.svg
             sed -i 's/fill:[^;"]*/fill:currentColor/g' _includes/diagrams/${base}.svg
