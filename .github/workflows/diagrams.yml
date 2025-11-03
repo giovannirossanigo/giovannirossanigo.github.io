@@ -43,6 +43,7 @@ jobs:
             texlive-latex-extra \
             texlive-fonts-recommended \
             texlive-fonts-extra \
+            texlive-pictures \
             texlive-science \
             inkscape \
             latexmk
@@ -55,9 +56,9 @@ jobs:
           mkdir -p _includes/diagrams
           for f in diagrams/*.tex; do
             base=$(basename "$f" .tex)
-
             echo "Compiling $f ..."
-            latexmk -xelatex -pdf -interaction=nonstopmode -halt-on-error -output-directory=diagrams "$f"
+            # usa XeLaTeX e stampa il log se fallisce
+            latexmk -pdfxe -interaction=nonstopmode -halt-on-error -output-directory=diagrams "$f" || cat diagrams/${base}.log
 
             echo "Converting $base.pdf to SVG ..."
             inkscape diagrams/${base}.pdf \
