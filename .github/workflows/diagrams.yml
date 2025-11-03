@@ -60,7 +60,9 @@ jobs:
             latexmk -xelatex -interaction=nonstopmode -halt-on-error -output-directory=diagrams "$f" || cat diagrams/${base}.log
 
             echo "Converting $base.pdf to SVG with dvisvgm..."
-            dvisvgm --pdf --no-fonts --exact diagrams/${base}.pdf -o _includes/diagrams/${base}.svg
+            dvisvgm --pdf diagrams/${base}.pdf -n -o _includes/diagrams/${base}.svg
+            #prima usavo questa
+            #dvisvgm --pdf --no-fonts --exact diagrams/${base}.pdf -o _includes/diagrams/${base}.svg
 
             echo "Replacing all fill/stroke colors with currentColor..."
             echo "Replacing all fill/stroke colors with currentColor..."
