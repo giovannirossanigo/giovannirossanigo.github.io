@@ -59,11 +59,11 @@ jobs:
             echo "Compiling $f with XeLaTeX..."
             latexmk -xelatex -interaction=nonstopmode -halt-on-error -output-directory=diagrams "$f" || cat diagrams/${base}.log
 
-            echo "Converting $base.dvi/pdf to SVG with dvisvgm..."
-            # dvisvgm legge PDF generato da XeLaTeX
+            echo "Converting $base.pdf to SVG with dvisvgm..."
             dvisvgm --pdf diagrams/${base}.pdf -n -o _includes/diagrams/${base}.svg
 
-            echo "Applying color substitution..."
+            echo "Applying color substitution for dynamic dark/light mode..."
+            # Sostituisce fill e stroke in TUTTO l'SVG, inclusi defs e path delle frecce
             sed -i 's/fill="[^"]*"/fill="currentColor"/g' _includes/diagrams/${base}.svg
             sed -i 's/stroke="[^"]*"/stroke="currentColor"/g' _includes/diagrams/${base}.svg
             sed -i 's/fill:[^;"]*/fill:currentColor/g' _includes/diagrams/${base}.svg
