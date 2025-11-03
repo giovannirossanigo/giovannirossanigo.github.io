@@ -201,7 +201,10 @@ body.color-mode-dark .corollary a {
 .diagram-container svg path {
   fill: currentColor; /* path vettoriali assumono il colore corrente */
 }
-
+.diagram-container svg text {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem; /* o quello del sito */
+}
 .diagram-container {
   color: inherit; /* eredita colore dal tema */
 }
