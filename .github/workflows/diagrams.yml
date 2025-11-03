@@ -76,7 +76,9 @@ jobs:
             # Style globali: style="..." con fill o stroke multipli
             sed -i -E 's/(style="[^"]*fill:[^;"]*;?)/\1 fill:currentColor;/g' _includes/diagrams/${base}.svg
             sed -i -E 's/(style="[^"]*stroke:[^;"]*;?)/\1 stroke:currentColor;/g' _includes/diagrams/${base}.svg
-
+            
+            # Hack per rendere punte delle frecce “vuote” in SVG
+            sed -i 's/fill="currentColor"/fill="none"/g' _includes/diagrams/${base}.svg
           done
 
       # ----------------------------
