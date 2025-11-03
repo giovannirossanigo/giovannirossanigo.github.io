@@ -45,22 +45,25 @@ jobs:
       # ----------------------------
       - name: Compile TikZ diagrams and convert to SVG
         run: |
-          mkdir -p assets/img/diagrams
+          # Crea la cartella direttamente in _includes/diagrams
+          mkdir -p _includes/diagrams
+
           for f in diagrams/*.tex; do
-            # Compila LaTeX
-            pdflatex -interaction=nonstopmode -halt-on-error -output-directory=diagrams "$f"
+          # Compila LaTeX
+          pdflatex -interaction=nonstopmode -halt-on-error -output-directory=diagrams "$f"
 
-            # Converte PDF in SVG (testo come percorso)
-            inkscape diagrams/$(basename "$f" .tex).pdf \
-              --export-plain-svg=assets/img/diagrams/$(basename "$f" .tex).svg \
-              --export-text-to-path
+          # Converte PDF in SVG (testo come percorso) direttamente in _includes
+          inkscape diagrams/$(basename "$f" .tex).pdf \
+          --export-plain-svg=_includes/diagrams/$(basename "$f" .tex).svg \
+          --export-text-to-path
 
-            # Sostituisci fill e stroke con currentColor
-            sed -i 's/fill="[^"]*"/fill="currentColor"/g' assets/img/diagrams/$(basename "$f" .tex).svg
-            sed -i 's/stroke="[^"]*"/stroke="currentColor"/g' assets/img/diagrams/$(basename "$f" .tex).svg
-            sed -i 's/fill:[^;"]*/fill:currentColor/g' assets/img/diagrams/$(basename "$f" .tex).svg
-            sed -i 's/stroke:[^;"]*/stroke:currentColor/g' assets/img/diagrams/$(basename "$f" .tex).svg
+          # Sostituisci fill e stroke con currentColor
+          sed -i 's/fill="[^"]*"/fill="currentColor"/g' _includes/diagrams/$(basename "$f" .tex).svg
+          sed -i 's/stroke="[^"]*"/stroke="currentColor"/g' _includes/diagrams/$(basename "$f" .tex).svg
+          sed -i 's/fill:[^;"]*/fill:currentColor/g' _includes/diagrams/$(basename "$f" .tex).svg
+          sed -i 's/stroke:[^;"]*/stroke:currentColor/g' _includes/diagrams/$(basename "$f" .tex).svg
           done
+
 
       # ----------------------------
       # Commit e push
