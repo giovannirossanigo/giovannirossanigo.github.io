@@ -63,39 +63,46 @@
                                 <g
                                    id="g48"
                                    transform="translate(-16.42)">
-                                <g
-                                   aria-label="Σ"
+                                <text
+                                   xml:space="preserve"
                                    transform="matrix(1,0,0,-1,39.979,62.961)"
-                                   id="text52"
-                                   style="font-size:9.9626px;font-family:'Latin Modern Math';-inkscape-font-specification:LatinModernMath-Regular-Identity-H">
-                                <path
-                                   d="M 6.6251288,-2.3511735 H 6.3760638 C 6.196737,-0.68741938 5.5192803,-0.41842919 3.9551521,-0.41842919 H 1.2054746 L 3.7060871,-3.2478075 c 0.089663,-0.099626 0.089663,-0.1594016 0.089663,-0.1594016 0,-0.049813 -0.03985,-0.099626 -0.069738,-0.1394764 L 1.6836794,-6.495615 h 2.3013605 c 1.6836794,0 2.1818093,0.3586536 2.3910239,1.9327443 h 0.249065 L 6.346176,-6.8044556 H 0.81693318 c -0.23910239,0 -0.25902759,0 -0.25902759,0.2291398 l 2.48068731,3.6064611 -2.37109872,2.69986451 c -0.099626,0.10958859 -0.099626,0.12951379 -0.099626,0.15940159 C 0.56786819,0 0.66749418,0 0.81693318,0 H 6.346176 Z"
-                                   id="path174" />
-                                </g>
-                                <g
-                                   aria-label="푗"
+                                   style="font-variant:normal;font-size:9.9626px;font-family:'Latin Modern Math';-inkscape-font-specification:LatinModernMath-Regular-Identity-H;writing-mode:lr-tb;fill:currentColor;fill-opacity:1;fill-rule:nonzero;stroke:currentColor"
+                                   id="text52"><tspan
+                                   x="0"
+                                   y="0"
+                                   id="tspan50">Σ</tspan></text>
+                                <text
+                                   xml:space="preserve"
                                    transform="matrix(1,0,0,-1,47.172,66.578)"
-                                   id="text56"
-                                   style="font-size:6.9738px;font-family:'Latin Modern Math';-inkscape-font-specification:LatinModernMath-Regular-Identity-H" />
-                                <g
-                                   aria-label="푏"
+                                   style="font-variant:normal;font-size:6.9738px;font-family:'Latin Modern Math';-inkscape-font-specification:LatinModernMath-Regular-Identity-H;writing-mode:lr-tb;fill:currentColor;fill-opacity:1;fill-rule:nonzero;stroke:currentColor"
+                                   id="text56"><tspan
+                                   x="0"
+                                   y="0"
+                                   id="tspan54">푗</tspan></text>
+                                <text
+                                   xml:space="preserve"
                                    transform="matrix(1,0,0,-1,50.968,62.961)"
-                                   id="text60"
-                                   style="font-size:9.9626px;font-family:'Latin Modern Math';-inkscape-font-specification:LatinModernMath-Regular-Identity-H" />
-                                <g
-                                   aria-label="푚푚"
+                                   style="font-variant:normal;font-size:9.9626px;font-family:'Latin Modern Math';-inkscape-font-specification:LatinModernMath-Regular-Identity-H;writing-mode:lr-tb;fill:currentColor;fill-opacity:1;fill-rule:nonzero;stroke:currentColor"
+                                   id="text60"><tspan
+                                   x="0"
+                                   y="0"
+                                   id="tspan58">푏</tspan></text>
+                                <text
+                                   xml:space="preserve"
                                    transform="matrix(1,0,0,-1,55.242,60.5)"
-                                   id="text64"
-                                   style="font-size:6.9738px;font-family:'Latin Modern Math';-inkscape-font-specification:LatinModernMath-Regular-Identity-H" />
-                                <g
-                                   aria-label="′"
+                                   style="font-variant:normal;font-size:6.9738px;font-family:'Latin Modern Math';-inkscape-font-specification:LatinModernMath-Regular-Identity-H;writing-mode:lr-tb;fill:currentColor;fill-opacity:1;fill-rule:nonzero;stroke:currentColor"
+                                   id="text64"><tspan
+                                   x="0 7.0714331"
+                                   y="0"
+                                   id="tspan62">푚푚</tspan></text>
+                                <text
+                                   xml:space="preserve"
                                    transform="matrix(1,0,0,-1,69.385,62.516)"
-                                   id="text68"
-                                   style="font-size:4.9813px;font-family:'Latin Modern Math';-inkscape-font-specification:LatinModernMath-Regular-Identity-H">
-                                <path
-                                   d="m 1.2503063,-3.5367229 c 0,-0.1046073 -0.084682,-0.1892894 -0.1892894,-0.1892894 -0.0747195,0 -0.14445772,0.049813 -0.16438292,0.1046073 l -0.59775599,1.4794461 h 0.1344951 L 1.2204185,-3.4420782 c 0.019925,-0.024906 0.029888,-0.059776 0.029888,-0.094645 z"
-                                   id="path180" />
-                                </g>
+                                   style="font-variant:normal;font-size:4.9813px;font-family:'Latin Modern Math';-inkscape-font-specification:LatinModernMath-Regular-Identity-H;writing-mode:lr-tb;fill:currentColor;fill-opacity:1;fill-rule:nonzero;stroke:currentColor"
+                                   id="text68"><tspan
+                                   x="0"
+                                   y="0"
+                                   id="tspan66">′</tspan></text>
                                 </g>
                                 <g
                                    id="g70"
@@ -128,39 +135,46 @@
                                 <g
                                    id="g88"
                                    transform="translate(-16.44)">
-                                <g
-                                   aria-label="Σ"
+                                <text
+                                   xml:space="preserve"
                                    transform="matrix(1,0,0,-1,105.335,62.961)"
-                                   id="text92"
-                                   style="font-size:9.9626px;font-family:'Latin Modern Math';-inkscape-font-specification:LatinModernMath-Regular-Identity-H">
-                                <path
-                                   d="M 6.6251288,-2.3511735 H 6.3760638 C 6.196737,-0.68741938 5.5192803,-0.41842919 3.9551521,-0.41842919 H 1.2054746 L 3.7060871,-3.2478075 c 0.089663,-0.099626 0.089663,-0.1594016 0.089663,-0.1594016 0,-0.049813 -0.03985,-0.099626 -0.069738,-0.1394764 L 1.6836794,-6.495615 h 2.3013605 c 1.6836794,0 2.1818093,0.3586536 2.3910239,1.9327443 h 0.249065 L 6.346176,-6.8044556 H 0.81693318 c -0.23910239,0 -0.25902759,0 -0.25902759,0.2291398 l 2.48068731,3.6064611 -2.37109872,2.69986451 c -0.099626,0.10958859 -0.099626,0.12951379 -0.099626,0.15940159 C 0.56786819,0 0.66749418,0 0.81693318,0 H 6.346176 Z"
-                                   id="path183" />
-                                </g>
-                                <g
-                                   aria-label="푗"
+                                   style="font-variant:normal;font-size:9.9626px;font-family:'Latin Modern Math';-inkscape-font-specification:LatinModernMath-Regular-Identity-H;writing-mode:lr-tb;fill:currentColor;fill-opacity:1;fill-rule:nonzero;stroke:currentColor"
+                                   id="text92"><tspan
+                                   x="0"
+                                   y="0"
+                                   id="tspan90">Σ</tspan></text>
+                                <text
+                                   xml:space="preserve"
                                    transform="matrix(1,0,0,-1,112.528,66.578)"
-                                   id="text96"
-                                   style="font-size:6.9738px;font-family:'Latin Modern Math';-inkscape-font-specification:LatinModernMath-Regular-Identity-H" />
-                                <g
-                                   aria-label="푐"
+                                   style="font-variant:normal;font-size:6.9738px;font-family:'Latin Modern Math';-inkscape-font-specification:LatinModernMath-Regular-Identity-H;writing-mode:lr-tb;fill:currentColor;fill-opacity:1;fill-rule:nonzero;stroke:currentColor"
+                                   id="text96"><tspan
+                                   x="0"
+                                   y="0"
+                                   id="tspan94">푗</tspan></text>
+                                <text
+                                   xml:space="preserve"
                                    transform="matrix(1,0,0,-1,116.325,62.961)"
-                                   id="text100"
-                                   style="font-size:9.9626px;font-family:'Latin Modern Math';-inkscape-font-specification:LatinModernMath-Regular-Identity-H" />
-                                <g
-                                   aria-label="푚푚"
+                                   style="font-variant:normal;font-size:9.9626px;font-family:'Latin Modern Math';-inkscape-font-specification:LatinModernMath-Regular-Identity-H;writing-mode:lr-tb;fill:currentColor;fill-opacity:1;fill-rule:nonzero;stroke:currentColor"
+                                   id="text100"><tspan
+                                   x="0"
+                                   y="0"
+                                   id="tspan98">푐</tspan></text>
+                                <text
+                                   xml:space="preserve"
                                    transform="matrix(1,0,0,-1,120.639,60.5)"
-                                   id="text104"
-                                   style="font-size:6.9738px;font-family:'Latin Modern Math';-inkscape-font-specification:LatinModernMath-Regular-Identity-H" />
-                                <g
-                                   aria-label="′"
+                                   style="font-variant:normal;font-size:6.9738px;font-family:'Latin Modern Math';-inkscape-font-specification:LatinModernMath-Regular-Identity-H;writing-mode:lr-tb;fill:currentColor;fill-opacity:1;fill-rule:nonzero;stroke:currentColor"
+                                   id="text104"><tspan
+                                   x="0 7.0714331"
+                                   y="0"
+                                   id="tspan102">푚푚</tspan></text>
+                                <text
+                                   xml:space="preserve"
                                    transform="matrix(1,0,0,-1,134.782,62.516)"
-                                   id="text108"
-                                   style="font-size:4.9813px;font-family:'Latin Modern Math';-inkscape-font-specification:LatinModernMath-Regular-Identity-H">
-                                <path
-                                   d="m 1.2503063,-3.5367229 c 0,-0.1046073 -0.084682,-0.1892894 -0.1892894,-0.1892894 -0.0747195,0 -0.14445772,0.049813 -0.16438292,0.1046073 l -0.59775599,1.4794461 h 0.1344951 L 1.2204185,-3.4420782 c 0.019925,-0.024906 0.029888,-0.059776 0.029888,-0.094645 z"
-                                   id="path189" />
-                                </g>
+                                   style="font-variant:normal;font-size:4.9813px;font-family:'Latin Modern Math';-inkscape-font-specification:LatinModernMath-Regular-Identity-H;writing-mode:lr-tb;fill:currentColor;fill-opacity:1;fill-rule:nonzero;stroke:currentColor"
+                                   id="text108"><tspan
+                                   x="0"
+                                   y="0"
+                                   id="tspan106">′</tspan></text>
                                 </g>
                                 <g
                                    id="g110"
@@ -193,46 +207,46 @@
                                 <g
                                    id="g128"
                                    transform="translate(-21.615)">
-                                <g
-                                   aria-label="Σ"
+                                <text
+                                   xml:space="preserve"
                                    transform="matrix(1,0,0,-1,175.887,62.961)"
-                                   id="text132"
-                                   style="font-size:9.9626px;font-family:'Latin Modern Math';-inkscape-font-specification:LatinModernMath-Regular-Identity-H">
-                                <path
-                                   d="M 6.6251288,-2.3511735 H 6.3760638 C 6.196737,-0.68741938 5.5192803,-0.41842919 3.9551521,-0.41842919 H 1.2054746 L 3.7060871,-3.2478075 c 0.089663,-0.099626 0.089663,-0.1594016 0.089663,-0.1594016 0,-0.049813 -0.03985,-0.099626 -0.069738,-0.1394764 L 1.6836794,-6.495615 h 2.3013605 c 1.6836794,0 2.1818093,0.3586536 2.3910239,1.9327443 h 0.249065 L 6.346176,-6.8044556 H 0.81693318 c -0.23910239,0 -0.25902759,0 -0.25902759,0.2291398 l 2.48068731,3.6064611 -2.37109872,2.69986451 c -0.099626,0.10958859 -0.099626,0.12951379 -0.099626,0.15940159 C 0.56786819,0 0.66749418,0 0.81693318,0 H 6.346176 Z"
-                                   id="path192" />
-                                </g>
-                                <g
-                                   aria-label="푗+1"
+                                   style="font-variant:normal;font-size:9.9626px;font-family:'Latin Modern Math';-inkscape-font-specification:LatinModernMath-Regular-Identity-H;writing-mode:lr-tb;fill:currentColor;fill-opacity:1;fill-rule:nonzero;stroke:currentColor"
+                                   id="text132"><tspan
+                                   x="0"
+                                   y="0"
+                                   id="tspan130">Σ</tspan></text>
+                                <text
+                                   xml:space="preserve"
                                    transform="matrix(1,0,0,-1,183.08,66.578)"
-                                   id="text136"
-                                   style="font-size:6.9738px;font-family:'Latin Modern Math';-inkscape-font-specification:LatinModernMath-Regular-Identity-H">
-                                <path
-                                   d="m 8.3336911,-1.74345 c 0,-0.076712 -0.062764,-0.139476 -0.139476,-0.139476 H 6.1508916 v -2.0433235 c 0,-0.076712 -0.062764,-0.139476 -0.139476,-0.139476 -0.076712,0 -0.139476,0.062764 -0.139476,0.139476 V -1.882926 H 3.8286162 c -0.076712,0 -0.139476,0.062764 -0.139476,0.139476 0,0.076712 0.062764,0.139476 0.139476,0.139476 h 2.0433234 v 2.04332341 c 0,0.0767118 0.062764,0.13947601 0.139476,0.13947601 0.076712,0 0.139476,-0.0627642 0.139476,-0.13947601 V -1.603974 h 2.0433235 c 0.076712,0 0.139476,-0.062764 0.139476,-0.139476 z"
-                                   id="path195" />
-                                <path
-                                   d="m 11.646246,0 v -0.21618781 h -0.223161 c -0.627642,0 -0.648564,-0.0767118 -0.648564,-0.3347424 V -4.4632321 c 0,-0.1673712 0,-0.1813188 -0.160397,-0.1813188 -0.432376,0.4463232 -1.0460701,0.4463232 -1.2692317,0.4463232 v 0.2161878 c 0.139476,0 0.5509302,0 0.9135677,-0.1813188 v 3.61242849 c 0,0.2510568 -0.02092,0.3347424 -0.6485633,0.3347424 H 9.3867351 V 0 c 0.244083,-0.0209214 0.8508039,-0.0209214 1.1297559,-0.0209214 0.278952,0 0.885672,0 1.129755,0.0209214 z"
-                                   id="path197" />
-                                </g>
-                                <g
-                                   aria-label="푎"
+                                   style="font-variant:normal;font-size:6.9738px;font-family:'Latin Modern Math';-inkscape-font-specification:LatinModernMath-Regular-Identity-H;writing-mode:lr-tb;fill:currentColor;fill-opacity:1;fill-rule:nonzero;stroke:currentColor"
+                                   id="text136"><tspan
+                                   x="0 3.2986073 8.7242241"
+                                   y="0"
+                                   id="tspan134">푗+1</tspan></text>
+                                <text
+                                   xml:space="preserve"
                                    transform="matrix(1,0,0,-1,196.271,62.961)"
-                                   id="text140"
-                                   style="font-size:9.9626px;font-family:'Latin Modern Math';-inkscape-font-specification:LatinModernMath-Regular-Identity-H" />
-                                <g
-                                   aria-label="푚푚"
+                                   style="font-variant:normal;font-size:9.9626px;font-family:'Latin Modern Math';-inkscape-font-specification:LatinModernMath-Regular-Identity-H;writing-mode:lr-tb;fill:currentColor;fill-opacity:1;fill-rule:nonzero;stroke:currentColor"
+                                   id="text140"><tspan
+                                   x="0"
+                                   y="0"
+                                   id="tspan138">푎</tspan></text>
+                                <text
+                                   xml:space="preserve"
                                    transform="matrix(1,0,0,-1,201.541,60.5)"
-                                   id="text144"
-                                   style="font-size:6.9738px;font-family:'Latin Modern Math';-inkscape-font-specification:LatinModernMath-Regular-Identity-H" />
-                                <g
-                                   aria-label="′"
+                                   style="font-variant:normal;font-size:6.9738px;font-family:'Latin Modern Math';-inkscape-font-specification:LatinModernMath-Regular-Identity-H;writing-mode:lr-tb;fill:currentColor;fill-opacity:1;fill-rule:nonzero;stroke:currentColor"
+                                   id="text144"><tspan
+                                   x="0 7.0714331"
+                                   y="0"
+                                   id="tspan142">푚푚</tspan></text>
+                                <text
+                                   xml:space="preserve"
                                    transform="matrix(1,0,0,-1,215.684,62.516)"
-                                   id="text148"
-                                   style="font-size:4.9813px;font-family:'Latin Modern Math';-inkscape-font-specification:LatinModernMath-Regular-Identity-H">
-                                <path
-                                   d="m 1.2503063,-3.5367229 c 0,-0.1046073 -0.084682,-0.1892894 -0.1892894,-0.1892894 -0.0747195,0 -0.14445772,0.049813 -0.16438292,0.1046073 l -0.59775599,1.4794461 h 0.1344951 L 1.2204185,-3.4420782 c 0.019925,-0.024906 0.029888,-0.059776 0.029888,-0.094645 z"
-                                   id="path202" />
-                                </g>
+                                   style="font-variant:normal;font-size:4.9813px;font-family:'Latin Modern Math';-inkscape-font-specification:LatinModernMath-Regular-Identity-H;writing-mode:lr-tb;fill:currentColor;fill-opacity:1;fill-rule:nonzero;stroke:currentColor"
+                                   id="text148"><tspan
+                                   x="0"
+                                   y="0"
+                                   id="tspan146">′</tspan></text>
                                 </g>
                                 <g
                                    id="g150"
