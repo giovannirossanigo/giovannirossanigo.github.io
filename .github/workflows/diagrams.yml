@@ -60,13 +60,16 @@ jobs:
             latexmk -xelatex -interaction=nonstopmode -halt-on-error -output-directory=diagrams "$f" || cat diagrams/${base}.log
 
             echo "Converting $base.pdf to SVG with dvisvgm..."
-            dvisvgm diagrams/${base}.pdf -n -o _includes/diagrams/${base}.svg
+            dvisvgm --pdf diagrams/${base}.pdf -o _includes/diagrams/${base}.svg
 
-            echo "Replacing all fill and stroke colors with currentColor..."
+            echo "Replacing all fill/stroke colors with currentColor..."
+            # Fill e stroke diretti
             sed -i 's/fill="[^"]*"/fill="currentColor"/g' _includes/diagrams/${base}.svg
             sed -i 's/stroke="[^"]*"/stroke="currentColor"/g' _includes/diagrams/${base}.svg
+            # Fill e stroke in style inline
             sed -i 's/fill:[^;"]*/fill:currentColor/g' _includes/diagrams/${base}.svg
             sed -i 's/stroke:[^;"]*/stroke:currentColor/g' _includes/diagrams/${base}.svg
+            # Style globali: style="..." con fill o stroke multipli
             sed -i -E 's/(style="[^"]*fill:[^;"]*;?)/\1 fill:currentColor;/g' _includes/diagrams/${base}.svg
             sed -i -E 's/(style="[^"]*stroke:[^;"]*;?)/\1 stroke:currentColor;/g' _includes/diagrams/${base}.svg
           done
@@ -78,6 +81,7 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
           git add _includes/diagrams/*.svg
           git commit -m "Update TikZ diagrams [skip ci]" || echo "No changes to commit"
           git pull --rebase origin master || true
