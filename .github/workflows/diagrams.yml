@@ -56,26 +56,23 @@ jobs:
           mkdir -p _includes/diagrams
           for f in diagrams/*.tex; do
             base=$(basename "$f" .tex)
-
-            echo "Compiling $f with XeLaTeX (force compilation)..."
-            latexmk -xelatex -interaction=nonstopmode -halt-on-error -output-directory=diagrams -f "$f" || cat diagrams/${base}.log
+            echo "Compiling $f with XeLaTeX..."
+            # Genera PDF completo, non solo bounding box
+            latexmk -xelatex -interaction=nonstopmode -halt-on-error -output-directory=diagrams "$f" || cat diagrams/${base}.log
 
             echo "Converting $base.pdf to SVG with dvisvgm using currentColor..."
             dvisvgm diagrams/${base}.pdf -n -o _includes/diagrams/${base}.svg
 
-            echo "Replacing all colors with currentColor..."
-            # fill e stroke diretti negli attributi
+            echo "Replacing all fill/stroke colors with currentColor..."
+            # Fill e stroke diretti
             sed -i 's/fill="[^"]*"/fill="currentColor"/g' _includes/diagrams/${base}.svg
             sed -i 's/stroke="[^"]*"/stroke="currentColor"/g' _includes/diagrams/${base}.svg
-
-            # fill e stroke in style inline (gestisce sia ; che fine stringa)
-            sed -i -E 's/fill:[^;"]*/fill:currentColor/g' _includes/diagrams/${base}.svg
-            sed -i -E 's/stroke:[^;"]*/stroke:currentColor/g' _includes/diagrams/${base}.svg
-
-            # style globali multipli: aggiusta anche stroke e fill se ci sono più proprietà
+            # Fill e stroke in style inline
+            sed -i 's/fill:[^;"]*/fill:currentColor/g' _includes/diagrams/${base}.svg
+            sed -i 's/stroke:[^;"]*/stroke:currentColor/g' _includes/diagrams/${base}.svg
+            # Style globali: style="..." con fill o stroke multipli
             sed -i -E 's/(style="[^"]*fill:[^;"]*;?)/\1 fill:currentColor;/g' _includes/diagrams/${base}.svg
             sed -i -E 's/(style="[^"]*stroke:[^;"]*;?)/\1 stroke:currentColor;/g' _includes/diagrams/${base}.svg
-
           done
 
       # ----------------------------
