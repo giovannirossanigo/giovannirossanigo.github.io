@@ -206,9 +206,17 @@ body.color-mode-dark .corollary a {
     font-size: 1rem; /* o quello del sito */
 }
 .diagram-container {
-  color: inherit; /* eredita colore dal tema */
+    color: inherit; /* eredita colore dal tema */
+    text-align: center; /* centra l'immagine orizzontalmente */
+    margin: 1em 0;      /* opzionale: spazio sopra e sotto */
 }
 
 body.dark-mode .diagram-container {
   color: white; /* modalità scura */
+}
+
+.diagram-container img {
+  display: inline-block; /* assicura che il text-align funzioni correttamente */
+  max-width: 100%;       /* evita che l'immagine esca dal container */
+  height: auto;
 }
