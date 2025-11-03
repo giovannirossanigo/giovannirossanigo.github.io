@@ -59,19 +59,8 @@ jobs:
             echo "Compiling $f with XeLaTeX..."
             latexmk -xelatex -interaction=nonstopmode -halt-on-error -output-directory=diagrams "$f" || cat diagrams/${base}.log
 
-            echo "Converting $base.pdf to SVG with dvisvgm..."
-            dvisvgm --pdf diagrams/${base}.pdf -n -o _includes/diagrams/${base}.svg
-
-            echo "Replacing all fixed colors with currentColor..."
-            # Fill e stroke diretti
-            sed -i 's/fill="[^"]*"/fill="currentColor"/g' _includes/diagrams/${base}.svg
-            sed -i 's/stroke="[^"]*"/stroke="currentColor"/g' _includes/diagrams/${base}.svg
-            # Fill e stroke in style inline
-            sed -i 's/fill:[^;"]*/fill:currentColor/g' _includes/diagrams/${base}.svg
-            sed -i 's/stroke:[^;"]*/stroke:currentColor/g' _includes/diagrams/${base}.svg
-            # Style globali: style="..." con fill o stroke multipli
-            sed -i -E 's/(style="[^"]*fill:[^;"]*;?)/\1 fill:currentColor;/g' _includes/diagrams/${base}.svg
-            sed -i -E 's/(style="[^"]*stroke:[^;"]*;?)/\1 stroke:currentColor;/g' _includes/diagrams/${base}.svg
+            echo "Converting $base.pdf to SVG with dvisvgm using currentColor..."
+            dvisvgm --pdf diagrams/${base}.pdf -n --stroke=currentColor --fill=currentColor -o _includes/diagrams/${base}.svg
           done
 
       # ----------------------------
