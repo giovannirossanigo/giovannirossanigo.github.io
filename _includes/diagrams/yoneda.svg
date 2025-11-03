@@ -41,14 +41,15 @@
                         <g
                            id="g30"
                            transform="translate(-6.282,-5.639)">
-                          <text
-                             xml:space="preserve"
+                          <g
+                             aria-label="A"
                              transform="matrix(1,0,0,-1,6.282,5.639)"
-                             style="font-variant:normal;font-weight:normal;font-size:9.9626px;font-family:CMMI10;-inkscape-font-specification:CMMI10;writing-mode:lr-tb;fill:currentColor;fill-opacity:1;fill-rule:nonzero;stroke:currentColor"
-                             id="text34"><tspan
-                               x="0"
-                               y="0"
-                               id="tspan32">A</tspan></text>
+                             id="text34"
+                             style="font-size:9.9626px;font-family:CMMI10;-inkscape-font-specification:CMMI10">
+                            <path
+                               d="M 5.4296169,0 4.5728333,-2.2017345 H 1.7534176 L 0.90659658,0 H 0 L 2.7795653,-7.143184 H 3.5865359 L 6.3561386,0 Z M 3.5068351,-5.1506641 q -0.029888,-0.079701 -0.099626,-0.2889154 -0.069738,-0.2092146 -0.1394764,-0.4283918 -0.059776,-0.2291397 -0.099626,-0.3486909 -0.069738,0.3088405 -0.1594016,0.6077185 -0.089663,0.2889154 -0.149439,0.4582796 l -0.8069706,2.1519216 h 2.2515476 z"
+                               id="path90" />
+                          </g>
                           <g
                              id="g36"
                              transform="translate(6.282,5.639)" />
@@ -75,14 +76,15 @@
                           <g
                              id="g50"
                              transform="translate(-46.243,-5.639)">
-                            <text
-                               xml:space="preserve"
+                            <g
+                               aria-label="B"
                                transform="matrix(1,0,0,-1,46.243,5.639)"
-                               style="font-variant:normal;font-weight:normal;font-size:9.9626px;font-family:CMMI10;-inkscape-font-specification:CMMI10;writing-mode:lr-tb;fill:currentColor;fill-opacity:1;fill-rule:nonzero;stroke:currentColor"
-                               id="text54"><tspan
-                                 x="0"
-                                 y="0"
-                                 id="tspan52">B</tspan></text>
+                               id="text54"
+                               style="font-size:9.9626px;font-family:CMMI10;-inkscape-font-specification:CMMI10">
+                              <path
+                                 d="m 2.9987425,-7.1132962 q 1.3349884,0 2.0124452,0.398504 0.6874194,0.3885414 0.6874194,1.3648761 0,0.6276438 -0.348691,1.046073 -0.348691,0.4084666 -1.0062226,0.5280178 v 0.049813 q 0.448317,0.069738 0.8069706,0.2590276 0.3686162,0.1892894 0.5778308,0.5379804 0.2092146,0.348691 0.2092146,0.9065965 0,0.9663722 -0.6674942,1.49439001 Q 4.6126837,0 3.4669847,0 H 0.96637218 v -7.1132962 z m 0.1793268,3.0286303 q 0.9165592,0 1.2552876,-0.2889154 0.3387284,-0.298878 0.3387284,-0.8767088 0,-0.5877934 -0.4184292,-0.8368583 Q 3.9451895,-6.346176 3.0385929,-6.346176 H 1.8630062 v 2.2615101 z m -1.3150631,0.747195 v 2.58031332 h 1.4346143 q 0.946447,0 1.3150632,-0.36861622 0.3686162,-0.3686162 0.3686162,-0.9663721 0,-0.5579056 -0.3885414,-0.896634 -0.3785788,-0.348691 -1.3648762,-0.348691 z"
+                                 id="path93" />
+                            </g>
                             <g
                                id="g56"
                                transform="translate(46.243,5.639)" />
@@ -131,14 +133,15 @@
                   <g
                      id="g80"
                      transform="translate(-27.665,-11.829)">
-                    <text
-                       xml:space="preserve"
+                    <g
+                       aria-label="f"
                        transform="matrix(1,0,0,-1,27.665,11.829)"
-                       style="font-variant:normal;font-weight:normal;font-size:6.9738px;font-family:CMMI7;-inkscape-font-specification:CMMI7;writing-mode:lr-tb;fill:currentColor;fill-opacity:1;fill-rule:nonzero;stroke:currentColor"
-                       id="text84"><tspan
-                         x="0"
-                         y="0"
-                         id="tspan82">f</tspan></text>
+                       id="text84"
+                       style="font-size:6.9738px;font-family:CMMI7;-inkscape-font-specification:CMMI7">
+                      <path
+                         d="M 2.3153017,-3.2637385 H 1.3738386 V 0 H 0.76014422 V -3.2637385 H 0.104607 v -0.2859258 l 0.65553722,-0.209214 v -0.2161878 q 0,-0.7252752 0.32079478,-1.0390962 0.3207948,-0.3207948 0.8926465,-0.3207948 0.2231616,0 0.4044804,0.041843 0.1882926,0.034869 0.3207948,0.083686 l -0.1603974,0.4811922 q -0.1115808,-0.034869 -0.2580306,-0.069738 -0.1464498,-0.034869 -0.2998734,-0.034869 -0.3068473,0 -0.4602709,0.209214 -0.1464498,0.2022402 -0.1464498,0.6415896 v 0.244083 h 0.9414631 z"
+                         id="path96" />
+                    </g>
                     <g
                        id="g86"
                        transform="translate(27.665,11.829)" />
