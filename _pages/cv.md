@@ -19,7 +19,7 @@ Education
 Work experience
 ======
 * Spring 2025: Research Assistant
-  * Universität Regensbyrg
+  * Universität Regensburg
   * Supervisor: Prof. Denis-Charles Cisinski 
 
 
