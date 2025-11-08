@@ -17,7 +17,7 @@ url                      : https://giovannirossanigo.github.io # The base hostna
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "giovannirossanigo/giovannirossanigo.github.io"
-google_site_verification : "3HjJabG0h8ikz6kuYb8LkhEAkHAv5N0KFTuXPIQPDK8" 
+ 
 
 test_variable: "HELLO_WORLD"
 
@@ -116,7 +116,7 @@ atom_feed:
 
 
 # SEO Related
-google_site_verification :
+google_site_verification : "3HjJabG0h8ikz6kuYb8LkhEAkHAv5N0KFTuXPIQPDK8"
 bing_site_verification   :
 alexa_site_verification  :
 yandex_site_verification :
