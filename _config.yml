@@ -347,4 +347,4 @@ scholar:
   style: "chicago-author-date"   # oppure "apa", a tua scelta
   default_cite_style: "author"    # genera citazioni inline autore-anno
 
-
+# force rebuild 2025-11-08
