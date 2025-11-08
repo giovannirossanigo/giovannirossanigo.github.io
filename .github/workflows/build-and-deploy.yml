@@ -18,6 +18,11 @@ jobs:
           gem install bundler
           bundle config path vendor/bundle
           bundle install
+      - run: |
+          rm -rf _site
+          gem install bundler
+          bundle config path vendor/bundle
+          bundle install
       - run: bundle exec jekyll build -d _site
       - uses: actions/upload-pages-artifact@v3
         with:
