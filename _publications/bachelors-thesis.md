@@ -23,4 +23,4 @@ The study of cloaking, that is the ability of hiding obejcts from electromagneti
   </li>
 </ol>
 
-The project aimed to extend some results on transformation optics and CALR, namely [this one](https://arxiv.org/1306.4647) and [this one](https://arxiv.org/abs/1210.4823), which provide theoretical results on cloaking and explicit estimates in circular geometry systems. More precisely, the goal was both to provide a theoretical introduction to cloaking and to present explicit results in elliptical geometry, where methods for representing solutions are still available.
+The project aimed to extend some results on transformation optics and CALR, namely [this one](https://arxiv.org/abs/1306.4647) and [this one](https://arxiv.org/abs/1210.4823), which provide theoretical results on cloaking and explicit estimates in circular geometry systems. More precisely, the goal was both to provide a theoretical introduction to cloaking and to present explicit results in elliptical geometry, where methods for representing solutions are still available.
