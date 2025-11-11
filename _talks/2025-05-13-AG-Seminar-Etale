@@ -1,0 +1,15 @@
+---
+title: "Étale cohomology of curves"
+collection: talks
+type: "Talk"
+permalink: /talks/AG-Seminar-Etale-Cohomology
+venue: "Universität Regensburg, Department of Mathematics"
+date: 2025-05-13
+location: "Regensburg, DE"
+share: false
+paperurl: 'http://giovannirossanigo.github.io/files/Cohomology_of_Curves.pdf'
+---
+In the summer semester 2025, Moritz Kerz group organized a seminar on étale cohomology, with the goal of proving Weil conjectures. 
+
+The topic of my seminar was to compute the cohomology of curves over a separably closed field. 
+You can find my notes [here](http://giovannirossanigo.github.io/files/Cohomology_of_Curves.pdf).
