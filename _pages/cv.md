@@ -18,10 +18,12 @@ Education
 
 Work experience
 ======
-* Spring 2025: Research Assistant
+* December 2025 - Ongoing: PhD Student
   * Universität Regensburg
   * Supervisor: Prof. Denis-Charles Cisinski 
-
+* April 2025 - October 2025: Research Assistant
+  * Universität Regensburg
+  * Supervisor: Prof. Denis-Charles Cisinski 
 
 
 Notes and publications  
