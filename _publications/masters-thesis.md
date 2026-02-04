@@ -1,7 +1,7 @@
 ---
 title: "Master's thesis: Abstract Neeman Dualities"
 collection: publications
-category: manuscripts
+category: theses
 permalink: /publications/masters-thesis
 excerpt: 'Here you can find my master thesis.'
 date: 2025-04-09
