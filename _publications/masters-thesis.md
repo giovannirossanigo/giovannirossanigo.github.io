@@ -3,10 +3,10 @@ title: "Master's thesis: Abstract Neeman Dualities"
 collection: publications
 category: theses
 permalink: /publications/masters-thesis
-excerpt: 'Here you can find my master thesis.'
+hide_excerpt: true
+hide_year: true
 date: 2025-04-09
 venue:
-layout: publication
 share: false
 comments: false
 slidesurl: 'http://giovannirossanigo.github.io/files/Abstract_Neeman_Dualities___Beamer.pdf'
