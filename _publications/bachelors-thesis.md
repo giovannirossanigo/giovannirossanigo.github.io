@@ -4,6 +4,7 @@ collection: publications
 category: theses
 permalink: /publication/bachelors_thesis
 hide_excerpt: true
+hide_year: true
 date: 2021-10-07
 slidesurl: 'http://giovannirossanigo.github.io/files/bachelors_thesis_beamer.pdf'
 paperurl: 'http://giovannirossanigo.github.io/files/bachelors_thesis.pdf'
