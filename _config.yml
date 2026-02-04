@@ -67,14 +67,15 @@ author:
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
-  books:
-    title: 'Lecture notes'
-  articles:
-    title: 'Journal Articles'
-  manuscripts:
-    title: 'Theses'  
+  papers:
+    title: "Papers"
   preprints:
     title: 'Preprints'
+  notes:
+    title: "Lecture notes"
+  theses:
+    title: "Theses"
+
   
 
 # Site Settings
