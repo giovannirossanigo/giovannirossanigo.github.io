@@ -4,13 +4,11 @@ collection: publications
 date: 2026-01-01
 category: notes
 permalink: /publications/Goodwillie-calculus 
-excerpt: 'Here you can find my .'
-date: 2026-01-01
+excerpt: 
 venue:
 layout: 
 share: false
 comments: false
-slidesurl: 'http://giovannirossanigo.github.io/files/Abstract_Neeman_Dualities___Beamer.pdf'
-paperurl: 'http://giovannirossanigo.github.io/files/Abstract_Neeman_Dualities.pdf'
+paperurl: 
 ---
 Marc Hoyois held a seminar on Goodwillie calculus in the winter semester 2025/2026. I decided to type some notes
