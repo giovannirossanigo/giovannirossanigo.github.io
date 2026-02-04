@@ -2,11 +2,11 @@
 title: "Goodwillie calculus"
 collection: publications
 category: manuscripts
-permalink: /publications/masters-thesis
+permalink: /publications/Goodwillie-calculus 
 excerpt: 'Here you can find my .'
-date: 2025-04-09
+date: 2026-01-01
 venue:
-layout: publication
+layout: Lecture notes
 share: false
 comments: false
 slidesurl: 'http://giovannirossanigo.github.io/files/Abstract_Neeman_Dualities___Beamer.pdf'
