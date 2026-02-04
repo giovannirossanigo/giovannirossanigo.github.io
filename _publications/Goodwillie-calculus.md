@@ -1,7 +1,8 @@
 ---
 title: "Goodwillie calculus"
-collection: Lecture notes
-category: manuscripts
+collection: publications
+date: 2026-01-01
+category: notes
 permalink: /publications/Goodwillie-calculus 
 excerpt: 'Here you can find my .'
 date: 2026-01-01
