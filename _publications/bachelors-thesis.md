@@ -1,7 +1,7 @@
 ---
 title: "Bachelor's thesis: Results on cloaking by transformation optics and anomalous localized resonance in elliptic geometry"
 collection: publications
-category: manuscripts
+category: theses
 permalink: /publication/bachelors_thesis
 excerpt: 'Here you can find my bachelor thesis.'
 date: 2021-10-07
