@@ -3,7 +3,7 @@ title: "Bachelor's thesis: Results on cloaking by transformation optics and anom
 collection: publications
 category: theses
 permalink: /publication/bachelors_thesis
-excerpt: 'Here you can find my bachelor thesis.'
+hide_excerpt: true
 date: 2021-10-07
 slidesurl: 'http://giovannirossanigo.github.io/files/bachelors_thesis_beamer.pdf'
 paperurl: 'http://giovannirossanigo.github.io/files/bachelors_thesis.pdf'
