@@ -10,5 +10,7 @@ layout:
 share: false
 comments: false
 paperurl: 
+hide_excerpt: true
 ---
+
 Marc Hoyois held a seminar on Goodwillie calculus in the winter semester 2025/2026. I decided to type some notes
