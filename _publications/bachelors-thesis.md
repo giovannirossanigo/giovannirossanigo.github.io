@@ -6,11 +6,9 @@ permalink: /publication/bachelors_thesis
 hide_excerpt: true
 hide_year: true
 date: 2021-10-07
-slidesurl: 'http://giovannirossanigo.github.io/files/bachelors_thesis_beamer.pdf'
-paperurl: 'http://giovannirossanigo.github.io/files/bachelors_thesis.pdf'
 ---
 
-In October 2021, I graduated in Physics from the Università degli Studi di Milano. My thesis was conducted under the supervision of Professor Giulio Ciraolo, a member of the math department. 
+In October 2021, I graduated in Physics from the Università degli Studi di Milano. My [thesis](http://giovannirossanigo.github.io/files/bachelors_thesis.pdf) was conducted under the supervision of Professor Giulio Ciraolo, a member of the math department. 
 
 The study of cloaking, that is the ability of hiding obejcts from electromagnetic waves, is an interesting and overgrowning field of physics, engineering and mathematics. Two options are available.
 <ol>
