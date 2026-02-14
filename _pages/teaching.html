@@ -5,10 +5,14 @@ permalink: /teaching/
 author_profile: true
 ---
 
-I list here courses, seminars, and teaching activities. Materials (notes, problem sets) are linked when available.
+I list here courses, seminars, and teaching activities. Materials are linked on the course pages when available.
+
 {% include base_path %}
 
-{% for post in site.teaching reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+{%- assign teaching_sorted = site.teaching | sort: "date" | reverse -%}
 
+<ul class="publist teachinglist">
+  {% for post in teaching_sorted %}
+    {% include teaching-hoyois.html %}
+  {% endfor %}
+</ul>
