@@ -1,17 +1,13 @@
 ---
 title: "Goodwillie calculus"
 collection: publications
-date: 2026-01-01
 category: notes
-permalink: /publications/Goodwillie-calculus 
-excerpt: 
-venue:
-layout: 
+date: 2026-01-01
+term: "WS 2025/2026"
+paperurl: /files/goodwillie-calculus.pdf
+permalink: /publications/Goodwillie-calculus
 share: false
 comments: false
-paperurl: 
 hide_excerpt: true
 hide_year: true
 ---
-
-Marc Hoyois held a seminar on Goodwillie calculus in the winter semester 2025/2026. I'm in the process of writing the notes.
