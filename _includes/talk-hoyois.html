@@ -1,0 +1,53 @@
+{%- comment -%}
+Formato desiderato:
+Title (bold), "Event name" (cliccabile), Month YYYY, City, Country – Contributed talk. [notes].
+
+Campi consigliati nel front matter:
+event: "Nome evento/workshop"
+event_url: "https://..."
+talk_type: "Contributed talk"   (opzionale)
+notesurl: "/files/....pdf"      (opzionale)
+location: "City, Country"
+date: YYYY-MM-DD
+{%- endcomment -%}
+
+{%- assign event_name = post.event | default: post.venue -%}
+{%- assign event_url  = post.event_url | default: post.talk_url | default: post.link -%}
+
+{%- assign notes_url = post.notesurl | default: post.notes_url | default: post.noteurl -%}
+{%- if notes_url and notes_url != "" and notes_url contains "://" -%}
+  {%- assign notes_href = notes_url -%}
+{%- elsif notes_url and notes_url != "" -%}
+  {%- assign notes_href = notes_url | relative_url -%}
+{%- endif -%}
+
+<li class="pubitem talkitem">
+  <span class="pubtitle talktitle">{{ post.title }}</span>
+
+  {%- if event_name and event_name != "" -%}
+    , <span class="talkevent">
+      &ldquo;
+      {%- if event_url and event_url != "" -%}
+        <a href="{{ event_url }}">{{ event_name }}</a>
+      {%- else -%}
+        {{ event_name }}
+      {%- endif -%}
+      &rdquo;
+    </span>
+  {%- endif -%}
+
+  {%- if post.date -%}
+    , <span class="talkdate">{{ post.date | date: "%B %Y" }}</span>
+  {%- endif -%}
+
+  {%- if post.location and post.location != "" -%}
+    , <span class="talkloc">{{ post.location }}</span>
+  {%- endif -%}
+
+  {%- if post.talk_type and post.talk_type != "" -%}
+    &nbsp;&ndash; <span class="talktype">{{ post.talk_type }}</span>
+  {%- endif -%}.
+  {%- if notes_href and notes_href != "" -%}
+    <span class="publinks">[<a href="{{ notes_href }}">notes</a>]</span>.
+  {%- endif -%}
+</li>
