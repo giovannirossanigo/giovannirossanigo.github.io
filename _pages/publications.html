@@ -12,44 +12,33 @@ You can also find my articles on [my Google Scholar profile]({{ site.author.goog
 
 {% include base_path %}
 
-{%- assign notes = site.publications
-  | where: "category", "notes"
-  | sort: "date"
-  | reverse -%}
-
 {%- assign articles = site.publications
   | where_exp: "p", "p.category == 'papers' or p.category == 'preprints'"
   | sort: "date"
   | reverse -%}
 
-<h2 class="archive__subtitle pubsection">Publications and preprints</h2>
+{%- assign notes = site.publications
+  | where: "category", "notes"
+  | sort: "date"
+  | reverse -%}
 
-<ul class="publist publist-articles">
-  {% for post in articles %}
-    {% include pub-hoyois.html %}
-  {% endfor %}
-</ul>
+{%- if articles.size > 0 -%}
+  <h2 class="archive__subtitle pubsection">Articles</h2>
+  <ul class="publist publist-articles">
+    {% for post in articles %}
+      {% include pub-hoyois.html %}
+    {% endfor %}
+  </ul>
+{%- endif -%}
 
-<h2 class="archive__subtitle pubsection">Lecture notes</h2>
-
-<ul class="publist publist-notes">
-  {% for post in notes %}
-    <li class="pubitem">
-      <span class="pubtitle">
-        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-      </span>
-      {%- if post.paperurl and post.paperurl != "" -%}
-        {%- assign note_pdf = post.paperurl -%}
-        {%- if note_pdf contains "://" -%}
-          {%- assign note_pdf_href = note_pdf -%}
-        {%- else -%}
-          {%- assign note_pdf_href = note_pdf | relative_url -%}
-        {%- endif -%}
-        <span class="publinks">[<a href="{{ note_pdf_href }}">pdf</a>]</span>
-      {%- endif -%}
-    </li>
-  {% endfor %}
-</ul>
+{%- if notes.size > 0 -%}
+  <h2 class="archive__subtitle pubsection">Lecture notes</h2>
+  <ul class="publist publist-notes">
+    {% for post in notes %}
+      {% include note-hoyois.html %}
+    {% endfor %}
+  </ul>
+{%- endif -%}
 
 
 
