@@ -311,3 +311,13 @@ h2.archive__subtitle.pubsection{
 .talktitle { font-weight: 700; }
 .talkevent a { text-decoration: none; }
 .talkevent a:hover { text-decoration: underline; }
+
+/* CV: section headings smaller */
+.page__content .cvsection {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-top: 1.2em;
+  margin-bottom: 0.4em;
+  font-size: 1.1em; /* abbassa ancora se vuoi (es. 1.0em) */
+}
+
