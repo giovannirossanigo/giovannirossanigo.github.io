@@ -1,8 +1,8 @@
 {%- comment -%}
-Render "Hoyois-style" per un articolo:
-Title, with ..., (August 2025) [pdf, arXiv].
-Titolo NON linkato. Link solo in [pdf, arXiv].
-Front matter consigliato: with, date, paperurl, arxivurl.
+Hoyois-ish (custom) per articoli:
+- senza coautore: Title (Month YYYY) [pdf, arXiv].
+- con coautore:  Title, with X (Month YYYY) [pdf, arXiv].
+NOTA: niente virgola prima della data.
 {%- endcomment -%}
 
 {%- assign pdf_url = post.paperurl -%}
@@ -12,18 +12,26 @@ Front matter consigliato: with, date, paperurl, arxivurl.
   {%- assign pdf_href = pdf_url | relative_url -%}
 {%- endif -%}
 
+{%- assign has_with = false -%}
+{%- if post.with and post.with != "" -%}{%- assign has_with = true -%}{%- endif -%}
+
+{%- assign has_date = false -%}
+{%- if post.date -%}{%- assign has_date = true -%}{%- endif -%}
+
+{%- assign has_links = false -%}
+{%- if pdf_href and pdf_href != "" -%}{%- assign has_links = true -%}{%- endif -%}
+{%- if post.arxivurl and post.arxivurl != "" -%}{%- assign has_links = true -%}{%- endif -%}
+
 <li class="pubitem">
   <span class="pubtitle">{{ post.title }}</span>
-  {%- if post.with and post.with != "" -%}
+
+  {%- if has_with -%}
     , <span class="pubwith">with {{ post.with }}</span>
   {%- endif -%}
-  {%- if post.date -%}
-    , <span class="pubdate">({{ post.date | date: "%B %Y" }})</span>
-  {%- endif -%}
 
-  {%- assign has_links = false -%}
-  {%- if pdf_href and pdf_href != "" -%}{%- assign has_links = true -%}{%- endif -%}
-  {%- if post.arxivurl and post.arxivurl != "" -%}{%- assign has_links = true -%}{%- endif -%}
+  {%- if has_date -%}
+    <span class="pubdate"> ({{ post.date | date: "%B %Y" }})</span>
+  {%- endif -%}
 
   {%- if has_links -%}
     <span class="publinks">
