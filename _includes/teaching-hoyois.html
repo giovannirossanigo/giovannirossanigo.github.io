@@ -1,0 +1,23 @@
+{%- comment -%}
+Formato:
+Title (bold, clickable), Type, Institution, Term
+Campi attesi:
+- course_type: Oberseminar | Seminar | Vorlesung (opzionale)
+- institution: "Universität Regensburg" (opzionale)
+- term: "WS26" (opzionale)
+{%- endcomment -%}
+
+<li class="pubitem teachingitem">
+  <span class="pubtitle teachingtitle">
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+  </span>
+  {%- if post.course_type and post.course_type != "" -%}
+    , <span class="teachingtype">{{ post.course_type }}</span>
+  {%- endif -%}
+  {%- if post.institution and post.institution != "" -%}
+    , <span class="teachinginst">{{ post.institution }}</span>
+  {%- endif -%}
+  {%- if post.term and post.term != "" -%}
+    , <span class="teachingterm">{{ post.term }}</span>
+  {%- endif -%}
+</li>
