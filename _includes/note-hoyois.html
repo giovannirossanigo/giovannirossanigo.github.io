@@ -1,9 +1,8 @@
 {%- comment -%}
-Render per lecture notes:
-Goodwillie calculus (WS 2025/2026) [pdf].
-Titolo NON linkato.
-Usa "term" (o "semester") per WS/SS ecc.
-Usa "paperurl" per il PDF.
+Lecture notes style:
+Title (WS 2025/2026) [pdf].
+Se presente "with": Title, with X (WS 2025/2026) [pdf].
+NOTA: niente virgola prima del termine/data.
 {%- endcomment -%}
 
 {%- assign term = post.term | default: post.semester -%}
@@ -15,11 +14,23 @@ Usa "paperurl" per il PDF.
   {%- assign pdf_href = pdf_url | relative_url -%}
 {%- endif -%}
 
+{%- assign has_with = false -%}
+{%- if post.with and post.with != "" -%}{%- assign has_with = true -%}{%- endif -%}
+
+{%- assign has_term = false -%}
+{%- if term and term != "" -%}{%- assign has_term = true -%}{%- endif -%}
+
 <li class="pubitem">
   <span class="pubtitle pubtitle--note">{{ post.title }}</span>
-  {%- if term and term != "" -%}
-    , <span class="pubdate">({{ term }})</span>
+
+  {%- if has_with -%}
+    , <span class="pubwith">with {{ post.with }}</span>
   {%- endif -%}
+
+  {%- if has_term -%}
+    <span class="pubdate"> ({{ term }})</span>
+  {%- endif -%}
+
   {%- if pdf_href and pdf_href != "" -%}
     <span class="publinks">[<a href="{{ pdf_href }}">pdf</a>]</span>
   {%- endif -%}.
