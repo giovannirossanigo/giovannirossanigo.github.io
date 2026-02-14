@@ -26,13 +26,11 @@ date: YYYY-MM-DD
 
   {%- if event_name and event_name != "" -%}
     , <span class="talkevent">
-      &ldquo;
       {%- if event_url and event_url != "" -%}
         <a href="{{ event_url }}">{{ event_name }}</a>
       {%- else -%}
         {{ event_name }}
       {%- endif -%}
-      &rdquo;
     </span>
   {%- endif -%}
 
