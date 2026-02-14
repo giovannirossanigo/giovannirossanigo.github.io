@@ -5,14 +5,29 @@ permalink: /teaching/
 author_profile: true
 ---
 
-I list here courses, seminars, and teaching activities. Materials are linked on the course pages when available.
-
 {% include base_path %}
 
 {%- assign teaching_sorted = site.teaching | sort: "date" | reverse -%}
+{%- assign current_term = "" -%}
 
-<ul class="publist teachinglist">
-  {% for post in teaching_sorted %}
-    {% include teaching-hoyois.html %}
-  {% endfor %}
-</ul>
+{% for post in teaching_sorted %}
+  {%- assign term = post.term | default: post.semester | default: "" -%}
+  {%- if term == "" -%}{%- assign term = post.date | date: "%Y" -%}{%- endif -%}
+
+  {%- if term != current_term -%}
+    {%- if current_term != "" -%}
+      </ul>
+    {%- endif -%}
+
+    <h2 class="archive__subtitle pubsection">{{ term }}</h2>
+    <ul class="publist teachinglist">
+
+    {%- assign current_term = term -%}
+  {%- endif -%}
+
+  {% include teaching-hoyois.html %}
+
+  {%- if forloop.last -%}
+    </ul>
+  {%- endif -%}
+{% endfor %}
