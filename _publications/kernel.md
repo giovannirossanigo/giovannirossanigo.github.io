@@ -1,13 +1,10 @@
 ---
 title: "Kernel theorems for rigidly-compaclty generated infinity-categories"
 collection: publications
-category: paper
-permalink: /publications/kernel-theorems
-hide_excerpt: true
-hide_year: true
-date: 2026-02-12
-venue:
-share: false
-comments: false
+category: papers        # oppure preprints
+date: 2026-01-01        # per mostrare (August 2025)
+with: ""
+paperurl: /files/Kernel.pdf
+arxivurl: https://arxiv.org/abs/xxxx.yyyyy
 ---
-(http://giovannirossanigo.github.io/files/Kernel.pdf)
+
