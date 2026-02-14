@@ -1,0 +1,41 @@
+{%- comment -%}
+Render "Hoyois-style" per un articolo:
+Title, with ..., (August 2025) [pdf, arXiv].
+Titolo NON linkato. Link solo in [pdf, arXiv].
+Front matter consigliato: with, date, paperurl, arxivurl.
+{%- endcomment -%}
+
+{%- assign pdf_url = post.paperurl -%}
+{%- if pdf_url and pdf_url != "" and pdf_url contains "://" -%}
+  {%- assign pdf_href = pdf_url -%}
+{%- elsif pdf_url and pdf_url != "" -%}
+  {%- assign pdf_href = pdf_url | relative_url -%}
+{%- endif -%}
+
+<li class="pubitem">
+  <span class="pubtitle">{{ post.title }}</span>
+  {%- if post.with and post.with != "" -%}
+    , <span class="pubwith">with {{ post.with }}</span>
+  {%- endif -%}
+  {%- if post.date -%}
+    , <span class="pubdate">({{ post.date | date: "%B %Y" }})</span>
+  {%- endif -%}
+
+  {%- assign has_links = false -%}
+  {%- if pdf_href and pdf_href != "" -%}{%- assign has_links = true -%}{%- endif -%}
+  {%- if post.arxivurl and post.arxivurl != "" -%}{%- assign has_links = true -%}{%- endif -%}
+
+  {%- if has_links -%}
+    <span class="publinks">
+      [
+      {%- if pdf_href and pdf_href != "" -%}
+        <a href="{{ pdf_href }}">pdf</a>
+      {%- endif -%}
+      {%- if post.arxivurl and post.arxivurl != "" -%}
+        {%- if pdf_href and pdf_href != "" -%}, {%- endif -%}
+        <a href="{{ post.arxivurl }}">arXiv</a>
+      {%- endif -%}
+      ]
+    </span>
+  {%- endif -%}.
+</li>
