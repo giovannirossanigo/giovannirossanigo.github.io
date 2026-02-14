@@ -237,4 +237,39 @@ body.dark-mode .diagram-container {
     height: auto;
 }
 
+/* === Publications (Hoyois-style) === */
+.publist {
+  list-style: none;
+  padding-left: 0;
+  margin: 0.6em 0 1.6em;
+}
+
+.pubitem {
+  margin: 0.35em 0;
+  line-height: 1.45;
+}
+
+.pubtitle {
+  font-weight: 600; /* leggero grassetto */
+}
+
+.pubwith,
+.pubdate {
+  opacity: 0.80; /* funziona bene anche in dark mode */
+}
+
+.publinks {
+  margin-left: 0.25em;
+  font-size: 0.95em;
+  white-space: nowrap;
+}
+
+.publinks a {
+  text-decoration: none;
+}
+
+.publinks a:hover {
+  text-decoration: underline;
+}
+
 
