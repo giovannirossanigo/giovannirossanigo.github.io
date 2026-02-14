@@ -272,4 +272,38 @@ body.dark-mode .diagram-container {
   text-decoration: underline;
 }
 
+/* Sezioni Publications: più sobrie */
+h2.archive__subtitle.pubsection{
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0.4em;
+  margin-top: 1.6em;
+}
+
+/* Liste pubblicazioni */
+.publist {
+  list-style: none;
+  padding-left: 0;
+  margin: 0.6em 0 1.6em;
+}
+
+.pubitem {
+  margin: 0.35em 0;
+  line-height: 1.45;
+}
+
+.pubtitle { font-weight: 600; }
+.pubtitle--note { font-weight: 700; }  /* “in grassetto” */
+
+.pubwith,
+.pubdate { opacity: 0.80; }
+
+.publinks {
+  margin-left: 0.25em;
+  font-size: 0.95em;
+  white-space: nowrap;
+}
+
+.publinks a { text-decoration: none; }
+.publinks a:hover { text-decoration: underline; }
 
