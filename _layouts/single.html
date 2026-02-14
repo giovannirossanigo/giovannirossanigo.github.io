@@ -35,8 +35,23 @@ layout: default
         {% endif %}
         
         {% if page.collection == 'teaching' %}
-          <p> {{ page.type }}, <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
-        {% elsif page.venue and page.date %}
+
+{%- assign t_type = page.course_type | default: page.type -%}
+{%- assign t_venue = page.institution | default: page.venue -%}
+{%- assign t_term = page.term -%}
+
+<p class="page__meta">
+  {%- if t_type and t_type != "" -%}{{ t_type }}{%- endif -%}
+  {%- if t_venue and t_venue != "" -%}{% if t_type and t_type != "" %}, {% endif %}{{ t_venue }}{%- endif -%}
+  {%- if t_term and t_term != "" -%}
+    {% if (t_type and t_type != "") or (t_venue and t_venue != "") %}, {% endif %}{{ t_term }}
+  {%- elsif page.date -%}
+    {% if (t_type and t_type != "") or (t_venue and t_venue != "") %}, {% endif %}{{ page.date | date: "%Y" }}
+  {%- endif -%}
+</p>
+
+{% elsif page.venue and page.date %}
+
           <p>Published in <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif page.date %}
           <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
