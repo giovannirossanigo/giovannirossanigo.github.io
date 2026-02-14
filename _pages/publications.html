@@ -22,6 +22,14 @@ You can also find my articles on [my Google Scholar profile]({{ site.author.goog
   | sort: "date"
   | reverse -%}
 
+<h2 class="archive__subtitle pubsection">Publications and preprints</h2>
+
+<ul class="publist publist-articles">
+  {% for post in articles %}
+    {% include pub-hoyois.html %}
+  {% endfor %}
+</ul>
+
 <h2 class="archive__subtitle pubsection">Lecture notes</h2>
 
 <ul class="publist publist-notes">
@@ -43,12 +51,6 @@ You can also find my articles on [my Google Scholar profile]({{ site.author.goog
   {% endfor %}
 </ul>
 
-<h2 class="archive__subtitle pubsection">Articles</h2>
 
-<ul class="publist publist-articles">
-  {% for post in articles %}
-    {% include pub-hoyois.html %}
-  {% endfor %}
-</ul>
 
 
