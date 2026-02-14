@@ -1,0 +1,26 @@
+{%- comment -%}
+Render per lecture notes:
+Goodwillie calculus (WS 2025/2026) [pdf].
+Titolo NON linkato.
+Usa "term" (o "semester") per WS/SS ecc.
+Usa "paperurl" per il PDF.
+{%- endcomment -%}
+
+{%- assign term = post.term | default: post.semester -%}
+
+{%- assign pdf_url = post.paperurl -%}
+{%- if pdf_url and pdf_url != "" and pdf_url contains "://" -%}
+  {%- assign pdf_href = pdf_url -%}
+{%- elsif pdf_url and pdf_url != "" -%}
+  {%- assign pdf_href = pdf_url | relative_url -%}
+{%- endif -%}
+
+<li class="pubitem">
+  <span class="pubtitle pubtitle--note">{{ post.title }}</span>
+  {%- if term and term != "" -%}
+    , <span class="pubdate">({{ term }})</span>
+  {%- endif -%}
+  {%- if pdf_href and pdf_href != "" -%}
+    <span class="publinks">[<a href="{{ pdf_href }}">pdf</a>]</span>
+  {%- endif -%}.
+</li>
