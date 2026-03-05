@@ -7,6 +7,6 @@ course_type: "Oberseminar"
 institution: "Universität Regensburg"
 permalink: /teaching/higher-zariski-geometry/
 ---
-Time and place: Tuesday 12.15-13.45 in SFB seminar room.
+Time and place: Tuesday 12.15-13.45 in M101.
 
 Here you can find the [program](/files/Higher_Zariski_Geometry_Seminar.pdf). Please contact me if you're interested in giving a talk. 
