@@ -1,13 +1,9 @@
 ---
 title: "Enrichments in finite filtered spectra"
-collection: publications
-category: notes
-date: 2026-03-26
-term: "WS 2025/2026"
+collection: preprints
+category: papers        # oppure preprints
+date: 2026-01-01        # per mostrare (August 2025)
 paperurl: /files/finite_filtrations.pdf
+arxivurl:
 permalink: /publications/filtrations
-share: false
-comments: false
-hide_excerpt: true
-hide_year: true
 ---
