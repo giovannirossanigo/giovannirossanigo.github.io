@@ -31,6 +31,7 @@ rows:
 
   - date: "19.05.2026"
     speaker: "Bastiaan Cnossen"
+    speaker_link: "https://sites.google.com/view/bastiaan-cnossen/home"
     topic: "Lurie’s geometries and G-structured ∞-topoi I"
     link: ""
 
@@ -51,6 +52,7 @@ rows:
 
   - date: "16.06.2026"
     speaker: "Marco Volpe"
+    speaker_link: "https://sites.google.com/view/marco-volpe/home?authuser=0"
     topic: "Comparison with classical geometries"
     link: ""
 
