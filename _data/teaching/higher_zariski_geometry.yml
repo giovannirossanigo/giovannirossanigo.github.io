@@ -3,29 +3,76 @@ program_url: "/files/Higher_Zariski_Geometry_Seminar.pdf"
 description: >
   This seminar is devoted to higher Zariski geometry.
 
+time_place: "Tuesday, 12:15–13:45, M101"
+program_url: "/files/Higher_Zariski_Geometry_Seminar.pdf"
+
 rows:
-  - date: "14.04"
+  - date: "14.04.2026"
     speaker: "Giovanni Rossanigo"
-    topic: "Introduction"
+    topic: "Introduction and distribution of talks"
     link: ""
 
-  - date: "21.04"
+  - date: "21.04.2026"
     speaker: "Matteo Munafò"
     topic: "Stable and symmetric monoidal categories"
-    link: "/files/hzg/lecture-01.pdf"
+    link: ""
 
-  - date: "28.04"
-    speaker: "Diva Liver"
+  - date: "28.04.2026"
+    speaker: "Liva Diler"
     topic: "2-rings"
     link: ""
 
-  - date: "05.05"
+  - date: "05.05.2026"
     speaker: "Yiming Wang"
     topic: "Tensor triangular geometry and the Balmer spectrum"
     link: ""
 
-  
-  - date: "12.05"
+  - date: "12.05.2026"
     speaker: "Antonin Milesi"
     topic: "A reconstruction theorem"
+    link: ""
+
+  - date: "19.05.2026"
+    speaker: "Bastiaan Cnossen"
+    topic: "Lurie’s geometries and G-structured ∞-topoi I"
+    link: ""
+
+  - date: "26.05.2026"
+    speaker: "Bin Wu"
+    topic: "Lurie’s geometries and G-structured ∞-topoi II"
+    link: ""
+
+  - date: "02.06.2026"
+    speaker: "Speaker"
+    topic: "The Zariski geometry on 2CAlg"
+    link: ""
+
+  - date: "09.06.2026"
+    speaker: "Speaker"
+    topic: "Points of Spec"
+    link: ""
+
+  - date: "16.06.2026"
+    speaker: "Marco Volpe"
+    topic: "Comparison with classical geometries"
+    link: ""
+
+  - date: "23.06.2026"
+    speaker: "Ou Liu"
+    topic: "Zariski descent for 2-rings"
+    link: ""
+
+  - date: "30.06.2026"
+    speaker: "Speaker"
+    topic: "Zariski descent for modules"
+    link: ""
+
+  - date: "07.07.2026"
+    speaker: "Speaker"
+    topic: "Support data"
+    link: ""
+
+  - date: "14.07.2026"
+    speaker: "Speaker"
+    topic: "The telescope conjecture for 2-rings"
     link: ""
