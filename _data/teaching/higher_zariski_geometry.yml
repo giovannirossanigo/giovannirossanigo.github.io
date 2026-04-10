@@ -1,5 +1,7 @@
 time_place: "Tuesday 12.15–13.45, M101"
-program_url: "/files/higher_zariski_geometry_program.pdf"
+program_url: "/files/Higher_Zariski_Geometry_Seminar.pdf"
+description: >
+  This seminar is devoted to higher Zariski geometry.
 
 rows:
   - date: "21.10"
@@ -8,16 +10,16 @@ rows:
     link: ""
 
   - date: "28.10"
-    speaker: "Speaker Name"
-    topic: "Structured topoi"
+    speaker: "Matteo Munafò"
+    topic: "Stable categories and symmetric monoidal categories"
     link: "/files/hzg/lecture-01.pdf"
 
   - date: "04.11"
-    speaker: "Speaker Name"
-    topic: "Geometries and affine objects"
+    speaker: "Diva Liver"
+    topic: "2-rings"
     link: "/files/hzg/lecture-02.pdf"
 
   - date: "11.11"
-    speaker: "Speaker Name"
+    speaker: ""
     topic: "Higher stacks"
     link: ""
