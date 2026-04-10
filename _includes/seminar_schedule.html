@@ -1,0 +1,36 @@
+{% assign seminar = include.data %}
+
+<div class="seminar-schedule">
+  {% if seminar.time_place %}
+    <p><strong>Time and place:</strong> {{ seminar.time_place }}</p>
+  {% endif %}
+
+  {% if seminar.program_url %}
+    <p><a href="{{ seminar.program_url | relative_url }}">Program</a></p>
+  {% endif %}
+
+  <table class="seminar-table">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Speaker</th>
+        <th>Topic</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for row in seminar.rows %}
+        <tr>
+          <td>{{ row.date }}</td>
+          <td>{{ row.speaker }}</td>
+          <td>
+            {% if row.link and row.link != "" %}
+              <a href="{{ row.link | relative_url }}">{{ row.topic }}</a>
+            {% else %}
+              {{ row.topic }}
+            {% endif %}
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
