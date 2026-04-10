@@ -31,7 +31,13 @@
       {% for row in seminar.rows %}
         <tr>
           <td>{{ row.date }}</td>
-          <td>{{ row.speaker }}</td>
+          <td>
+  {% if row.speaker_link and row.speaker_link != "" %}
+    <a href="{{ row.speaker_link }}">{{ row.speaker }}</a>
+  {% else %}
+    {{ row.speaker }}
+  {% endif %}
+</td>
           <td>
             {% if row.link and row.link != "" %}
               <a href="{{ row.link | relative_url }}">{{ row.topic }}</a>
