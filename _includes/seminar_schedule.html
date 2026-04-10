@@ -1,5 +1,11 @@
 {% assign seminar = include.data %}
 
+{% if seminar.description %}
+  <p class="seminar-description">
+    {{ seminar.description }}
+  </p>
+{% endif %}
+
 <div class="seminar-schedule">
   {% if seminar.time_place %}
     <p><strong>Time and place:</strong> {{ seminar.time_place }}</p>
