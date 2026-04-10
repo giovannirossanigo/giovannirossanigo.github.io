@@ -1,22 +1,23 @@
 {% assign seminar = include.data %}
 
-
 <div class="seminar-schedule">
-  {% if seminar.time_place %}
-    <p><strong>Time and place:</strong> {{ seminar.time_place }}</p>
-  {% endif %}
-  
-  {% if seminar.description %}
-  <p class="seminar-description">
-    {{ seminar.description }}
-  </p>
-{% endif %}
 
-{% if seminar.program_url %}
-  <p class="seminar-program">
-    Here you can find the <a href="{{ seminar.program_url | relative_url }}">program</a>.
-  </p>
-{% endif %}
+  {% if seminar.time_place %}
+    <p class="seminar-meta">
+      <strong>Time and place:</strong> {{ seminar.time_place }}
+    </p>
+  {% endif %}
+
+  {% if seminar.description or seminar.program_url %}
+    <p class="seminar-description">
+      {% if seminar.description %}
+        {{ seminar.description }}
+      {% endif %}
+      {% if seminar.program_url %}
+        Here you can find the <a href="{{ seminar.program_url | relative_url }}">program</a>.
+      {% endif %}
+    </p>
+  {% endif %}
 
   <table class="seminar-table">
     <thead>
@@ -42,4 +43,5 @@
       {% endfor %}
     </tbody>
   </table>
+
 </div>
