@@ -12,9 +12,12 @@
   </p>
 {% endif %}
 
-  {% if seminar.program_url %}
-    <p><a href="{{ seminar.program_url | relative_url }}">Program</a></p>
-  {% endif %}
+ {% if seminar.program_url %}
+  <p class="seminar-program">
+    Here you can find the
+    <a href="{{ seminar.program_url | relative_url }}">program</a>.
+  </p>
+{% endif %}
 
   <table class="seminar-table">
     <thead>
