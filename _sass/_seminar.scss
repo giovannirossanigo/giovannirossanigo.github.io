@@ -1,0 +1,38 @@
+.seminar-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0 2rem 0;
+  font-size: 1rem;
+}
+
+.seminar-table th,
+.seminar-table td {
+  padding: 0.4rem 0.55rem;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid #dddddd;
+}
+
+.seminar-table th {
+  font-weight: 600;
+}
+
+.seminar-table th:first-child,
+.seminar-table td:first-child {
+  width: 6.5rem;
+  white-space: nowrap;
+}
+
+.seminar-table th:nth-child(2),
+.seminar-table td:nth-child(2) {
+  width: 14rem;
+  white-space: nowrap;
+}
+
+.seminar-table a {
+  text-decoration: none;
+}
+
+.seminar-table a:hover {
+  text-decoration: underline;
+}
