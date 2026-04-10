@@ -1,13 +1,19 @@
+.seminar-description {
+  max-width: 700px;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
 .seminar-table {
   width: 100%;
   border-collapse: collapse;
   margin: 1.5rem 0 2rem 0;
-  font-size: 1rem;
+  font-size: 0.92rem;
 }
 
 .seminar-table th,
 .seminar-table td {
-  padding: 0.4rem 0.55rem;
+  padding: 0.3rem 0.45rem;
   text-align: left;
   vertical-align: top;
   border-bottom: 1px solid #dddddd;
@@ -29,10 +35,66 @@
   white-space: nowrap;
 }
 
+.seminar-table td:nth-child(2) {
+  font-size: 0.9em;
+  color: #555;
+}
+
 .seminar-table a {
   text-decoration: none;
 }
 
 .seminar-table a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .seminar-table,
+  .seminar-table thead,
+  .seminar-table tbody,
+  .seminar-table th,
+  .seminar-table td,
+  .seminar-table tr {
+    display: block;
+  }
+
+  .seminar-table thead {
+    display: none;
+  }
+
+  .seminar-table tr {
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid #dddddd;
+  }
+
+  .seminar-table td {
+    border: 0;
+    padding: 0.2rem 0;
+    white-space: normal !important;
+  }
+
+  .seminar-table td::before {
+    display: inline-block;
+    min-width: 5.5rem;
+    font-weight: 600;
+    color: inherit;
+  }
+
+  .seminar-table td:nth-child(1)::before {
+    content: "Date: ";
+  }
+
+  .seminar-table td:nth-child(2)::before {
+    content: "Speaker: ";
+  }
+
+  .seminar-table td:nth-child(3)::before {
+    content: "Topic: ";
+  }
+
+  .seminar-table td:nth-child(2) {
+    font-size: 1em;
+    color: inherit;
+  }
 }
