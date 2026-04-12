@@ -1,5 +1,5 @@
 time_place: "Tuesday 12.15–13.45, M101"
-program_url: "/files/Higher_Zariski_Geometry_Seminar.pdf"
+program_url: "/files/teaching/HZG/Higher_Zariski_Geometry_Seminar.pdf"
 description: >
   This seminar is devoted to higher Zariski geometry.
 
@@ -7,7 +7,7 @@ rows:
   - date: "14.04.2026"
     speaker: "Giovanni Rossanigo"
     topic: "Introduction and distribution of talks"
-    link: ""
+    link: "/files/teaching/HZG/HZG___talk_1.pdf"
 
   - date: "21.04.2026"
     speaker: "Matteo Munafò"
