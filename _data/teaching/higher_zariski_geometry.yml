@@ -42,8 +42,10 @@ rows:
 
   - date: "02.06.2026"
     speaker: "Sil Linskens"
+    speaker_link: "https://sites.google.com/view/sil-linskens/"
     topic: "The Zariski geometry on 2CAlg"
-    link: "https://sites.google.com/view/sil-linskens/"
+    link: 
+  
 
   - date: "09.06.2026"
     speaker: "Speaker"
