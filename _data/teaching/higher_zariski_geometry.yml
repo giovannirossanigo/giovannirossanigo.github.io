@@ -12,7 +12,7 @@ rows:
   - date: "21.04.2026"
     speaker: "Matteo Munafò"
     topic: "Stable and symmetric monoidal categories"
-    link: ""
+    link: "/files/teaching/HZG/HZG___talk_2.pdf"
 
   - date: "28.04.2026"
     speaker: "Giovanni Rossanigo"
@@ -48,7 +48,7 @@ rows:
   
 
   - date: "09.06.2026"
-    speaker: "Speaker"
+    speaker: "Zhenming Xu"
     topic: "Points of Spec"
     link: ""
 
