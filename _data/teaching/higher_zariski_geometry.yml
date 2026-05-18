@@ -29,48 +29,43 @@ rows:
     topic: "A reconstruction theorem"
     link: "/files/teaching/HZG/HZG__talk_5.pdf"
 
-  - date: "19.05.2026"
+  - date: "26.05.2026"
     speaker: "Bastiaan Cnossen"
     speaker_link: "https://sites.google.com/view/bastiaan-cnossen/home"
     topic: "Lurie’s geometries and G-structured ∞-topoi I"
     link: ""
 
-  - date: "26.05.2026"
+  - date: "02.06.2026"
     speaker: "Bin Wu"
     topic: "Lurie’s geometries and G-structured ∞-topoi II"
     link: ""
 
-  - date: "02.06.2026"
+  - date: "09.06.2026"
     speaker: "Sil Linskens"
     speaker_link: "https://sites.google.com/view/sil-linskens/"
     topic: "The Zariski geometry on 2CAlg"
     link: 
   
 
-  - date: "09.06.2026"
+  - date: "16.06.2026"
     speaker: "Zhenming Xu"
     topic: "Points of Spec"
     link: ""
 
-  - date: "16.06.2026"
+  - date: "23.06.2026"
     speaker: "Marco Volpe"
     speaker_link: "https://sites.google.com/view/marco-volpe/home?authuser=0"
     topic: "Comparison with classical geometries"
     link: ""
 
-  - date: "23.06.2026"
+  - date: "30.06.2026"
     speaker: "Ningyi Li"
     topic: "Zariski descent for 2-rings"
     link: ""
 
-  - date: "30.06.2026"
+  - date: "07.07.2026"
     speaker: "Ou Liu"
     topic: "Zariski descent for modules"
-    link: ""
-
-  - date: "07.07.2026"
-    speaker: "Speaker"
-    topic: "Support data"
     link: ""
 
   - date: "14.07.2026"
