@@ -34,16 +34,6 @@ NOTA: niente virgola prima della data.
   {%- endif -%}
 
   {%- if has_links -%}
-    <span class="publinks">
-      [
-      {%- if pdf_href and pdf_href != "" -%}
-        <a href="{{ pdf_href }}">pdf</a>
-      {%- endif -%}
-      {%- if post.arxivurl and post.arxivurl != "" -%}
-        {%- if pdf_href and pdf_href != "" -%}, {%- endif -%}
-        <a href="{{ post.arxivurl }}">arXiv</a>
-      {%- endif -%}
-      ]
-    </span>
+    <span class="publinks">[{% if pdf_href and pdf_href != "" %}<a href="{{ pdf_href }}">pdf</a>{% endif %}{% if post.arxivurl and post.arxivurl != "" %}{% if pdf_href and pdf_href != "" %}, {% endif %}<a href="{{ post.arxivurl }}">arXiv</a>{% endif %}]</span>
   {%- endif -%}.
 </li>
