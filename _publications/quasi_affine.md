@@ -5,6 +5,6 @@ category: preprints        # oppure preprints
 date: 2026-02-01        # per mostrare (August 2025)
 with: 
 paperurl: /files/Quasi_affine.pdf
-arxivurl: 
+arxivurl: "https://arxiv.org/abs/2606.19417"
 ---
 
