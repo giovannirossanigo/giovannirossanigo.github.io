@@ -1,7 +1,7 @@
 ---
-title: "Quasi-compact quasi-separated schemes are approximable"
+title: "Approximability for quasi-compact quasi-separated schemes"
 collection: preprints
-category: preprints        # oppure preprints
+category: notes
 date: 2026-06-01        # per mostrare (August 2025)
 with: 
 paperurl: /files/approximability.pdf
