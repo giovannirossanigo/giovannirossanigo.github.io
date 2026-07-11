@@ -52,8 +52,7 @@ rows:
     link: "/files/teaching/HZG/HZG___talk_9.pdf"
 
   - date: "23.06.2026"
-    speaker: "Marco Volpe"
-    speaker_link: "https://sites.google.com/view/marco-volpe/home?authuser=0"
+    speaker: "Giovanni Rossanigo"
     topic: "Comparison with classical geometries"
     link: ""
 
@@ -68,6 +67,6 @@ rows:
     link: ""
 
   - date: "14.07.2026"
-    speaker: "Speaker"
+    speaker: "Timon Tausendpfund"
     topic: "The telescope conjecture for 2-rings"
     link: ""
