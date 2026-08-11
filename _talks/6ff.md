@@ -6,7 +6,6 @@ location: "Darmstadt, Germany"
 
 event: "Six Functor Formalisms Workshop"
 event_url: "https://www.mathematik.tu-darmstadt.de/algebra/forschung_algebra/konferenzen_und_workshops_ag_algebra/workshop_sixfunctor_formalisms.en.jsp"   # link workshop
-
-talk_type: "Contributed talk"   # opzionale
-notesurl: "/files/6ff.pdf" # opzionale
+talk_type: "Contributed talk"   
+notesurl: "/files/6ff.pdf" 
 ---
