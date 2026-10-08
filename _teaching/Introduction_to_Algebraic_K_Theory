@@ -1,0 +1,9 @@
+---
+title: "Introduction to Algebraic K-theory"
+collection: teaching
+permalink: /teaching/K-theory/
+venue: "Universität Regensburg"
+type: "Seminar"
+date: 2026-10-01
+---
+{% include seminar_schedule.html data=site.data.teaching.k_theory %}
