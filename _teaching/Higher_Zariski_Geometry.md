@@ -5,5 +5,6 @@ permalink: /teaching/higher-zariski-geometry/
 venue: "Universität Regensburg"
 type: "Oberseminar"
 date: 2026-01-01
+semester: "Summer Semester 2026"
 ---
 {% include seminar_schedule.html data=site.data.teaching.higher_zariski_geometry %}
