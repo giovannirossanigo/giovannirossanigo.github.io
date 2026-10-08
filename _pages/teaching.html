@@ -4,33 +4,19 @@ title: "Teaching"
 permalink: /teaching/
 author_profile: true
 ---
-<p>
-  Here I list my courses, seminars, and teaching activities. Materials are linked on the course pages when available.
-</p>
 
-{% include base_path %}
+<p>Here I list my courses, seminars, and teaching activities. Materials are linked on the course pages when available.</p>
 
-{%- assign teaching_sorted = site.teaching | sort: "date" | reverse -%}
-{%- assign current_term = "" -%}
+{% assign courses = site.teaching | sort: "date" | reverse %}
+{% assign semesters = courses | group_by: "semester" %}
 
-{% for post in teaching_sorted %}
-  {%- assign term = post.term | default: post.semester | default: "" -%}
-  {%- if term == "" -%}{%- assign term = post.date | date: "%Y" -%}{%- endif -%}
-
-  {%- if term != current_term -%}
-    {%- if current_term != "" -%}
-      </ul>
-    {%- endif -%}
-
-    <h2 class="archive__subtitle pubsection">{{ term }}</h2>
-    <ul class="publist teachinglist">
-
-    {%- assign current_term = term -%}
-  {%- endif -%}
-
-  {% include teaching-hoyois.html %}
-
-  {%- if forloop.last -%}
-    </ul>
-  {%- endif -%}
+{% for semester in semesters %}
+  <h2>{{ semester.name }}</h2>
+  <ul>
+    {% for course in semester.items %}
+      <li>
+        <a href="{{ course.url | relative_url }}">{{ course.title }}</a>{% if course.type %}, {{ course.type }}{% endif %}{% if course.venue %}, {{ course.venue }}{% endif %}
+      </li>
+    {% endfor %}
+  </ul>
 {% endfor %}
