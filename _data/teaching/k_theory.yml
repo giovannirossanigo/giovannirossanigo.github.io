@@ -1,7 +1,6 @@
 time_place: "Thursday 14.15–15.45, M009"
 program_url: "/files/teaching/KT/K_theory_Seminar.pdf"
-description: >
- 
+description: ""
 
 rows:
   - date: "15.10.2026"
@@ -40,8 +39,8 @@ rows:
     link: ""
 
   - date: "10.12.2026"
-    speaker: "Stable categories"
-    topic: ""
+    speaker: ""
+    topic: "Stable categories"
     link: ""
 
   - date: "17.12.2026"
@@ -64,13 +63,12 @@ rows:
     topic: "Devissage and applications"
     link: ""
 
-   - date: "28.01.2027"
-    speaker: "Nisnevich descent"
-    topic: ""
+  - date: "28.01.2027"
+    speaker: ""
+    topic: "Nisnevich descent"
     link: ""
 
-   - date: "05.02.2027"
+  - date: "05.02.2027"
     speaker: ""
     topic: "The projective bundle formula"
     link: ""
-
