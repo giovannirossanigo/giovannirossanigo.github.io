@@ -1,71 +1,76 @@
-time_place: "Tuesday 12.15–13.45, M101"
+time_place: "Thursday 14.15–15.45, M009"
 program_url: "/files/teaching/KT/K_theory_Seminar.pdf"
 description: >
  
 
 rows:
-  - date: "14.04.2026"
+  - date: "15.10.2026"
     speaker: "Denis-Charles"
     topic: "Introduction and distribution of talks"
     link: ""
 
-  - date: "21.04.2026"
+  - date: "22.10.2026"
     speaker: ""
-    topic: ""
+    topic: "Higher category theory I"
     link: ""
 
-  - date: "28.04.2026"
-    speaker: "Giovanni Rossanigo"
-    topic: ""
-    link: ""
-
-  - date: "05.05.2026"
+  - date: "29.10.2026"
     speaker: ""
-    topic: ""
+    topic: "Higher category theory II"
     link: ""
 
-  - date: "12.05.2026"
+  - date: "05.11.2026"
     speaker: ""
-    topic: ""
+    topic: "Waldhausen categories"
     link: ""
 
-  - date: "26.05.2026"
+  - date: "12.11.2026"
     speaker: ""
-    topic: ""
+    topic: "Construction of K-theory"
     link: ""
 
-  - date: "02.06.2026"
-    speaker: "Bin Wu"
-    topic: "Lurie’s geometries and G-structured ∞-topoi II"
-    link: "/files/teaching/HZG/HZG___talk_7.pdf"
+  - date: "19.11.2026"
+    speaker: ""
+    topic: "Additivity of Waldhausen K-theory I"
+    link: ""
 
-  - date: "09.06.2026"
-    speaker: "Sil Linskens"
-    speaker_link: "https://sites.google.com/view/sil-linskens/"
-    topic: "The Zariski geometry on 2CAlg"
+  - date: "03.12.2026"
+    speaker: ""
+    topic: "Additivity of Waldhausen K-theory II"
+    link: ""
+
+  - date: "10.12.2026"
+    speaker: "Stable categories"
+    topic: ""
     link: 
 
-  - date: "16.06.2026"
-    speaker: "Zhenming Xu"
-    topic: "Points of Spec"
-    link: "/files/teaching/HZG/HZG___talk_9.pdf"
-
-  - date: "23.06.2026"
-    speaker: "Giovanni Rossanigo"
-    topic: "Comparison with classical geometries"
+  - date: "17.12.2026"
+    speaker: ""
+    topic: "Localization and non-connective K-theory"
     link: ""
 
-  - date: "30.06.2026"
+  - date: "07.01.2027"
     speaker: ""
-    topic: "Zariski descent for 2-rings"
-    link: "/files/teaching/HZG/HZG___talk_11.pdf"
+    topic: "Derived categories of schemes"
+    link: ""
 
-  - date: "07.07.2026"
+  - date: "14.01.2027"
     speaker: ""
+    topic: "Localization in algebraic geometry"
+    link: ""
+
+  - date: "21.01.2027"
+    speaker: ""
+    topic: "Devissage and applications"
+    link: ""
+
+   - date: "28.01.2027"
+    speaker: "Nisnevich descent"
     topic: ""
     link: ""
 
-  - date: "14.07.2026"
+   - date: "05.02.2027"
     speaker: ""
-    topic: ""
+    topic: "The projective bundle formula"
     link: ""
+
