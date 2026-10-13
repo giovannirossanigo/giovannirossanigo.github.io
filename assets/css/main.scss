@@ -324,3 +324,13 @@ h2.archive__subtitle.pubsection{
 
 
 @import "seminar";
+
+/* Reclaim the left column when the page has no sidebar. */
+@include breakpoint($large) {
+  #main > .archive:first-child,
+  #main > .page:first-child {
+    float: left;
+    margin-left: 0;
+    padding-left: 0;
+  }
+}
