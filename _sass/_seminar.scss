@@ -60,6 +60,11 @@
   text-decoration: underline;
 }
 
+html[data-theme="dark"] .seminar-table thead {
+  background-color: #353a40;
+  color: var(--global-text-color);
+}
+
 @media (max-width: 768px) {
   .seminar-table,
   .seminar-table thead,
