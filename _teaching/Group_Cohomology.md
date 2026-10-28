@@ -10,6 +10,6 @@ semester: "Winter Semester 2026-2027"
 
 **Time and place:** Wednesday, 18:00–19:00, M311.
 
-**Organizers:** Giovanni Rossanigo, Andrej Matevc, [Andrea Taccani](https://andreataccani.github.io/), and [Christoph Fronhöfer](https://homepages.uni-regensburg.de/~frc51243/).
+**Organizers:** [Christoph Fronhöfer](https://homepages.uni-regensburg.de/~frc51243/), Andrej Matevc, Giovanni Rossanigo, and [Andrea Taccani](https://andreataccani.github.io/).
 
 An informal seminar to learn some group cohomology together, work through examples, and ask plenty of questions.
