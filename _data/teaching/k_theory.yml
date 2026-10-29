@@ -11,33 +11,33 @@ rows:
     link: ""
 
   - date: "22.10.2026"
-    speaker: ""
+    speaker: "Denis-Charles"
     topic: "Higher category theory I"
     link: ""
 
   - date: "29.10.2026"
-    speaker: ""
+    speaker: "Denis-Charles"
     topic: "Higher category theory II"
     link: ""
 
   - date: "05.11.2026"
     speaker: ""
-    topic: "Waldhausen categories"
+    topic: "Presentable categories"
     link: ""
 
   - date: "12.11.2026"
     speaker: ""
-    topic: "Construction of K-theory"
+    topic: "Waldhausen categories"
     link: ""
 
   - date: "19.11.2026"
     speaker: ""
-    topic: "Additivity of Waldhausen K-theory I"
+    topic: "Construction of K-theory"
     link: ""
 
   - date: "03.12.2026"
     speaker: ""
-    topic: "Additivity of Waldhausen K-theory II"
+    topic: "Additivity of Waldhausen K-theory"
     link: ""
 
   - date: "10.12.2026"
