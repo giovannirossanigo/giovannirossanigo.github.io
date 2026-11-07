@@ -7,6 +7,4 @@ type: "Seminar"
 date: 2026-10-01
 semester: "Winter Semester 2026-2027"
 ---
-<p><a href="{{ '/files/teaching/KT/K-theory.pdf' | relative_url }}">Here</a> you can find the notes of the course.</p>
-
 {% include seminar_schedule.html data=site.data.teaching.k_theory %}
