@@ -10,7 +10,7 @@ author_profile: false
 
 {% include base_path %}
 
-{%- assign teaching_sorted = site.teaching | sort: "date" | reverse -%}
+{%- assign teaching_sorted = site.teaching | concat: site.data.external_teaching | sort: "date" | reverse -%}
 {%- assign current_term = "" -%}
 
 {% for post in teaching_sorted %}

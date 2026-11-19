@@ -8,7 +8,7 @@ Title (bold, clickable), Type, Institution
 
 <li class="pubitem teachingitem">
   <span class="pubtitle teachingtitle">
-    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    <a href="{% if post.external_url %}{{ post.external_url }}{% else %}{{ post.url | relative_url }}{% endif %}">{{ post.title }}</a>
   </span>
   {%- if t_type and t_type != "" -%}
     , <span class="teachingtype">{{ t_type }}</span>
