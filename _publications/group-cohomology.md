@@ -1,10 +1,10 @@
 ---
-title: "Group Cohomology — From a geometric point of view"
+title: "Group Cohomology"
 collection: publications
 category: notes
 date: 2023-10-01
 term: "Kevin Li’s course, WS 2023/2024"
-paperurl: https://raw.githubusercontent.com/giovannirossanigo/group-cohomology-notes/main/main.pdf
+paperurl: /files/group-cohomology.pdf
 permalink: /publications/group-cohomology
 share: false
 comments: false
